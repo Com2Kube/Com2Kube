@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+
+  frontend:
+    build: ./frontend
+    container_name: "Compose2Kube_frontend"
+    ports:
+      - 80:80
+    depends_on:
+      - backend
+    
+  backend:

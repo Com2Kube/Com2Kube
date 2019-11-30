@@ -1,0 +1,50 @@
+html, body{
+  margin: 0;
+  height: 100%;
+  background: white;
+}
+
+  #drop_zone {
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    width:  200px;
+    height: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+  }
+header {
+  margin-bottom: 8%;
+}
+
+#Main_Title {
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+#input {
+  margin-left: 7.5%;;
+}
+
+.footer {
+ /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.footer ul{
+  list-style-type: none;
+}
+
+.footer a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Crimson Text', serif;
+}
