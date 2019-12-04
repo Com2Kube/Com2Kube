@@ -1,3 +1,4 @@
 FROM tiangolo/uwsgi-nginx-flask:python3.7
 
-COPY app /app
+COPY . /app
+RUN mkdir -p /app/uploads
