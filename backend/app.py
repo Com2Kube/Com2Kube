@@ -1,11 +1,13 @@
-from backend import app
+from flask import Flask
 from flask import flash, request, redirect, url_for, send_from_directory, session
 import os, random, threading, time, shutil
 from werkzeug.utils import secure_filename
 
 
+app = Flask(__name__)
+
 ALLOWED_EXTENSIONS = {'txt', 'yml'}
-UPLOAD_FOLDER = 'backend/uploads'
+UPLOAD_FOLDER = '/app/uploads' #This folder is necessary for the applitcations to run
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed_file(filename):
@@ -45,7 +47,8 @@ def backend_status():
 def serve_static(path):
     root_dir = os.getcwd()
     path = os.path.split(path)
-    folder = root_dir + "/" + app.config['UPLOAD_FOLDER'] + "/" + path[0]
+    folder = app.config['UPLOAD_FOLDER'] + "/" + path[0]
+    print("serving " + folder)
     thread = threading.Thread(target=cleanup, args=(folder,))
     thread.start()
     return send_from_directory(folder, path[1], as_attachment=True)
@@ -53,3 +56,6 @@ def serve_static(path):
 def cleanup(folder):
     time.sleep(5)
     shutil.rmtree(folder)
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
