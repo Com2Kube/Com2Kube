@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 ALLOWED_EXTENSIONS = {'txt', 'yml'}
-UPLOAD_FOLDER = '/app'
+UPLOAD_FOLDER = '/app/uploads' #This folder is necessary for the applitcations to run
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed_file(filename):
