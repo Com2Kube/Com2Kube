@@ -5,9 +5,17 @@ services:
   frontend:
     build: ./frontend
     container_name: "Compose2Kube_frontend"
+    volumes:
+      - "./frontend:/usr/share/nginx/html/"
     ports:
       - 80:80
     depends_on:
       - backend
     
   backend:
+    build: ./backend
+    container_name: "Compose2Kube_backend"
+    volumes:
+      - "./backend:/app"
+    ports:
+      - 5000:5000
