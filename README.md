@@ -10,3 +10,12 @@ This project aim to provide an easy way for docker-compose users to convert thei
 * Flask
 
 
+# Contribute
+## Requirements
+* Git
+* Docker 
+* Docker-Compose
+
+## Run locally
+* Clone the project 
+* docker-compose up
