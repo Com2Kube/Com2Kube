@@ -58,8 +58,8 @@ def serve_static(path):
     return send_from_directory(folder, path[1], as_attachment=True)
 
 def cleanup(folder):
-    print("deleteing... " + folder, flush=True)
     time.sleep(2)
+    print("deleteing... " + folder, flush=True)
     try:
         shutil.rmtree(folder)
     except:
