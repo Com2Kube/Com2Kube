@@ -1,25 +1,24 @@
-import React from 'react'
+import React from "react";
+import { Button, Input } from "@material-ui/core";
 
 export const FileUpload = () => {
-    return (
-        <div class="container">
-            <div class="row">
-                <div class="col" style="text-align: center;">
-                    <form action="http://c2k.canadacentral.cloudapp.azure.com:5000" method="POST" enctype="multipart/form-data">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <input id="input" type="file" name="file" />
-                        <br>
-                        <br>
-                        <br>
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </form>
-                </div>
-            </div>
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <form
+            action="http://c2k.canadacentral.cloudapp.azure.com:5000"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <Input id="input" type="file" name="file" />
+
+            <Button type="submit" className="btn btn-dark">
+              Submit
+            </Button>
+          </form>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
