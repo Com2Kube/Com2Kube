@@ -1,9 +1,9 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import kubernetes from "../assets/images/kubernetes_logo.png";
-import { Button, Toolbar, Typography, Container } from "@material-ui/core";
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import kubernetes from "../assets/images/kubernetes_logo.png"
+import { Button, Toolbar, Typography, Container } from "@material-ui/core"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     with: "100%"
@@ -11,10 +11,10 @@ const useStyles = makeStyles(theme => ({
   menuButton: {
     marginRight: theme.spacing(2)
   }
-}));
+}))
 
 export const Header = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <div className={classes.root}>
@@ -28,10 +28,7 @@ export const Header = () => {
           <Button
             color="inherit"
             onClick={() =>
-              window.open(
-                "https://github.com/GabrielJean/Compose2Kube",
-                "_blank"
-              )
+              window.open("https://github.com/GabrielJean/Compose2Kube", "_blank")
             }
           >
             Github
@@ -40,5 +37,5 @@ export const Header = () => {
         </Container>
       </Toolbar>
     </div>
-  );
-};
+  )
+}

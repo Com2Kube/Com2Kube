@@ -1,8 +1,8 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Container, Link, Typography } from "@material-ui/core";
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import { Container, Link, Typography } from "@material-ui/core"
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
@@ -20,10 +20,10 @@ const useStyles = makeStyles(theme => ({
         ? theme.palette.grey[800]
         : theme.palette.grey[200]
   }
-}));
+}))
 
 export const Footer = () => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
     <div className={classes.root}>
       <footer className={classes.footer}>
@@ -44,5 +44,5 @@ export const Footer = () => {
         </Container>
       </footer>
     </div>
-  );
-};
+  )
+}
