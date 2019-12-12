@@ -1,4 +1,4 @@
-FROM node:10.15.0
+FROM node:12.13.1
 WORKDIR /home/node
 COPY . /home/node
 
