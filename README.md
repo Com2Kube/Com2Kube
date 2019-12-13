@@ -1,21 +1,30 @@
 # Compose2Kube
-This project aim to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
+This project aim to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
 # Technology Stack
 
 ## Frontend
-* HTML/CSS with Bootstrap 4
-## Backend
-* Flask
 
+- HTML/CSS with Bootstrap 4
+
+## Backend
+
+- Flask
 
 # Contribute
+
 ## Requirements
-* Git
-* Docker 
-* Docker-Compose
+
+- Git
+- Docker
+- Docker-Compose
 
 ## Run locally
-* Clone the project 
-* docker-compose up
+
+- Clone the project
+- docker-compose up
+
+# Licence
+
+[Apache License](LICENCE.md)
