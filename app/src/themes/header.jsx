@@ -28,7 +28,9 @@ const Header = () => {
       <Toolbar>
         <img className={classes.logo} src={kubernetes} alt="kubernetes logo" />
         <Typography variant="h6" className={classes.title}>
-          <Link href="/">Compose2kube</Link>
+          <Link href="/" style={{ textDecoration: "none" }}>
+            Compose2kube
+          </Link>
         </Typography>
         <Container className={classes.navLinks}>
           <Button color="inherit" href="/about">

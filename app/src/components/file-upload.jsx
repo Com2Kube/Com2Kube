@@ -22,7 +22,7 @@ const FileUpload = () => {
       >
         <Input id="input" type="file" name="file" />
         <Box m={2}>
-          <Button type="submit" variant="outlined">
+          <Button type="submit" variant="outlined" alt="convert button">
             Submit
           </Button>
         </Box>
