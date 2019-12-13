@@ -42,7 +42,6 @@ export const Header = () => {
           >
             Github
           </Button>
-          <Button color="inherit">Community</Button>
         </Container>
       </Toolbar>
     </div>

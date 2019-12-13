@@ -19,7 +19,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   )
