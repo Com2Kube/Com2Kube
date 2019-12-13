@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import { Box } from "@material-ui/core"
 import FileUpload from "./file-upload"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     with: "100%",
     display: "flex",
