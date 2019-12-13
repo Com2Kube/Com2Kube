@@ -1,9 +1,11 @@
 import React from "react"
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <div>
       <p>ErrorPage component</p>
     </div>
   )
 }
+
+export default NotFound

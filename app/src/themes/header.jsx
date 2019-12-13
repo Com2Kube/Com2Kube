@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import kubernetes from "../assets/images/kubernetes_logo.png"
 import { Button, Toolbar, Typography, Container, Link } from "@material-ui/core"
+import kubernetes from "../assets/images/kubernetes_logo.png"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export const Header = () => {
+const Header = () => {
   const classes = useStyles()
 
   return (
@@ -47,3 +47,5 @@ export const Header = () => {
     </div>
   )
 }
+
+export default Header

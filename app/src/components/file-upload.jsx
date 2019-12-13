@@ -1,19 +1,34 @@
 import React from "react"
-import { Button, Input } from "@material-ui/core"
+import { makeStyles } from "@material-ui/core/styles"
+import { Button, Input, Box } from "@material-ui/core"
 
-export const FileUpload = () => {
+const useStyles = makeStyles(() => ({
+  form: {
+    with: "100%",
+    display: "flex",
+    flexDirection: "column"
+  }
+}))
+
+const FileUpload = () => {
+  const classes = useStyles()
   return (
     <div>
       <form
         action="http://dev-c2k.canadacentral.cloudapp.azure.com:5000"
         method="POST"
-        enctype="multipart/form-data"
+        encType="multipart/form-data"
+        className={classes.form}
       >
         <Input id="input" type="file" name="file" />
-        <Button type="submit" variant="outlined">
-          Submit
-        </Button>
+        <Box m={2}>
+          <Button type="submit" variant="outlined">
+            Submit
+          </Button>
+        </Box>
       </form>
     </div>
   )
 }
+
+export default FileUpload

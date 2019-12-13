@@ -8,6 +8,11 @@
     "prettier/react"
   ],
   "plugins": ["jsx-a11y", "prettier"],
+  "globals": {
+    "document": true,
+    "foo": true,
+    "window": true
+  },
   "rules": {
     "semi": 0,
     "react/jsx-filename-extension": [

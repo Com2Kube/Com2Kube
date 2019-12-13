@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-export const Footer = () => {
+const Footer = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -40,7 +40,7 @@ export const Footer = () => {
             component={NavLink}
             className={classes.navLink}
             activeClassName="active"
-            to=""
+            to="/about"
           >
             Information
           </Link>
@@ -48,7 +48,7 @@ export const Footer = () => {
             component={NavLink}
             className={classes.navLink}
             activeClassName="active"
-            to=""
+            to="/about"
           >
             Disclaimer
           </Link>
@@ -80,3 +80,5 @@ export const Footer = () => {
     </div>
   )
 }
+
+export default Footer
