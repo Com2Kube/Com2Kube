@@ -1,4 +1,5 @@
 import React from "react"
+import { FileUpload } from "./file-upload"
 
 export const Index = () => {
   return (
@@ -14,6 +15,7 @@ export const Index = () => {
         <li>Select your docker-compose.yml file.</li>
         <li>Press submit to get your compose to kubernetes file.</li>
       </ol>
+      <FileUpload />
     </div>
   )
 }
