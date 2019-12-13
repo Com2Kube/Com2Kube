@@ -12,7 +12,7 @@ jobs:
     - name: Build the Docker image
       env:
         SHA: ${{ github.sha }}
-      working-directory: frontend
+      working-directory: app
       run: docker build . -t frontend:$SHA
     
     - name: Save the Docker image
