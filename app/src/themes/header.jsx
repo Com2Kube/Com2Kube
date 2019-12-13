@@ -6,10 +6,17 @@ import { Button, Toolbar, Typography, Container, Link } from "@material-ui/core"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    with: "100%"
+    with: "100%",
+    display: "flex"
   },
-  menuButton: {
-    marginRight: theme.spacing(2)
+  logo: {
+    width: "5%",
+    margin: theme.spacing(2)
+  },
+  navLinks: {
+    display: "flex",
+    justifyContent: "flex-end",
+    flexDirection: "row"
   }
 }))
 
@@ -19,11 +26,11 @@ export const Header = () => {
   return (
     <div className={classes.root}>
       <Toolbar>
+        <img className={classes.logo} src={kubernetes} alt="kubernetes logo" />
         <Typography variant="h6" className={classes.title}>
           <Link href="/">Compose2kube</Link>
         </Typography>
-        {/* <img src={kubernetes} alt="kubernetes logo" /> */}
-        <Container display="flex">
+        <Container className={classes.navLinks}>
           <Button color="inherit" href="/about">
             About
           </Button>

@@ -5,10 +5,10 @@ export const Index = () => {
   return (
     <div className="col">
       <p>
-        This website sole purpose is to convert docker compose files into kubernetes
+        This website sole purpose is to convert docker compose files into Kubernetes
         items.
         <br />
-        You can convert your files in three steps:
+        You can convert your docker-compose files into three simple steps:
       </p>
       <ol>
         <li>Click on the "Choose File" button.</li>
