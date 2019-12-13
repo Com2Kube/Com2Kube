@@ -2,29 +2,49 @@
 
 This project aim to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
-# Technology Stack
+## Getting started
 
-## Frontend
+```text
+git clone https://github.com/CB-GJ/Compose2Kube
+cd Compose2Kube
+npm install
+```
 
-- HTML/CSS with Bootstrap 4
+### Start the project locally
 
-## Backend
+```text
+cd app
+npm run start
+```
+
+### Run the project with Docker
+
+If you decide to run the project with Docker. Make sure to have Docker installed to your machine.
+
+```text
+docker-compose up
+```
+
+## Technology Stack
+
+### Frontend
+
+- React
+- React Material UI
+
+### Backend
 
 - Flask
 
-# Contribute
+## Contribute
 
-## Requirements
+Thank your for contributing to our project. Please follow our [Contributing documentation](CONTRIBUTING.md) and the [Code of Conduct](CODE-OF-CONDUCT.md)
 
-- Git
-- Docker
-- Docker-Compose
+## Contributors
 
-## Run locally
+- [Gabriel Jean](https://github.com/GabrielJean)
+- [Claire Bun](https://github.com/cbun097)
 
-- Clone the project
-- docker-compose up
-
-# Licence
+## Licence
 
 [Apache License](LICENCE.md)
