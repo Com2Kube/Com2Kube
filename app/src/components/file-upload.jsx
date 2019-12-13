@@ -5,7 +5,7 @@ export const FileUpload = () => {
   return (
     <div>
       <form
-        action="http://c2k.canadacentral.cloudapp.azure.com:5000"
+        action="http://dev-c2k.canadacentral.cloudapp.azure.com:5000"
         method="POST"
         enctype="multipart/form-data"
       >
