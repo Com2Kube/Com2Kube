@@ -27,7 +27,7 @@ const Header = () => {
     <div className={classes.root}>
       <Toolbar>
         <img className={classes.logo} src={kubernetes} alt="kubernetes logo" />
-        <Typography variant="h6" className={classes.title}>
+        <Typography variant="h6">
           <Link href="/" style={{ textDecoration: "none" }}>
             Compose2kube
           </Link>
