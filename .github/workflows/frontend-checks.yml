@@ -1,4 +1,4 @@
-name: Lint Frontend
+name: Frontend Checks
 
 on: [push]
 
@@ -41,8 +41,8 @@ jobs:
       #   working-directory: app
       #   run: npm test
 
-      # - name: Format
-      #   env:
-      #     SHA: ${{ github.sha }}
-      #   working-directory: app
-      #   run: npm run format
+      - name: Format
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: app
+        run: npm run format
