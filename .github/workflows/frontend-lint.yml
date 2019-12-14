@@ -1,4 +1,4 @@
-name: Frontend Checks
+name: Lint Frontend
 
 on: [push]
 
@@ -23,16 +23,15 @@ jobs:
         working-directory: app
         run: npm install
 
-      - name: Build
-        env:
-          SHA: ${{ github.sha }}
-        working-directory: app
-        run: npm run build --if-present
+      # - name: Build
+      #   env:
+      #     SHA: ${{ github.sha }}
+      #   working-directory: app
+      #   run: npm run build --if-present
 
       - name: Linting
         env:
           SHA: ${{ github.sha }}
-          CI: "true"
         working-directory: app
         run: npm run lint
 
