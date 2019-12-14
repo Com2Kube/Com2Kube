@@ -17,33 +17,32 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      -name: Install
+      - name: Install
         env:
           SHA: ${{ github.sha }}
         working-directory: app
         run: npm install
 
-      -name: Build
+      - name: Build
         env:
-          SHA: ${{ github.sha }}                  
+          SHA: ${{ github.sha }}
         working-directory: app
         run: npm run build --if-present
 
-      -name: Linting
+      - name: Linting
         env:
-          SHA: ${{ github.sha }}  
+          SHA: ${{ github.sha }}
         working-directory: app
         run: npm run lint
 
-      -name: Unit Tests
+      - name: Unit Tests
         env:
-          SHA: ${{ github.sha }} 
-        working-directory: app 
+          SHA: ${{ github.sha }}
+        working-directory: app
         run: npm test
 
-      -name: Format
+      - name: Format
         env:
-          SHA: ${{ github.sha }} 
-        working-directory: app 
+          SHA: ${{ github.sha }}
+        working-directory: app
         run: npm run format
-
