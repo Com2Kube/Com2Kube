@@ -1,0 +1,28 @@
+name: Frontend Checks
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Format
+        env:
+            SHA: ${{ github.sha }}
+          working-directory: app
+          run: npm run format
+
+          - name: Linting
+            env:
+                SHA: ${{ github.sha }}
+              working-directory: app
+              run: npm run lint
+
+              - name: Unit Test
+              env:
+                  SHA: ${{ github.sha }}
+                working-directory: app
+                run: npm run test
