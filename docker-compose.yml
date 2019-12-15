@@ -5,7 +5,7 @@ services:
     build: ./frontend
     container_name: "Compose2Kube_frontend"
     volumes:
-      - "./app:/home/node"
+      - "./frontend:/home/node"
     ports:
       - 80:3000
   backend:
