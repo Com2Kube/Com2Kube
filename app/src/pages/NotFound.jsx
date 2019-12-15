@@ -24,7 +24,7 @@ const NotFound = () => {
     <div className={classes.root}>
       <Typography variant="h2">Oops..</Typography>
       <Typography variant="h4">
-        We can't seem to find the page you're looking for.
+        We can&apos;t seem to find the page you&apos;re looking for.
       </Typography>
       <img className={classes.img} src={NotFoundImg} alt="not found error img" />
     </div>
