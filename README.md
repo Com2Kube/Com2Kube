@@ -15,7 +15,7 @@ npm install
 ### Start the project locally
 
 ```text
-cd app
+cd frontend
 npm run start
 ```
 
