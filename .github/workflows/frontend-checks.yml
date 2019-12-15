@@ -20,29 +20,29 @@ jobs:
       - name: Install
         env:
           SHA: ${{ github.sha }}
-        working-directory: app
+        working-directory: frontend
         run: npm install
 
       - name: Build
         env:
           SHA: ${{ github.sha }}
-        working-directory: app
+        working-directory: frontend
         run: npm run build --if-present
 
       - name: Linting
         env:
           SHA: ${{ github.sha }}g
-        working-directory: app
+        working-directory: frontend
         run: npm run lint
 
       # - name: Unit Tests
       #   env:
       #     SHA: ${{ github.sha }}
-      #   working-directory: app
+      #   working-directory: frontend
       #   run: npm test
 
       - name: Format
         env:
           SHA: ${{ github.sha }}
-        working-directory: app
+        working-directory: frontend
         run: npm run format

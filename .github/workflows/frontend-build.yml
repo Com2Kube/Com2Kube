@@ -3,34 +3,26 @@ name: Build Frontend
 on: [push]
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Build the Docker image
-      env:
-        SHA: ${{ github.sha }}
-      working-directory: app
-      run: docker build . -t frontend:$SHA
-    
-    - name: Save the Docker image
-      env:
-        SHA: ${{ github.sha }}
-      run: docker save frontend:$SHA > frontend.tar
-    
+      - uses: actions/checkout@v1
+      - name: Build the Docker image
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: frontend
+        run: docker build . -t frontend:$SHA
 
-    - uses: actions/upload-artifact@v1
-      name: Upload artifact
-      env:
-        SHA: ${{ github.sha }}
-      with:
-        name: frontend-$SHA
-        path: frontend.tar
-      
-    
-      
-      
-      
+      - name: Save the Docker image
+        env:
+          SHA: ${{ github.sha }}
+        run: docker save frontend:$SHA > frontend.tar
 
+      - uses: actions/upload-artifact@v1
+        name: Upload artifact
+        env:
+          SHA: ${{ github.sha }}
+        with:
+          name: frontend-$SHA
+          path: frontend.tar
