@@ -23,8 +23,10 @@ const NotFound = () => {
   return (
     <div className={classes.root}>
       <Typography variant="h2">Oops..</Typography>
-      <Typography variant="h4">We can't seem to find the page you're looking for.</Typography>
-        <img className={classes.img} src={NotFoundImg} alt="not found error img"/>
+      <Typography variant="h4">
+        We can't seem to find the page you're looking for.
+      </Typography>
+      <img className={classes.img} src={NotFoundImg} alt="not found error img" />
     </div>
   )
 }
