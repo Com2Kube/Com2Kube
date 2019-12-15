@@ -2,10 +2,10 @@ const express = require('express');
 
 const app = express();
 
-//Routes
-app.get('/', (req,res) => {
-    res.send('Backend here');
-})
+//Import Routes
+const statusRoute = require('./routes/status');
 
+//Routes
+app.use('/api/status', statusRoute)
 //Start server
-app.listen(5000)
+app.listen(5000);
