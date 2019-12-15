@@ -1,17 +1,13 @@
 version: "2"
 
 services:
-
   frontend:
-    build: ./frontend
+    build: ./app
     container_name: "Compose2Kube_frontend"
     volumes:
-      - "./frontend:/usr/share/nginx/html/"
+      - "./app:/home/node"
     ports:
-      - 80:80
-    depends_on:
-      - backend
-    
+      - 3000:3000
   backend:
     build: ./backend
     container_name: "Compose2Kube_backend"
