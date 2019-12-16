@@ -36,7 +36,7 @@ docker-compose up
 
 ### Backend
 
-- Flask
+- ExpressJS
 
 ## Contribute
 
