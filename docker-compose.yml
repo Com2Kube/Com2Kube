@@ -8,10 +8,19 @@ services:
       - "./frontend:/home/node"
     ports:
       - 80:3000
-  backend:
-    build: ./backend
-    container_name: "Compose2Kube_backend"
+
+  backend_py:
+    build: ./backend-py
+    container_name: "Compose2Kube_backend_py"
     volumes:
       - "./backend:/app"
+    ports:
+      - 5001:5000
+
+  backend_js:
+    build: ./backend
+    container_name: "Compose2Kube_backend_js"
+    volumes:
+      - ".backend:/home/node"
     ports:
       - 5000:5000
