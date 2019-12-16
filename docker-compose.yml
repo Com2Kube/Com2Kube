@@ -21,6 +21,6 @@ services:
     build: ./backend
     container_name: "Compose2Kube_backend_js"
     volumes:
-      - ".backend:/home/node"
+      - "./backend:/home/node"
     ports:
       - 5000:5000
