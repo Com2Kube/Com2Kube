@@ -1,13 +1,8 @@
-FROM python:slim
+FROM node:12.13.1
+WORKDIR /home/node
+COPY . /home/node
 
-COPY . /app
+CMD ["/bin/sh", "entrypoint.sh"]
+# Set environment varibles
+ENV TZ America/Toronto
 
-WORKDIR /app
-
-RUN pip install -r requirements.txt
-
-RUN mkdir -p /app/uploads
-ENV FLASK_APP=app.py
-ENV FLASK_ENV=development
-
-CMD ["flask", "run", "--host=0.0.0.0"]
