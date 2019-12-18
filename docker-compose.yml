@@ -8,7 +8,7 @@ services:
       - "./frontend:/home/node"
     ports:
       - 80:3000
-    depends-on:
+    depends_on:
       - backend
 
   backend:
