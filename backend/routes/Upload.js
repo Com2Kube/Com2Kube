@@ -5,6 +5,7 @@ var upload = multer({ dest: 'uploads/' });
 
 router.post('/', upload.single('compose_file'), function (req, res, next) {
   const filename = req.file.originalname;
+  //let data = fs.createReadStream(req.files.test.path,'utf8');
   res.json({ status: "ok", filename: filename, });
   });
 
