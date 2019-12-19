@@ -2,7 +2,7 @@ import React from "react"
 import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import Header from "./themes/header"
-import Index from "./components/index"
+import Index from "./pages/index"
 import About from "./components/about"
 import NotFound from "./pages/NotFound"
 
