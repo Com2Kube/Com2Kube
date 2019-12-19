@@ -1,17 +1,17 @@
 const express = require('express');
-var cors = require('cors');
+const cors = require('cors');
 
 const app = express();
 
-//Enable cors
+// Enable cors
 app.use(cors());
 
-//Import Routes
+// Import Routes
 const statusRoute = require('./routes/status');
 const uploadRoute = require('./routes/Upload');
 
-//Routes
+// Routes
 app.use('/api/status', statusRoute);
 app.use('/api/upload', uploadRoute);
-//Start server
+// Start server
 app.listen(5000);
