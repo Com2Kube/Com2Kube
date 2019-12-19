@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Suspense } from "react"
 import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import Header from "./themes/header"
@@ -9,14 +9,16 @@ import NotFound from "./pages/NotFound"
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Index} />
-          <Route path="/about" component={About} />
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
+      <Suspense fallback="loading">
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Index} />
+            <Route path="/about" component={About} />
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
+      </Suspense>
     </div>
   )
 }

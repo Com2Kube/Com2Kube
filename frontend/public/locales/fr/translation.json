@@ -1,3 +1,12 @@
 {
-  "introduction": "Ceci est un teste"
+  "index": {
+    "introduction": "Le but de cette application est de vous faciliter la vie en convertissant un fichier docker-compose en Kubernetes.",
+    "steps": "Vous pouvez faire la conversion du docker-compose en trois étapes simples:",
+    "step1": "Cliquer sur le bouton 'Choose File'.",
+    "step2": "Sélectionner votre fichier docker-compose.yml.",
+    "step3": "Appuyer sur 'Soumettre' afin d'avoir votre fichier kubernetes."
+  },
+  "fileUpload": {
+    "submitBtn": "Soumettre"
+  }
 }

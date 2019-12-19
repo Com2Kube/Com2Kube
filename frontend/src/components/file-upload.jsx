@@ -1,6 +1,7 @@
 import React from "react"
 import { post } from "axios"
 import { Button, Input, Box } from "@material-ui/core"
+import { withTranslation } from "react-i18next"
 
 const useStyles = () => ({
   form: {
@@ -57,6 +58,8 @@ class FileUpload extends React.Component {
   }
 
   render() {
+    // eslint-disable-next-line react/prop-types
+    const { t } = this.props
     const classes = useStyles()
     return (
       <div>
@@ -78,7 +81,7 @@ class FileUpload extends React.Component {
               alt="convert button"
               value="upload"
             >
-              Submit
+              {t("fileUpload.submitBtn")}
             </Button>
           </Box>
         </form>
@@ -87,4 +90,4 @@ class FileUpload extends React.Component {
   }
 }
 
-export default FileUpload
+export default withTranslation()(FileUpload)
