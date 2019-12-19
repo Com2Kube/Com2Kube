@@ -1,20 +1,19 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "convert docker-compose to kubernetes",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier ."
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "https://github.com/CB-GJ/Compose2Kube"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "CB-GJ",
+  "license": "Apache",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
