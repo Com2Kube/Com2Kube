@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Installing dependencies"
-yarn
-yarn start
+npm install
+npm start
