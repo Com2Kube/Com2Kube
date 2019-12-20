@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Button, Toolbar, Typography, Container, Link } from "@material-ui/core"
 import kubernetes from "../assets/images/kubernetes_logo.png"
+import i18n from "../i18n"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,6 +14,13 @@ const useStyles = makeStyles((theme) => ({
     width: "5%",
     margin: theme.spacing(2)
   },
+  langIcon: {
+    width: "5%",
+    padding: theme.spacing(1)
+  },
+  button: {
+    margin: theme.spacing(1)
+  },
   navLinks: {
     display: "flex",
     justifyContent: "flex-end",
@@ -20,8 +28,18 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-const Header = () => {
+function Header() {
+  const [isHidden, isHiddenState] = useState(false)
   const classes = useStyles()
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng)
+  }
+
+  const langState = (lang) => {
+    changeLanguage(lang)
+    isHiddenState(!isHidden)
+  }
 
   return (
     <div className={classes.root}>
@@ -44,6 +62,39 @@ const Header = () => {
           >
             Github
           </Button>
+          {isHidden ? (
+            <Button
+              onClick={() => {
+                langState("en")
+              }}
+              type="button"
+              alt="english lang"
+              className={classes.button}
+            >
+              English
+              {/* <img
+                src={UsFlag}
+                alt="english language"
+                className={classes.langIcon}
+              /> */}
+            </Button>
+          ) : (
+            <Button
+              onClick={() => {
+                langState("fr")
+              }}
+              type="button"
+              alt="french lang"
+              className={classes.button}
+            >
+              French
+              {/* <img
+                src={FrenchFlag}
+                alt="french language"
+                className={classes.langIcon}
+              /> */}
+            </Button>
+          )}
         </Container>
       </Toolbar>
     </div>

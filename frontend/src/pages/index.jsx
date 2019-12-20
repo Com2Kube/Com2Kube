@@ -1,6 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box } from "@material-ui/core"
+import { useTranslation } from "react-i18next"
 import FileUpload from "../components/file-upload"
 
 const useStyles = makeStyles(() => ({
@@ -20,19 +21,16 @@ const useStyles = makeStyles(() => ({
 
 const Index = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   return (
     <div className={classes.root}>
       <Box className={classes.text}>
-        <p>
-          This website sole purpose is to convert docker compose files into
-          Kubernetes items.
-          <br />
-          You can convert your docker-compose files into three simple steps:
-        </p>
+        <p>{t("index.introduction")}</p>
+        <p>{t("index.steps")}</p>
         <ol>
-          <li>Click on the &quot;Choose File&quot; button.</li>
-          <li>Select your docker-compose.yml file.</li>
-          <li>Press submit to get your compose to kubernetes file.</li>
+          <li>{t("index.step1")}</li>
+          <li>{t("index.step2")}</li>
+          <li>{t("index.step3")}</li>
         </ol>
       </Box>
 
