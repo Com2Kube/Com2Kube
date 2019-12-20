@@ -1,5 +1,5 @@
 .vscode/settings.json
 backend/__pycache__/
-package-lock.json/
+frontend/package-lock.json
 node_modules/
 npm-debug.log
