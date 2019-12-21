@@ -1,0 +1,16 @@
+name: Docker checks
+
+on: [push]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Docker Compose Build
+      env:
+        SHA: ${{ github.sha }}
+      working-directory: /
+      run: docker-compose up -d --build
