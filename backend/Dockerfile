@@ -2,7 +2,14 @@ FROM node:12.13.1
 WORKDIR /home/node
 COPY . /home/node
 
-CMD ["/bin/sh", "entrypoint.sh"]
+# Install Kompose
+RUN curl -L https://github.com/kubernetes/kompose/releases/download/v1.19.0/kompose-linux-amd64 -o kompose
+RUN chmod +x kompose
+RUN mv ./kompose /usr/local/bin/kompose
+
 # Set environment varibles
 ENV TZ America/Toronto
+
+CMD ["/bin/sh", "entrypoint.sh"]
+
 
