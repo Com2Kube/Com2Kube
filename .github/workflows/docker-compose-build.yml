@@ -12,5 +12,4 @@ jobs:
     - name: Docker Compose Build
       env:
         SHA: ${{ github.sha }}
-      working-directory: /
       run: docker-compose up -d --build
