@@ -15,16 +15,16 @@ jobs:
       working-directory: backend
       run: docker build . -t backend:$SHA
     
-    - name: Save the Docker image
-      env:
-        SHA: ${{ github.sha }}
-      run: docker save backend:$SHA > backend.tar
+    # - name: Save the Docker image
+    #   env:
+    #     SHA: ${{ github.sha }}
+    #   run: docker save backend:$SHA > backend.tar
     
 
-    - uses: actions/upload-artifact@v1
-      name: Upload artifact
-      env:
-        SHA: ${{ github.sha }}
-      with:
-        name: backend-$SHA
-        path: backend.tar
+    # - uses: actions/upload-artifact@v1
+    #   name: Upload artifact
+    #   env:
+    #     SHA: ${{ github.sha }}
+    #   with:
+    #     name: backend-$SHA
+    #     path: backend.tar
