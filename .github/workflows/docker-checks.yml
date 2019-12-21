@@ -1,4 +1,4 @@
-name: Docker checks
+name: Docker Checks
 
 on: [pull_request]
 
