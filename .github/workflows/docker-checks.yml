@@ -1,0 +1,15 @@
+name: Docker Checks
+
+on: [pull_request]
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Docker Compose Build
+      env:
+        SHA: ${{ github.sha }}
+      run: docker-compose up -d --build
