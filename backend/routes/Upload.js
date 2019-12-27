@@ -1,5 +1,4 @@
 const express = require('express');
-const fs = require('fs');
 
 const router = express.Router();
 const multer = require('multer');
@@ -7,25 +6,22 @@ const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
 const { exec } = require('child_process');
 
-
 function convert(path, callback) {
   exec(`kompose convert -f ${path} --stdout`, (err, stdout, stderr) => {
     if (err) {
-      console.log("An error has occurred. Abort everything!");
       return callback(err);
     }
-    callback(err,stdout);
+    return callback(err, stdout);
   });
 }
 
 router.post('/', upload.single('compose_file'), (req, res) => {
   const { path } = req.file;
-  convert(path, function(err, data) {
-    if (err){
-      console.log(err);
+  convert(path, (err, data) => {
+    if (err) {
+      res.status(404);
     }
-    console.log(data);
-    res.json({data: data})
+    res.json({ data });
   });
 });
 
