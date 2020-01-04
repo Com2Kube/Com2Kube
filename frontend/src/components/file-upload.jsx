@@ -72,7 +72,7 @@ class FileUpload extends React.Component {
             id="compose_file"
             type="file"
             name="compose_file"
-            required={true}
+            required="true"
             onChange={this.onChange}
           />
           <Box m={2}>
