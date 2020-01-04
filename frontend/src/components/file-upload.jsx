@@ -44,7 +44,7 @@ class FileUpload extends React.Component {
   }
 
   fileUpload(file) {
-    const url = process.env.REACT_APP_ENV_URL
+    const url = "/api/upload"
     // eslint-disable-next-line no-undef
     const formData = new FormData()
     formData.append("compose_file", file)
@@ -72,6 +72,7 @@ class FileUpload extends React.Component {
             id="compose_file"
             type="file"
             name="compose_file"
+            required="true"
             onChange={this.onChange}
           />
           <Box m={2}>
