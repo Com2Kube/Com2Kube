@@ -18,7 +18,10 @@ class FileUpload extends React.Component {
       this.setState({ file })
     }
     this.state = {
-      file: null
+      file: null,
+      posts: [],
+      errors: null,
+      isLoading: true
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
     this.onChange = this.onChange.bind(this)
@@ -31,14 +34,25 @@ class FileUpload extends React.Component {
 
   onFormSubmit(e) {
     const { file } = this.state
+    console.log(file)
     e.preventDefault()
     this.fileUpload(file)
       .then((response) => {
-        // eslint-disable-next-line no-console
+        // // eslint-disable-next-line no-console
+        this.setState({
+          posts: response.data.items,
+          isLoading: false
+        })
+        console.log(this.state.isLoading)
+        console.log(this.state.posts)
         console.log(response.data)
       })
       .catch((error) => {
         // eslint-disable-next-line no-console
+        this.setState({
+          error,
+          isLoading: false
+        })
         console.error(error)
       })
   }
@@ -60,6 +74,7 @@ class FileUpload extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
+    const { isLoading, posts } = this.state
     const classes = useStyles()
     return (
       <div>
@@ -72,7 +87,7 @@ class FileUpload extends React.Component {
             id="compose_file"
             type="file"
             name="compose_file"
-            required="true"
+            required={true}
             onChange={this.onChange}
           />
           <Box m={2}>
@@ -84,6 +99,24 @@ class FileUpload extends React.Component {
             >
               {t("fileUpload.submitBtn")}
             </Button>
+          </Box>
+          <Box m={2}>
+            {!isLoading ? (
+              posts.map((post, index) => {
+                return (
+                  <div key={index}>
+                    <p>{index}</p>
+                    <p>{post.kind}</p>
+                    <p>{post.apiVersion}</p>
+                    <p>{post.metadata.name}</p>
+                    {/* <p>{post.spec}</p> */}
+                    {/* loop in specs but some may not have port */}
+                  </div>
+                )
+              })
+            ) : (
+              <p>Loading for results...</p>
+            )}
           </Box>
         </form>
       </div>
