@@ -7,6 +7,7 @@
     "step3": "Appuyer sur 'Soumettre' afin d'avoir votre fichier kubernetes."
   },
   "fileUpload": {
-    "submitBtn": "Soumettre"
+    "submitBtn": "Soumettre",
+    "loadingMsg": "Chargement des résultats, veuillez patienter..."
   }
 }

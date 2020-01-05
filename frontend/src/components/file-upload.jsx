@@ -22,7 +22,6 @@ class FileUpload extends React.Component {
     this.state = {
       file: null,
       posts: [],
-      errors: null,
       isLoading: true
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
@@ -36,25 +35,16 @@ class FileUpload extends React.Component {
 
   onFormSubmit(e) {
     const { file } = this.state
-    console.log(file)
     e.preventDefault()
     this.fileUpload(file)
       .then((response) => {
-        // // eslint-disable-next-line no-console
         this.setState({
           posts: response.data.items,
           isLoading: false
         })
-        console.log(this.state.isLoading)
-        console.log(this.state.posts)
-        console.log(response.data)
       })
       .catch((error) => {
         // eslint-disable-next-line no-console
-        this.setState({
-          error,
-          isLoading: false
-        })
         console.error(error)
       })
   }
@@ -104,21 +94,16 @@ class FileUpload extends React.Component {
           </Box>
           <Box m={2}>
             {!isLoading ? (
-              // posts.map((post, index) => {
-              // return (
               <div>
                 <JSONPretty
                   id="results"
                   data={posts}
                   mainStyle="padding:1em"
                   theme={JSONPrettyMon}
-                ></JSONPretty>
-                {/* <pre>{JSON.stringify(post, null, " ")}</pre> */}
+                />
               </div>
             ) : (
-              // )
-              // })
-              <p>Loading for results...</p>
+              <p>{t("fileUpload.loadingMsg")}</p>
             )}
           </Box>
         </form>
