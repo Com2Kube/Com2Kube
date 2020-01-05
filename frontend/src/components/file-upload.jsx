@@ -2,6 +2,8 @@ import React from "react"
 import { post } from "axios"
 import { Button, Input, Box } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
+import JSONPretty from "react-json-pretty"
+import JSONPrettyMon from "react-json-pretty/themes/monikai.css"
 
 const useStyles = () => ({
   form: {
@@ -18,7 +20,9 @@ class FileUpload extends React.Component {
       this.setState({ file })
     }
     this.state = {
-      file: null
+      file: null,
+      posts: [],
+      isLoading: true
     }
     this.onFormSubmit = this.onFormSubmit.bind(this)
     this.onChange = this.onChange.bind(this)
@@ -34,8 +38,10 @@ class FileUpload extends React.Component {
     e.preventDefault()
     this.fileUpload(file)
       .then((response) => {
-        // eslint-disable-next-line no-console
-        console.log(response.data)
+        this.setState({
+          posts: response.data.items,
+          isLoading: false
+        })
       })
       .catch((error) => {
         // eslint-disable-next-line no-console
@@ -44,7 +50,7 @@ class FileUpload extends React.Component {
   }
 
   fileUpload(file) {
-    const url = "/api/upload"
+    const url = "/api/compose"
     // eslint-disable-next-line no-undef
     const formData = new FormData()
     formData.append("compose_file", file)
@@ -60,6 +66,7 @@ class FileUpload extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
+    const { isLoading, posts } = this.state
     const classes = useStyles()
     return (
       <div>
@@ -72,7 +79,7 @@ class FileUpload extends React.Component {
             id="compose_file"
             type="file"
             name="compose_file"
-            required="true"
+            required={true}
             onChange={this.onChange}
           />
           <Box m={2}>
@@ -84,6 +91,20 @@ class FileUpload extends React.Component {
             >
               {t("fileUpload.submitBtn")}
             </Button>
+          </Box>
+          <Box m={2}>
+            {!isLoading ? (
+              <div>
+                <JSONPretty
+                  id="results"
+                  data={posts}
+                  mainStyle="padding:1em"
+                  theme={JSONPrettyMon}
+                />
+              </div>
+            ) : (
+              <p>{t("fileUpload.loadingMsg")}</p>
+            )}
           </Box>
         </form>
       </div>

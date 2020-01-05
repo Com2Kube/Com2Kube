@@ -7,6 +7,7 @@
     "step3": "Press submit to get your docker-compose to Kubernetes file."
   },
   "fileUpload": {
-    "submitBtn": "Submit"
+    "submitBtn": "Submit",
+    "loadingMsg": "Loading for results, please wait..."
   }
 }
