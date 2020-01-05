@@ -8,7 +8,8 @@ const { exec } = require('child_process');
 // var fs = require('fs');
 
 function komposeConvert(path, callback) {
-  exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
+  exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr),
+  );
 }
 
 router.post('/', upload.single('compose_file'), (req, res) => {
@@ -30,9 +31,8 @@ router.post('/', upload.single('compose_file'), (req, res) => {
         res.send(data);
       }
     });
-  }
-  else{
-    res.status(404).json({status: "file format invalid"})
+  } else {
+    res.status(404).json({ status: 'file format invalid' });
   }
 });
 
