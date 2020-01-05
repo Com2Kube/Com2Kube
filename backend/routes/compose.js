@@ -8,6 +8,7 @@ const { exec } = require('child_process');
 // var fs = require('fs');
 
 function komposeConvert(path, callback) {
+  // prettier-ignore
   exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
 }
 
