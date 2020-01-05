@@ -104,13 +104,8 @@ class FileUpload extends React.Component {
             {!isLoading ? (
               posts.map((post, index) => {
                 return (
-                  <div key={index}>
-                    <p>{index}</p>
-                    <p>{post.kind}</p>
-                    <p>{post.apiVersion}</p>
-                    <p>{post.metadata.name}</p>
-                    {/* <p>{post.spec}</p> */}
-                    {/* loop in specs but some may not have port */}
+                  <div className key={index}>
+                    <pre>{JSON.stringify(post, null, " ")}</pre>
                   </div>
                 )
               })
