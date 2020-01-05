@@ -2,6 +2,8 @@ import React from "react"
 import { post } from "axios"
 import { Button, Input, Box } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
+import JSONPretty from "react-json-pretty"
+import JSONPrettyMon from "react-json-pretty/themes/monikai.css"
 
 const useStyles = () => ({
   form: {
@@ -102,14 +104,20 @@ class FileUpload extends React.Component {
           </Box>
           <Box m={2}>
             {!isLoading ? (
-              posts.map((post, index) => {
-                return (
-                  <div className key={index}>
-                    <pre>{JSON.stringify(post, null, " ")}</pre>
-                  </div>
-                )
-              })
+              // posts.map((post, index) => {
+              // return (
+              <div>
+                <JSONPretty
+                  id="results"
+                  data={posts}
+                  mainStyle="padding:1em"
+                  theme={JSONPrettyMon}
+                ></JSONPretty>
+                {/* <pre>{JSON.stringify(post, null, " ")}</pre> */}
+              </div>
             ) : (
+              // )
+              // })
               <p>Loading for results...</p>
             )}
           </Box>
