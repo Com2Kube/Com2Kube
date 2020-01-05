@@ -1,33 +1,39 @@
 const express = require('express');
-var fs = require('fs');
-
 
 const router = express.Router();
 const multer = require('multer');
 
 const upload = multer({ dest: 'uploads/' });
 const { exec } = require('child_process');
+// var fs = require('fs');
 
-function kompose_convert(path, callback) {
-  exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => {
-    return callback(err, stdout);
-  });
+function komposeConvert(path, callback) {
+  exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
 }
 
 router.post('/', upload.single('compose_file'), (req, res) => {
+  // Get file path
   const { path } = req.file;
-  kompose_convert(path, (err, data) => {
-    if (err) {
-      res.status(404);
-    }
-    res.send(data);
-  });
-});
+  // Get file extention
+  const ext = req.file.originalname.toLocaleLowerCase().split('.');
 
-// router.use((err, req, res, next) => {
-//   // eslint-disable-next-line no-console
-//   console.log('This is the invalid field ->', err.field);
-//   next(err);
-// });
+  // Check if file extention is valid
+  if (ext[ext.length - 1] === 'yml' || ext[ext.length - 1] === 'yaml') {
+    // Call function to initate file conversion
+    komposeConvert(path, (err, data /* stderr */) => {
+      // Check if returned command is successful
+      if (err) {
+        // Send the error
+        res.send(err);
+      } else {
+        // Send the result
+        res.send(data);
+      }
+    });
+  }
+  else{
+    res.status(404).json({status: "file format invalid"})
+  }
+});
 
 module.exports = router;
