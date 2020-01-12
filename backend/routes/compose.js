@@ -15,12 +15,15 @@ function komposeConvert(path, callback) {
 router.post('/', upload.single('compose_file'), (req, res) => {
   // Get file path
   const { path } = req.file;
+  console.log(req.file.size)
   // Get file extention
   const ext = req.file.originalname.toLocaleLowerCase().split('.');
 
   // Check if file extention is valid
   if (ext[ext.length - 1] === 'yml' || ext[ext.length - 1] === 'yaml') {
-    // Call function to initate file conversion
+    // Check if file is empty
+    if (req.file.size != 0){
+          // Call function to initate file conversion
     komposeConvert(path, (err, data /* stderr */) => {
       // Check if returned command is successful
       if (err) {
@@ -29,8 +32,12 @@ router.post('/', upload.single('compose_file'), (req, res) => {
       } else {
         // Send the result
         res.send(data);
+        
       }
     });
+    } else {
+      res.status(404).json({ status: 'file is empty'})
+    }
   } else {
     res.status(404).json({ status: 'file format invalid' });
   }
