@@ -35,14 +35,14 @@ jobs:
         working-directory: backend
         run: npm run lint
 
-      # - name: Unit Tests
-      #   env:
-      #     SHA: ${{ github.sha }}
-      #   working-directory: backend
-      #   run: npm test
-
       - name: Format
         env:
           SHA: ${{ github.sha }}
         working-directory: backend
         run: npm run format
+        
+      - name: Unit Tests
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: npm run test
