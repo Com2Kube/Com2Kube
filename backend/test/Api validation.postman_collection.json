@@ -6,12 +6,45 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost/api/compose",
+			"name": "status",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"id": "c06dfaeb-cc10-4bc9-89a3-72ded48c1500",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/status",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"gwebs",
+						"ca"
+					],
+					"path": [
+						"api",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "file upload",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7106f790-9302-40d1-9aff-ca51c8a633da",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -38,9 +71,7 @@
 					"raw": "http://localhost/api/compose",
 					"protocol": "http",
 					"host": [
-						"dev",
-						"gwebs",
-						"ca"
+						"localhost"
 					],
 					"path": [
 						"api",
