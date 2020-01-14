@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.+(js|json)\" ",
-    "format:fix": "prettier --write \"**/*.+(js|json)\"  --fix"
+    "format:fix": "prettier --write \"**/*.+(js|json)\"  --fix",
+    "test": "newman run test/Api-validation.postman_collection.json"
   },
   "repository": {
     "type": "git",
