@@ -17,11 +17,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install
-        env:
-          SHA: ${{ github.sha }}
-        working-directory: backend
-        run: npm install
+      # - name: Install
+      #   env:
+      #     SHA: ${{ github.sha }}
+      #   working-directory: backend
+      #   run: npm install
 
       #   - name: Build
       #     env:
@@ -41,8 +41,20 @@ jobs:
         working-directory: backend
         run: npm run format
         
+      - name: Docker Build
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: docker build . -t ci
+
       - name: Unit Tests
         env:
           SHA: ${{ github.sha }}
         working-directory: backend
-        run: npm run test
+        run: docker run -p 80:5000 -d ci 
+
+      - name: Unit Tests
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: sleep 5 && npm install -g newman && npm run test
