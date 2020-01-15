@@ -21,7 +21,7 @@ jobs:
         env:
           SHA: ${{ github.sha }}
         working-directory: backend
-        run: npm install -g eslint prettier
+        run: npm install
 
       #   - name: Build
       #     env:
