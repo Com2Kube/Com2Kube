@@ -35,14 +35,26 @@ jobs:
         working-directory: backend
         run: npm run lint
 
-      # - name: Unit Tests
-      #   env:
-      #     SHA: ${{ github.sha }}
-      #   working-directory: backend
-      #   run: npm test
-
       - name: Format
         env:
           SHA: ${{ github.sha }}
         working-directory: backend
         run: npm run format
+        
+      - name: Docker Build
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: docker build . -t ci
+
+      - name: Docker Run
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: docker run -p 80:5000 -d ci 
+
+      - name: Unit Tests
+        env:
+          SHA: ${{ github.sha }}
+        working-directory: backend
+        run: sleep 5 && npm install -g newman && npm run test
