@@ -47,7 +47,7 @@ jobs:
         working-directory: backend
         run: docker build . -t ci
 
-      - name: Unit Tests
+      - name: Docker Run
         env:
           SHA: ${{ github.sha }}
         working-directory: backend
