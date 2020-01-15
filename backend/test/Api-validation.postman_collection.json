@@ -28,9 +28,7 @@
 					"raw": "http://localhost/api/status",
 					"protocol": "http",
 					"host": [
-						"dev",
-						"gwebs",
-						"ca"
+						"localhost"
 					],
 					"path": [
 						"api",
