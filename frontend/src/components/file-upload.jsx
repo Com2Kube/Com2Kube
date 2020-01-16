@@ -39,7 +39,7 @@ class FileUpload extends React.Component {
     this.fileUpload(file)
       .then((response) => {
         this.setState({
-          posts: response.data.items,
+          posts: response.data,
           isLoading: false
         })
       })
