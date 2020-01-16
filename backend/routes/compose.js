@@ -9,7 +9,7 @@ const { exec } = require('child_process');
 
 function komposeConvert(path, callback) {
   // prettier-ignore
-  exec(`kompose convert -f ${path} -j --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
+  exec(`kompose convert -f ${path} --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
 }
 
 router.post('/', upload.single('compose_file'), (req, res) => {
