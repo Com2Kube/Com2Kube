@@ -2,8 +2,8 @@ import React from "react"
 import { post } from "axios"
 import { Button, Input, Box } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
-import JSONPretty from "react-json-pretty"
-import JSONPrettyMon from "react-json-pretty/themes/monikai.css"
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 const useStyles = () => ({
   form: {
@@ -95,15 +95,17 @@ class FileUpload extends React.Component {
           <Box m={2}>
             {!isLoading ? (
               <div>
-                <JSONPretty
-                  id="results"
-                  data={posts}
-                  mainStyle="padding:1em"
-                  theme={JSONPrettyMon}
-                />
+                <SyntaxHighlighter
+                  language="yaml"
+                  style={atomDark}
+                  showLineNumbers="true"
+                >
+                  {posts}
+                </SyntaxHighlighter>
               </div>
             ) : (
-              <p>{t("fileUpload.loadingMsg")}</p>
+              // eslint-disable-next-line react/self-closing-comp
+              <p></p>
             )}
           </Box>
         </form>
