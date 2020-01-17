@@ -23,11 +23,11 @@ router.post('/', upload.single('compose_file'), (req, res) => {
     // Check if file is empty
     if (req.file.size !== 0 && req.file.size <= 1048576) {
       // Call function to initate file conversion
-      komposeConvert(path, (err, data /* stderr */) => {
+      komposeConvert(path, (err, data, stderr) => {
         // Check if returned command is successful
         if (err) {
           // Send the error
-          res.send(err);
+          res.send(stderr);
         } else {
           // Send the result
           res.send(data);
