@@ -98,7 +98,6 @@ class FileUpload extends React.Component {
                 <SyntaxHighlighter
                   language="yaml"
                   style={atomDark}
-                  showLineNumbers="true"
                 >
                   {posts}
                 </SyntaxHighlighter>
