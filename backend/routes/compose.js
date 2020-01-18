@@ -26,6 +26,12 @@ router.post('/', upload.single('compose_file'), (req, res) => {
       komposeConvert(path, (err, data, stderr) => {
         // Check if returned command is successful
         if (err) {
+          // Clean stderr
+          stderr = stderr.replace("[31mERRO[0m ", "")
+          stderr = stderr.replace("[31mFATA[0m ", "")
+          stderr = stderr.replace("[36mINFO[0m ", "")
+          stderr = stderr.replace("[33mWARN[0m ", "")
+
           // Send the error
           res.send(stderr);
         } else {
