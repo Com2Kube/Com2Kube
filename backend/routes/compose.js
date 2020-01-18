@@ -40,10 +40,10 @@ router.post('/', upload.single('compose_file'), (req, res) => {
         }
       });
     } else {
-      res.status(404).json({ status: 'file size is invalid' });
+      res.send("File size is invalid");
     }
   } else {
-    res.status(404).json({ status: 'file format is invalid' });
+    res.send("File format is invalid");
   }
 });
 
