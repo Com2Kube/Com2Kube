@@ -72,11 +72,6 @@ function Header() {
               className={classes.button}
             >
               English
-              {/* <img
-                src={UsFlag}
-                alt="english language"
-                className={classes.langIcon}
-              /> */}
             </Button>
           ) : (
             <Button
@@ -88,11 +83,6 @@ function Header() {
               className={classes.button}
             >
               French
-              {/* <img
-                src={FrenchFlag}
-                alt="french language"
-                className={classes.langIcon}
-              /> */}
             </Button>
           )}
         </Container>

@@ -27,16 +27,29 @@ If you decide to run the project with Docker. Make sure to have Docker installed
 docker-compose up
 ```
 
+To build a new image: `docker-compose up --build`
+
 ## Technology Stack
 
 ### Frontend
 
 - React
 - React Material UI
+- [React Syntaxe Highlighter](https://github.com/conorhastings/react-syntax-highlighter/tree/f7e4774b9cbc76fb42ee97e8861349aa1d50e532)
 
 ### Backend
 
 - ExpressJS
+
+## For the future
+
+We would like to add these items:
+
+- File drop
+- Helm Chart
+- Download the file with preview option
+- Dark theme
+- Save file to Github repo
 
 ## Contribute
 
