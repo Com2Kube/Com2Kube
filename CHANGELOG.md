@@ -1,16 +1,27 @@
 # Changelog
 
+All notable changes to this project will be documented in this file.
+
+## [for future release]
+
+### Added
+
+### Changed
+
+### Removed
+
 ## [Unreleased] - 2020-01-18
 
 ### Addded
 
-Beginning of the project
-
-- Create the project and the documentation
+- Create the project
+- Add documentation (README, Changelog, licence)
 - Add Frontend in React
 - Add Backend in Nodejs
-- Return the conversion docker-compose to yml
-- Add react syntax highlighter
-- Manage User error
-- Add translation in french and in english
-- Add routing
+- Docker compose
+- Conversion docker-compose to yml
+- Add react syntax highlighter frontend
+- Manage User error from the backend and display frontend
+- Add translation in French and in English
+- Add frontend and backend routing
+- CI integration with Github Action
