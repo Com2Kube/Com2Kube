@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 
 const router = express.Router();
 const multer = require('multer');
@@ -39,6 +40,7 @@ router.post('/', upload.single('compose_file'), (req, res) => {
           // Send the result
           res.send(data);
         }
+        fs.unlinkSync(path);
       });
     } else {
       res.send('File size is invalid');
