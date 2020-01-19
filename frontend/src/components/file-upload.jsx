@@ -95,10 +95,7 @@ class FileUpload extends React.Component {
           <Box m={2}>
             {!isLoading ? (
               <div>
-                <SyntaxHighlighter
-                  language="yaml"
-                  style={atomDark}
-                >
+                <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
                 </SyntaxHighlighter>
               </div>
