@@ -24,26 +24,27 @@ router.post('/', upload.single('compose_file'), (req, res) => {
     if (req.file.size !== 0 && req.file.size <= 1048576) {
       // Call function to initate file conversion
       komposeConvert(path, (err, data, stderr) => {
-        // Check if returned command is successful
+        // Check if returned command is successfull
         if (err) {
           // Clean stderr
-          stderr = stderr.replace("[31mERRO[0m ", "")
-          stderr = stderr.replace("[31mFATA[0m ", "")
-          stderr = stderr.replace("[36mINFO[0m ", "")
-          stderr = stderr.replace("[33mWARN[0m ", "")
+          const stderrCleaned = stderr
+            .replace('[31mERRO[0m ', 'Error : ')
+            .replace('[31mFATA[0m ', 'Fatal : ')
+            .replace('[36mINFO[0m ', 'Info : ')
+            .replace('[33mWARN[0m ', 'Warning : ');
 
           // Send the error
-          res.send(stderr);
+          res.send(stderrCleaned);
         } else {
           // Send the result
           res.send(data);
         }
       });
     } else {
-      res.send("File size is invalid");
+      res.send('File size is invalid');
     }
   } else {
-    res.send("File format is invalid");
+    res.send('File format is invalid');
   }
 });
 
