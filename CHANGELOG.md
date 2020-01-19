@@ -10,7 +10,7 @@ Beginning of the project
 - Add Frontend in React
 - Add Backend in Nodejs
 - Return the conversion docker-compose to yml
-- Add react syntaxe highlighter
+- Add react syntax highlighter
 - Manage User error
 - Add translation in french and in english
 - Add routing
