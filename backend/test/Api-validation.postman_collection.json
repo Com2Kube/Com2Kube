@@ -1,86 +1,76 @@
 {
-	"info": {
-		"_postman_id": "d76d6f1c-90da-4f9e-a3f0-14bc06af3640",
-		"name": "Api validation",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "status",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "c06dfaeb-cc10-4bc9-89a3-72ded48c1500",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost/api/status",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"api",
-						"status"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "file upload",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "7106f790-9302-40d1-9aff-ca51c8a633da",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "compose_file",
-							"type": "file",
-							"src": "test/docker-compose.yml"
-						}
-					]
-				},
-				"url": {
-					"raw": "http://localhost/api/compose",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"api",
-						"compose"
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"protocolProfileBehavior": {}
+  "info": {
+    "_postman_id": "d76d6f1c-90da-4f9e-a3f0-14bc06af3640",
+    "name": "Api validation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "status",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "c06dfaeb-cc10-4bc9-89a3-72ded48c1500",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/api/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["api", "status"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "file upload",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "7106f790-9302-40d1-9aff-ca51c8a633da",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "compose_file",
+              "type": "file",
+              "src": "test/docker-compose.yml"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost/api/compose",
+          "protocol": "http",
+          "host": ["localhost"],
+          "path": ["api", "compose"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
 }
