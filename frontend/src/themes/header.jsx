@@ -47,7 +47,7 @@ function Header() {
         <img className={classes.logo} src={kubernetes} alt="kubernetes logo" />
         <Typography variant="h6">
           <Link href="/" style={{ textDecoration: "none" }}>
-            Compose2kube
+            Com2kube
           </Link>
         </Typography>
         <Container className={classes.navLinks}>
@@ -57,7 +57,7 @@ function Header() {
           <Button
             color="inherit"
             onClick={() =>
-              window.open("https://github.com/CB-GJ/Compose2Kube", "_blank")
+              window.open("https://github.com/CB-GJ/Com2Kube", "_blank")
             }
           >
             Github

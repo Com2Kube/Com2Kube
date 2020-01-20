@@ -1,14 +1,14 @@
-# Compose2Kube
+# Com2Kube
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![BCH compliance](https://bettercodehub.com/edge/badge/CB-GJ/Compose2Kube?branch=master)](https://bettercodehub.com/) ![](https://github.com/CB-GJ/Compose2kube/workflows/Build%20Frontend/badge.svg) ![](https://github.com/CB-GJ/Compose2kube/workflows/Build%20Backend/badge.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![BCH compliance](https://bettercodehub.com/edge/badge/CB-GJ/Com2Kube?branch=master)](https://bettercodehub.com/) ![](https://github.com/CB-GJ/Com2kube/workflows/Build%20Frontend/badge.svg) ![](https://github.com/CB-GJ/Com2kube/workflows/Build%20Backend/badge.svg)
 
 This project aims to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
 ## Getting started
 
 ```text
-git clone https://github.com/CB-GJ/Compose2Kube
-cd Compose2Kube
+git clone https://github.com/CB-GJ/Com2Kube
+cd Com2Kube
 npm install
 ```
 

@@ -1,4 +1,4 @@
-# Compose2kube - Frontend
+# Com2kube - Frontend
 
 This is the frontend architecture for Comp2kube made in React and React Material UI.
 

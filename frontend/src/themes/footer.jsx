@@ -72,7 +72,7 @@ const Footer = () => {
         <Typography variant="body2" color="textSecondary">
           {"Copyright© "}
           <Link color="inherit" href="/">
-            Compose2Kube&nbsp;
+            Com2Kube&nbsp;
           </Link>
           {new Date().getFullYear()}
         </Typography>
