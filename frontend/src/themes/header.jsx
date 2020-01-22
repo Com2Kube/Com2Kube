@@ -47,7 +47,7 @@ function Header() {
       <Toolbar>
         <img className={classes.logo} src={logo} alt="com2kube logo" />
         <Typography variant="h6">
-          <Link href="/" style={{ textDecoration: "none", color: '#5FABC2' }}>
+          <Link href="/" style={{ textDecoration: "none", color: "#5FABC2" }}>
             Com2kube
           </Link>
         </Typography>
