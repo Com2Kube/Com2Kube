@@ -9,5 +9,11 @@
   "fileUpload": {
     "submitBtn": "Submit",
     "loadingMsg": "Loading for results, please wait..."
+  },
+  "about": {
+    "item1": "Hey all!",
+    "item2": "We would like to present you our first projet that we've build. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do. Convert your docker-compose file to kubernetes!",
+    "item3": "Feel free to check our our Github project page and to contribute.",
+    "item4": "Cheers! :) "
   }
 }
