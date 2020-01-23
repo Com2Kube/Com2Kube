@@ -53,7 +53,7 @@ function Header() {
       <Container className={classes.nameLogo}>
         <img className={classes.logo} src={logo} alt="com2kube logo" />
         <Typography variant="h6">
-          <Link href="/" style={{ textDecoration: "none", color: "#5FABC2" }}>
+          <Link href="/" style={{ textDecoration: "none", color: "#5FABC2", fontSize: "1vw" }}>
             Com2kube
           </Link>
         </Typography>
