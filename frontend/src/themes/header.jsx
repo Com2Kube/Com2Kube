@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Button, Toolbar, Typography, Container, Link } from "@material-ui/core"
+import { Button, Typography, Container, Link } from "@material-ui/core"
 import logo from "../assets/images/logo_transparent.png"
 import i18n from "../i18n"
 
@@ -9,6 +9,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     with: "100%",
     display: "flex"
+  },
+  nameLogo: {
+    display: "flex",
+    justifyContent: "flex-start",
+    flexDirection: "row",
+    alignItems: "center"
   },
   logo: {
     width: "5%",
@@ -44,50 +50,48 @@ function Header() {
 
   return (
     <div className={classes.root}>
-      <Toolbar>
+      <Container className={classes.nameLogo}>
         <img className={classes.logo} src={logo} alt="com2kube logo" />
         <Typography variant="h6">
           <Link href="/" style={{ textDecoration: "none", color: "#5FABC2" }}>
             Com2kube
           </Link>
         </Typography>
-        <Container className={classes.navLinks}>
-          <Button color="inherit" href="/about">
-            About
-          </Button>
+      </Container>
+      <Container className={classes.navLinks}>
+        <Button color="inherit" href="/about">
+          About
+        </Button>
+        <Button
+          color="inherit"
+          onClick={() => window.open("https://github.com/CB-GJ/Com2Kube", "_blank")}
+        >
+          Github
+        </Button>
+        {isHidden ? (
           <Button
-            color="inherit"
-            onClick={() =>
-              window.open("https://github.com/CB-GJ/Com2Kube", "_blank")
-            }
+            onClick={() => {
+              langState("en")
+            }}
+            type="button"
+            alt="english lang"
+            className={classes.button}
           >
-            Github
+            English
           </Button>
-          {isHidden ? (
-            <Button
-              onClick={() => {
-                langState("en")
-              }}
-              type="button"
-              alt="english lang"
-              className={classes.button}
-            >
-              English
-            </Button>
-          ) : (
-            <Button
-              onClick={() => {
-                langState("fr")
-              }}
-              type="button"
-              alt="french lang"
-              className={classes.button}
-            >
-              French
-            </Button>
-          )}
-        </Container>
-      </Toolbar>
+        ) : (
+          <Button
+            onClick={() => {
+              langState("fr")
+            }}
+            type="button"
+            alt="french lang"
+            className={classes.button}
+          >
+            French
+          </Button>
+        )}
+      </Container>
     </div>
   )
 }
