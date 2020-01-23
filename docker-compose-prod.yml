@@ -3,7 +3,7 @@ version: "2"
 services:
   letsencrypt:
     image: linuxserver/letsencrypt
-    container_name: Compose2Kube_letsencrypt
+    container_name: com2kube_letsencrypt
     cap_add:
       - NET_ADMIN
     environment:
@@ -32,7 +32,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile.prod
-    container_name: "Compose2Kube_frontend"
+    container_name: "com2kube_frontend"
     depends_on:
       - backend
 
@@ -40,4 +40,4 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile.prod
-    container_name: "Compose2Kube_backend"
+    container_name: "com2kube_backend"
