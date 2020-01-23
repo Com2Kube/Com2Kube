@@ -1,14 +1,38 @@
 version: "2"
 
 services:
+  letsencrypt:
+    image: linuxserver/letsencrypt
+    container_name: Compose2Kube_letsencrypt
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Toronto
+      - URL=com2kube.io
+      - SUBDOMAINS=dev
+      - VALIDATION=http
+      - EMAIL=com2kube@gmail.com #optional
+      - DHLEVEL=2048 #optional
+      - ONLY_SUBDOMAINS=true #optional
+      # - EXTRA_DOMAINS=com2kube.com #optional
+      - STAGING=true #optional
+    volumes:
+      - ./frontend/nginx/nginx-https.conf:/config/nginx/site-confs/default
+    ports:
+      - 443:443
+      - 80:80 #optional
+    restart: unless-stopped
+    depends_on:
+      - backend
+      - frontend
 
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile.prod
     container_name: "Compose2Kube_frontend"
-    ports:
-      - 80:80
     depends_on:
       - backend
 
