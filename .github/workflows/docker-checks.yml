@@ -12,4 +12,4 @@ jobs:
     - name: Docker Compose Build
       env:
         SHA: ${{ github.sha }}
-      run: docker-compose up -d --build
+      run: docker-compose -f docker-compose-prod.yml up -d --build
