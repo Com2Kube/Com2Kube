@@ -15,5 +15,5 @@ This is the backend architecture for Com2kube made in ExpressJS
 ## Features
 
 - ExpressJS
-- multer
+- Multer
 - Kompose
