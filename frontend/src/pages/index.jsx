@@ -4,7 +4,7 @@ import { Box } from "@material-ui/core"
 import { useTranslation } from "react-i18next"
 import FileUpload from "../components/file-upload"
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     with: "100%",
     display: "flex",
@@ -33,7 +33,6 @@ const Index = () => {
           <li>{t("index.step3")}</li>
         </ol>
       </Box>
-
       <Box m="2rem">
         <FileUpload />
       </Box>
