@@ -4,7 +4,7 @@ import { Box } from "@material-ui/core"
 import { useTranslation } from "react-i18next"
 import FileUpload from "../components/file-upload"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     with: "100%",
     display: "flex",
