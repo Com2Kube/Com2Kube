@@ -15,8 +15,7 @@ const useStyles = makeStyles(() => ({
   text: {
     justifyContent: "center",
     margin: "auto",
-    padding: "2vh",
-    fontSize: "0.75vw"
+    padding: "2vh"
   }
 }))
 
