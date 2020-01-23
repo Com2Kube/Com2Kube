@@ -1,6 +1,6 @@
 # Com2kube - Backend
 
-This is the fbackend architecture for Com2kube made in ExpressJS
+This is the backend architecture for Com2kube made in ExpressJS
 
 ## App Structure
 
