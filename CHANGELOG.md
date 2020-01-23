@@ -14,8 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Addded
 
-- Create the project
-- Add documentation (README, Changelog, licence)
+- Add documentation (README, Changelog, Licence)
 - Add Frontend in React
 - Add Backend in Nodejs
 - Docker compose
@@ -25,3 +24,15 @@ All notable changes to this project will be documented in this file.
 - Add translation in French and in English
 - Add frontend and backend routing
 - CI integration with Github Action
+- Add organization logo and name
+
+### Prod readiness
+
+- Created docker images for backend and frontend in prod
+- Added letsencrypt for HTTPS
+- Add Google Analytics
+- Add Google Adsense
+
+### Updates
+
+- project name Compose2kube to Com2kube
