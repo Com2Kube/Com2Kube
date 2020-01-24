@@ -5,28 +5,3 @@ body {
   min-height: 100%;
   position: relative;
 }
-
-#org-logo {
-  width: 5%;
-  min-width: 10%;
-  margin: 1em;
-}
-
-@media (min-width: 300px) {
-  #org-logo {
-    width: 9vw;
-    margin: 0.5em;
-  }
-}
-
-@media (min-width: 400px) {
-  #org-logo {
-    width: 7vw;
-  }
-}
-
-@media (min-width: 800px) {
-  #org-logo {
-    width: 6vw;
-  }
-}
