@@ -1,7 +1,7 @@
 import React, { Suspense } from "react"
 import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
-import Header from "./themes/header"
+import Header from "./themes/header/header"
 import Index from "./pages/index"
 import About from "./pages/about"
 import NotFound from "./pages/not-found"

@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Button, Typography, Container, Link } from "@material-ui/core"
-import logo from "../assets/images/logo_transparent.png"
-import i18n from "../i18n"
+import logoCom2kube from "../../assets/images/logo_transparent.png"
+import i18n from "../../i18n"
+import Logo from "./style"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,11 +16,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     flexDirection: "row",
     alignItems: "center"
-  },
-  logo: {
-    width: "5%",
-    minWidth: "10%",
-    margin: theme.spacing(2)
   },
   langIcon: {
     width: "5%",
@@ -51,9 +47,16 @@ function Header() {
   return (
     <div className={classes.root}>
       <Container className={classes.nameLogo}>
-        <img className={classes.logo} src={logo} alt="com2kube logo" />
+        <Logo src={logoCom2kube} alt="com2kube logo" />
         <Typography variant="h6">
-          <Link href="/" style={{ textDecoration: "none", color: "#5FABC2" }}>
+          <Link
+            href="/"
+            style={{
+              textDecoration: "none",
+              color: "#5FABC2",
+              justifyContent: "flex-start"
+            }}
+          >
             Com2kube
           </Link>
         </Typography>
