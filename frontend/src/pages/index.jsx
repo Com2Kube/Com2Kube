@@ -14,11 +14,6 @@ const useStyles = makeStyles(() => ({
   },
   text: {
     justifyContent: "center",
-    // flex: 1,
-    // height: "50vh",
-    // width: "50vw"
-    // margin: "auto",
-    // padding: "2vh",
     alignItems: "center"
   }
 }))
