@@ -3,7 +3,7 @@ import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import Header from "./themes/header"
 import Index from "./pages/index"
-import About from "./components/about"
+import About from "./pages/about"
 import NotFound from "./pages/not-found"
 
 function App() {

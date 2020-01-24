@@ -1,6 +1,6 @@
 import React from "react"
 import { post } from "axios"
-import { Button, Input, Box } from "@material-ui/core"
+import { Button, Input, Box, Grid } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
@@ -75,23 +75,25 @@ class FileUpload extends React.Component {
           encType="multipart/form-data"
           className={classes.form}
         >
-          <Input
-            id="compose_file"
-            type="file"
-            name="compose_file"
-            required={true}
-            onChange={this.onChange}
-          />
-          <Box m={2}>
-            <Button
-              type="submit"
-              variant="outlined"
-              alt="convert button"
-              value="upload"
-            >
-              {t("fileUpload.submitBtn")}
-            </Button>
-          </Box>
+          <Grid container spacing={0} direction="column" alignItems="center">
+            <Input
+              id="compose_file"
+              type="file"
+              name="compose_file"
+              required={true}
+              onChange={this.onChange}
+            />
+            <Box m={2}>
+              <Button
+                type="submit"
+                variant="outlined"
+                alt="convert button"
+                value="upload"
+              >
+                {t("fileUpload.submitBtn")}
+              </Button>
+            </Box>
+          </Grid>
           <Box m={2}>
             {!isLoading ? (
               <div>

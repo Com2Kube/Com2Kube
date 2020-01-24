@@ -1,6 +1,6 @@
-# Compose2kube - Frontend
+# Com2kube - Frontend
 
-This is the frontend architecture for Comp2kube made in React and React Material UI.
+This is the frontend architecture for Com2kube made in React and React Material UI.
 
 ## App Structure
 
@@ -23,3 +23,4 @@ This is the frontend architecture for Comp2kube made in React and React Material
 - Linting
 - Prettier
 - React Material UI
+- React Syntax Highlight

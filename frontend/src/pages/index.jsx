@@ -33,7 +33,6 @@ const Index = () => {
           <li>{t("index.step3")}</li>
         </ol>
       </Box>
-
       <Box m="2rem">
         <FileUpload />
       </Box>

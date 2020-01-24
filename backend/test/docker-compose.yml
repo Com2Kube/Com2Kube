@@ -1,7 +1,6 @@
 version: "2"
 
 services:
-
   nginx:
     build: ./nginx
     ports:
@@ -15,7 +14,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: "Compose2Kube_frontend"
+    container_name: "Com2Kube_frontend"
     volumes:
       - "./frontend:/home/node"
     ports:
@@ -25,7 +24,7 @@ services:
 
   backend:
     build: ./backend
-    container_name: "Compose2Kube_backend"
+    container_name: "Com2Kube_backend"
     volumes:
       - "./backend:/home/node"
     ports:
