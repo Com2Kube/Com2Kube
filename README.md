@@ -13,21 +13,15 @@ npm install
 ```
 
 ### Start the project locally
+We are using Docker as our development environment so that anyone can simply clone the repository and get to work in minutes. 
+The only requirements is to have Docker and docker-compose installed on your computer. 
 
-```text
-cd frontend
-npm run start
-```
-
-### Run the project with Docker
-
-If you decide to run the project with Docker. Make sure to have Docker installed to your machine.
 
 ```text
 docker-compose up
 ```
 
-To build a new image: `docker-compose up --build`
+To force docker to rebuild the images : `docker-compose up --build` 
 
 ## Technology Stack
 
@@ -40,6 +34,8 @@ To build a new image: `docker-compose up --build`
 ### Backend
 
 - ExpressJS
+- Multer
+- Kompose
 
 ## For the future
 
