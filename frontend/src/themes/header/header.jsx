@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    alignContent: "center"
   },
   langIcon: {
     width: "5%",
