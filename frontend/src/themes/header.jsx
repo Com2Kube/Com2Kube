@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Button, Typography, Container, Link } from "@material-ui/core"
+import { Button, Container, Link } from "@material-ui/core"
 import logo from "../assets/images/logo_transparent.png"
 import i18n from "../i18n"
 
@@ -14,12 +14,17 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    alignContent: "center"
   },
   logo: {
     width: "5%",
     minWidth: "10%",
     margin: theme.spacing(2)
+  },
+  nameOrg: {
+    textDecoration: "none",
+    color: "#5FABC2"
   },
   langIcon: {
     width: "5%",
@@ -51,12 +56,10 @@ function Header() {
   return (
     <div className={classes.root}>
       <Container className={classes.nameLogo}>
-        <img className={classes.logo} src={logo} alt="com2kube logo" />
-        <Typography variant="h6">
-          <Link href="/" style={{ textDecoration: "none", color: "#5FABC2" }}>
-            Com2kube
-          </Link>
-        </Typography>
+        <img className={classes.logo} src={logo} alt="com2kube logo" id="org-logo" />
+        <Link href="/" className={classes.nameOrg} underline="none">
+          Com2kube
+        </Link>
       </Container>
       <Container className={classes.navLinks}>
         <Button color="inherit" href="/about">
