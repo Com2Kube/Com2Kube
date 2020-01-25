@@ -16,9 +16,9 @@ const useStyles = () => ({
 
 const sumbitHandler = () => {
   ReactGA.event({
-      category: 'Sumbit',
-      action: 'Submitted a Docker-Compose File'
-    });
+    category: "Sumbit",
+    action: "Submitted a Docker-Compose File"
+  })
 }
 
 class FileUpload extends React.Component {
