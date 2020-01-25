@@ -1,4 +1,5 @@
 import React from "react"
+import ReactGA from "react-ga"
 import { post } from "axios"
 import { Button, Input, Box, Grid } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
@@ -12,6 +13,13 @@ const useStyles = () => ({
     flexDirection: "column"
   }
 })
+
+const sumbitHandler = () => {
+  ReactGA.event({
+    category: "Sumbit",
+    action: "Submitted a Docker-Compose File"
+  })
+}
 
 class FileUpload extends React.Component {
   constructor(props) {
@@ -47,6 +55,7 @@ class FileUpload extends React.Component {
         // eslint-disable-next-line no-console
         console.error(error)
       })
+    sumbitHandler()
   }
 
   fileUpload(file) {
