@@ -13,7 +13,6 @@ function komposeConvert(path, callback) {
   exec(`kompose convert -f ${path} --stdout`, (err, stdout, stderr) => callback(err, stdout, stderr));
 }
 
-
 router.post('/', upload.single('compose_file'), (req, res) => {
   // Get file path
   const { path } = req.file;
@@ -42,8 +41,9 @@ router.post('/', upload.single('compose_file'), (req, res) => {
           res.send(data);
         }
         // Delete received file after the user received it
-        fs.unlink(path, (err) => {
-          if (err) throw err;
+        // prettier-ignore
+        fs.unlink(path, (error) => {
+          if (error) throw error;
         });
       });
     } else {
