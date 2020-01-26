@@ -12,6 +12,12 @@ code {
 
 @media (min-width: 800px) {
   body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
     font-size: 18px;
   }
 }
