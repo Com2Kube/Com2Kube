@@ -24,3 +24,4 @@ This is the frontend architecture for Com2kube made in React and React Material 
 - Prettier
 - React Material UI
 - React Syntax Highlight
+- Translations (French and English)
