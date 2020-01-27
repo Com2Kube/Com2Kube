@@ -11,6 +11,9 @@
     "submitBtn": "Soumettre",
     "loadingMsg": "Chargement des résultats, veuillez patienter..."
   },
+  "fileSample": {
+    "downloadBtn": "Télécharger un fichier docker-compose.yml"
+  },
   "about": {
     "item1": "Salut à tous!",
     "item2": "Nous voulons vous présenter notre premier projet que nous avons monté. Il s'agit d'un projet qui nous permet de développer nos connaissances en programmation et nous espérons que vous aimez notre projet autant que nous. Convertir votre fichier docker-compose en kubernetes",
