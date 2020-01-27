@@ -7,7 +7,7 @@ This project aims to provide an easy way for docker-compose users to convert the
 ## Getting started
 
 ```text
-git clone https://github.com/CB-GJ/Com2Kube
+git clone https://github.com/Com2Kube/Com2Kube.git
 cd Com2Kube
 npm install
 ```
@@ -30,6 +30,7 @@ To force docker to rebuild the images : `docker-compose up --build`
 - React 
 - React Material UI
 - [React Syntaxe Highlighter](https://github.com/conorhastings/react-syntax-highlighter/tree/f7e4774b9cbc76fb42ee97e8861349aa1d50e532)
+- [React i18next](https://github.com/i18next/react-i18next)
 
 ### Backend
 
