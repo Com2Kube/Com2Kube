@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Box, Container, Typography } from "@material-ui/core"
+import { Box, Container } from "@material-ui/core"
 import { Alert, AlertTitle } from "@material-ui/lab"
 import { useTranslation } from "react-i18next"
 import SampleFile from "../components/file-sample"
