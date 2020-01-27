@@ -2,6 +2,7 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box, Container, Typography } from "@material-ui/core"
 import { useTranslation } from "react-i18next"
+import SampleFile from "../components/file-sample"
 import FileUpload from "../components/file-upload"
 
 const useStyles = makeStyles(() => ({
@@ -40,6 +41,7 @@ const Index = () => {
         <Typography variant="h5" color="textSecondary" className={classes.text}>
           {t("index.betaMessage")}
         </Typography>
+        <SampleFile />
       </Container>
       <Box m="2rem">
         <FileUpload />

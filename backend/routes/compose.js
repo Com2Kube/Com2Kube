@@ -40,7 +40,11 @@ router.post('/', upload.single('compose_file'), (req, res) => {
           // Send the result
           res.send(data);
         }
-        fs.unlinkSync(path);
+        // Delete received file after the user received it
+        // prettier-ignore
+        fs.unlink(path, (error) => {
+          if (error) throw error;
+        });
       });
     } else {
       res.send('File size is invalid');
