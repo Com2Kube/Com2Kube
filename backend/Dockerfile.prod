@@ -3,7 +3,7 @@ WORKDIR /home/node
 COPY . /home/node
 
 # Install Kompose
-RUN curl -L https://github.com/kubernetes/kompose/releases/download/v1.19.0/kompose-linux-amd64 -o kompose
+RUN curl -L https://github.com/kubernetes/kompose/releases/download/v1.20.0/kompose-linux-amd64 -o kompose
 RUN chmod +x kompose
 RUN mv ./kompose /usr/local/bin/kompose
 
