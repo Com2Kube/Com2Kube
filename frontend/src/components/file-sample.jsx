@@ -1,6 +1,13 @@
 import React from "react"
 import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
+import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
+
+const useStyles = () => ({
+  root: {
+    margin: "1.2rem"
+  }
+})
 
 class SampleFile extends React.Component {
   constructor(props) {
@@ -31,14 +38,16 @@ class SampleFile extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
+    const classes = useStyles()
     return (
-      <div>
+      <div className={classes.root}>
         <Button
           variant="outlined"
           color="primary"
           type="submit"
           alt="download docker-compose"
           onClick={this.getFileSample}
+          startIcon={<GetAppRoundedIcon />}
         >
           {t("fileSample.downloadBtn")}
         </Button>
