@@ -15,6 +15,7 @@
     "downloadBtn": "Download a docker-compose.yml"
   },
   "about": {
+    "menu" : "About",
     "item1": "Hey all!",
     "item2": "We would like to present to you the first project that we built. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do.",
     "item3": "Feel free to check out our Github project page and to contribute.",
