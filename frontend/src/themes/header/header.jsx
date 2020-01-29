@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Button, Typography, Container, Link } from "@material-ui/core"
-import logoCom2kube from "../../assets/images/logo_transparent.png"
 import { useTranslation } from "react-i18next"
+import logoCom2kube from "../../assets/images/logo_transparent.png"
 import i18n from "../../i18n"
 import Logo from "./style"
 
@@ -66,7 +66,7 @@ function Header() {
       </Container>
       <Container className={classes.navLinks}>
         <Button color="inherit" href="/about">
-        {t("about.menu")}
+          {t("about.menu")}
         </Button>
         <Button
           color="inherit"
