@@ -6,18 +6,17 @@
     "steps": "You can convert your docker-compose files into three simple steps:",
     "step1": "1. Click on the 'Choose File' button.",
     "step2": "2. Select your docker-compose.yml file.",
-    "step3": "3. Press submit to get your docker-compose to Kubernetes file."
+    "step3": "3. Press submit to convert your docker-compose into a Kubernetes file and get the result."
   },
   "fileUpload": {
-    "submitBtn": "Submit",
-    "loadingMsg": "Loading for results, please wait..."
+    "submitBtn": "Submit"
   },
   "fileSample": {
-    "downloadBtn": "Download file sample"
+    "downloadBtn": "Download a docker-compose.yml"
   },
   "about": {
     "item1": "Hey all!",
-    "item2": "We would like to present to you the first project that we built. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do. Convert your docker-compose file to kubernetes!",
+    "item2": "We would like to present to you the first project that we built. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do.",
     "item3": "Feel free to check out our Github project page and to contribute.",
     "item4": "Cheers! :) "
   }
