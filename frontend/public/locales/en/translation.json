@@ -1,8 +1,8 @@
 {
   "index": {
     "betaTitle": "Beta Version",
-    "betaMessage": "Please note this is a beta version.",
-    "introduction": " The purpose of this application is to make your job easier when it comes to convert docker-compose files into Kubernetes items.",
+    "betaMessage": "Please note that this is a beta version.",
+    "introduction": " The purpose of this application is to make your job easier when it comes to converting your docker-compose files into Kubernetes objects.",
     "steps": "You can convert your docker-compose files into three simple steps:",
     "step1": "1. Click on the 'Choose File' button.",
     "step2": "2. Select your docker-compose.yml file.",
@@ -17,8 +17,8 @@
   },
   "about": {
     "item1": "Hey all!",
-    "item2": "We would like to present you our first projet that we've build. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do. Convert your docker-compose file to kubernetes!",
-    "item3": "Feel free to check our our Github project page and to contribute.",
+    "item2": "We would like to present to you the first project that we built. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do. Convert your docker-compose file to kubernetes!",
+    "item3": "Feel free to check out our Github project page and to contribute.",
     "item4": "Cheers! :) "
   }
 }
