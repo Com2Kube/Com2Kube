@@ -3,7 +3,7 @@
     "betaTitle": "Version Beta",
     "betaMessage": "Veuillez s'il vous plaît prendre en compte qu'il s'agit d'une version BETA.",
     "introduction": "Le but de cette application est de vous faciliter la vie en convertissant un fichier docker-compose en objets Kubernetes.",
-    "steps": "Vous pouvez éffectuer la conversion du fichier docker-compose en trois étapes faciles:",
+    "steps": "Vous pouvez effectuer la conversion du fichier docker-compose en trois étapes faciles:",
     "step1": "1. Cliquez sur le bouton 'Choose File'.",
     "step2": "2. Sélectionnez votre fichier docker-compose.yml.",
     "step3": "3. Appuyez sur 'Soumettre' afin d'avoir votre fichier kubernetes."
