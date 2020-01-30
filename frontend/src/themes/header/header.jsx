@@ -50,7 +50,9 @@ function Header() {
   return (
     <div className={classes.root}>
       <Container className={classes.nameLogo}>
-        <Logo src={logoCom2kube} alt="com2kube logo" />
+        <Link href="/">
+          <Logo src={logoCom2kube} alt="com2kube logo" />
+        </Link>
         <Typography variant="h6">
           <Link
             href="/"
