@@ -38,7 +38,7 @@ To force docker to rebuild the images : `docker-compose up --build`
 - Multer
 - Kompose
 
-## Roadmao
+## Roadmap
 
 - [ ] File drop
 - [ ] Helm Chart
