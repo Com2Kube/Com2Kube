@@ -38,15 +38,13 @@ To force docker to rebuild the images : `docker-compose up --build`
 - Multer
 - Kompose
 
-## For the future
+## Roadmao
 
-We would like to add these items:
-
-- File drop
-- Helm Chart
-- Download the file with preview option
-- Dark theme
-- Save file to Github repo
+- [] File drop
+- [] Helm Chart
+- [] Download the file with preview option
+- [] Dark theme
+- [] Save file to Github repo
 
 ## Contribute
 
