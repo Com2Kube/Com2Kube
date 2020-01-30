@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Button, Typography, Container, Link } from "@material-ui/core"
+import { useTranslation } from "react-i18next"
 import logoCom2kube from "../../assets/images/logo_transparent.png"
 import i18n from "../../i18n"
 import Logo from "./style"
@@ -44,6 +45,7 @@ function Header() {
     changeLanguage(lang)
     isHiddenState(!isHidden)
   }
+  const { t } = useTranslation()
 
   return (
     <div className={classes.root}>
@@ -64,7 +66,7 @@ function Header() {
       </Container>
       <Container className={classes.navLinks}>
         <Button color="inherit" href="/about">
-          About
+          {t("about.menu")}
         </Button>
         <Button
           color="inherit"
