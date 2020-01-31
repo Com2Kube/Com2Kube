@@ -18,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     padding: theme.spacing(3, 2),
     marginTop: "auto",
-    backgroundColor:
-      theme.palette.type === "dark"
-        ? theme.palette.grey[800]
-        : theme.palette.grey[200]
   },
   navLink: {
     display: "flex",
@@ -35,46 +31,8 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <footer className={classes.footer}>
-        <Box variant="body1" m={0.5}>
-          <Link
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/about"
-          >
-            Information
-          </Link>
-          <Link
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/about"
-          >
-            Disclaimer
-          </Link>
-          <Link
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/about"
-          >
-            About
-          </Link>
-          <Link
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/contact"
-          >
-            Contact us
-          </Link>
-        </Box>
         <Typography variant="body2" color="textSecondary">
-          {"Copyright© "}
-          <Link color="inherit" href="/">
-            Com2Kube&nbsp;
-          </Link>
-          {new Date().getFullYear()}
+          test
         </Typography>
       </footer>
     </div>
