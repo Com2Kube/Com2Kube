@@ -7,7 +7,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
-    minHeight: "50vh",
     width: "auto",
     flexShrink: "0"
   },
@@ -32,7 +31,7 @@ const Footer = () => {
     <div className={classes.root}>
       <footer className={classes.footer}>
         <Typography variant="body2" color="textSecondary">
-          test
+          Version: 0.1.0
         </Typography>
       </footer>
     </div>
