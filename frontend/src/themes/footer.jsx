@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Typography } from "@material-ui/core"
+import { Link, Typography } from "@material-ui/core"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +30,13 @@ const Footer = () => {
       <footer className={classes.footer}>
         <Typography variant="body2" color="textSecondary">
           Version: 0.1.0
+        </Typography>
+        <Typography variant="body2" color="textSecondary">
+          {"Copyright© "}
+          <Link color="inherit" href="/">
+            Com2Kube&nbsp;
+          </Link>
+          {new Date().getFullYear()}
         </Typography>
       </footer>
     </div>
