@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     flexGrow: 1,
     width: "100%",
-    display: "flex",
+    display: "flex"
     // backgroundColor: "white"
   },
   nameLogo: {

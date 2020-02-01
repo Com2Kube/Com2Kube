@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Box, Link, Typography } from "@material-ui/core"
-import { NavLink } from "react-router-dom"
+import { Typography } from "@material-ui/core"
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
     padding: theme.spacing(3, 2),
-    marginTop: "auto",
+    marginTop: "auto"
   },
   navLink: {
     display: "flex",
