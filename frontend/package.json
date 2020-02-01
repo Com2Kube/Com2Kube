@@ -14,7 +14,6 @@
     "i18next-browser-languagedetector": "^4.0.1",
     "i18next-xhr-backend": "^3.2.2",
     "react": "^16.12.0",
-    "react-adsense": "^0.1.0",
     "react-dom": "^16.12.0",
     "react-ga": "^2.7.0",
     "react-i18next": "^11.2.7",

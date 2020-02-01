@@ -13,21 +13,21 @@ npm install
 ```
 
 ### Start the project locally
-We are using Docker as our development environment so that anyone can simply clone the repository and get to work in minutes. 
-The only requirements is to have Docker and docker-compose installed on your computer. 
 
+We are using Docker as our development environment so that anyone can simply clone the repository and get to work in minutes.
+The only requirements is to have Docker and docker-compose installed on your computer.
 
 ```text
 docker-compose up
 ```
 
-To force docker to rebuild the images : `docker-compose up --build` 
+To force docker to rebuild the images : `docker-compose up --build`
 
 ## Build with
 
 ### Frontend
 
-- React 
+- React
 - React Material UI
 - [React Syntaxe Highlighter](https://github.com/conorhastings/react-syntax-highlighter/tree/f7e4774b9cbc76fb42ee97e8861349aa1d50e532)
 - [React i18next](https://github.com/i18next/react-i18next)
