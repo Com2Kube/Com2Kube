@@ -8,9 +8,11 @@ import Logo from "./style"
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    position: "fixed",
     flexGrow: 1,
-    with: "100%",
-    display: "flex"
+    width: "100%",
+    display: "flex",
+    // backgroundColor: "white"
   },
   nameLogo: {
     display: "flex",

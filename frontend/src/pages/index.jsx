@@ -12,7 +12,8 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginTop: "15vh"
   },
   text: {
     alignItems: "center",
