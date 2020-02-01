@@ -31,7 +31,6 @@ All notable changes to this project will be documented in this file.
 - Created docker images for backend and frontend in prod
 - Added letsencrypt for HTTPS
 - Add Google Analytics
-- Add Google Adsense
 
 ### Updates
 
