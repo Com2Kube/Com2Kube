@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
     flexShrink: "0"
   },
   footer: {
-    with: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",

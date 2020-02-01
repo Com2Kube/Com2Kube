@@ -5,7 +5,7 @@ import NotFoundImg from "../assets/images/not-found.svg"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    with: "100%",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
