@@ -2,7 +2,7 @@ import React, { Suspense, useEffect } from "react"
 import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import ReactGA from "react-ga"
-import AdSense from "react-adsense"
+// import AdSense from "react-adsense"
 import Header from "./themes/header/header"
 import Index from "./pages/index"
 import About from "./pages/about"
@@ -20,7 +20,7 @@ function App() {
       <Suspense fallback="loading">
         <Router>
           <Header />
-          <AdSense.Google client="ca-pub-3056643200641173" slot="7806394673" />
+          {/* <AdSense.Google client="" slot="" /> */}
           <Switch>
             <Route exact path="/" component={Index} />
             <Route path="/about" component={About} />
