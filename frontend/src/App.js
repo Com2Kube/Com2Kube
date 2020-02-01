@@ -3,6 +3,7 @@ import "./App.css"
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import ReactGA from "react-ga"
 import Header from "./themes/header/header"
+import Footer from "./themes/footer"
 import Index from "./pages/index"
 import About from "./pages/about"
 import NotFound from "./pages/not-found"
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" component={About} />
             <Route component={NotFound} />
           </Switch>
+          <Footer />
         </Router>
       </Suspense>
     </div>

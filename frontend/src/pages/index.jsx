@@ -8,11 +8,12 @@ import FileUpload from "../components/file-upload"
 
 const useStyles = makeStyles(() => ({
   root: {
-    with: "100%",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    marginTop: "15vh"
   },
   text: {
     alignItems: "center",

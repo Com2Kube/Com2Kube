@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    with: "100%",
+    width: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

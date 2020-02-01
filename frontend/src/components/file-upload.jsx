@@ -8,7 +8,7 @@ import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 const useStyles = () => ({
   form: {
-    with: "100%",
+    width: "100%",
     display: "flex",
     flexDirection: "column"
   }
