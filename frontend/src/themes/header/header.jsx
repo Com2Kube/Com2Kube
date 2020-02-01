@@ -11,8 +11,10 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     flexGrow: 1,
     width: "100%",
-    display: "flex"
-    // backgroundColor: "white"
+    display: "flex",
+    backgroundColor: "white",
+    boxShadow: "1px 1px 5px #888888;",
+    zIndex: "1"
   },
   nameLogo: {
     display: "flex",
