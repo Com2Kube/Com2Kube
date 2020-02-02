@@ -10,9 +10,16 @@ import NotFound from "./pages/not-found"
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize("UA-156694657-1")
-    // To Report Page View
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    // Making sure we dont mix prod and dev analytic data
+    if (window.location.hostname === "com2kube.io") {
+      ReactGA.initialize("UA-156694657-2")
+      // To Report Page View
+      ReactGA.pageview(window.location.pathname + window.location.search)
+    } else {
+      ReactGA.initialize("UA-156694657-1")
+      // To Report Page View
+      ReactGA.pageview(window.location.pathname + window.location.search)
+    }
   }, [])
 
   return (
