@@ -6,7 +6,9 @@ import Header from "./themes/header/header"
 import Footer from "./themes/footer"
 import Index from "./pages/index"
 import About from "./pages/about"
+import Privacy from "./pages/privacy"
 import NotFound from "./pages/not-found"
+import TermsConditions from "./pages/terms-conditions"
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,8 @@ function App() {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route path="/about" component={About} />
+            <Route path="/privacy-policy" component={Privacy} />
+            <Route path="/terms-and-conditions" component={TermsConditions} />
             <Route component={NotFound} />
           </Switch>
           <Footer />

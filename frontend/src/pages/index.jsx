@@ -45,6 +45,9 @@ const Index = () => {
           <li>{t("index.step2")}</li>
           <li>{t("index.step3")}</li>
         </ol>
+        <span>
+          Disclaimer: we do not save any of your docker-compose file submitted.
+        </span>
       </Container>
       <Box m="2rem">
         <FileUpload />

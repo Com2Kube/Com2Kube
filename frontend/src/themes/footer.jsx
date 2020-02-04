@@ -1,6 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Link, Typography } from "@material-ui/core"
+import { Box, Link, Typography } from "@material-ui/core"
+import { NavLink } from "react-router-dom"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,9 +18,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "auto"
   },
   navLink: {
-    display: "flex",
-    // justifyContent: "flex-end",
-    flexDirection: "row"
+    margin: theme.spacing(1, 1)
   }
 }))
 
@@ -28,8 +27,37 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <footer className={classes.footer}>
-        <Typography variant="body2" color="textSecondary">
-          Version: 0.1.0
+        <Box variant="body1" m={0.5}>
+          <Link
+            color="textSecondary"
+            component={NavLink}
+            className={classes.navLink}
+            activeClassName="active"
+            to="/privacy-policy"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            color="textSecondary"
+            component={NavLink}
+            className={classes.navLink}
+            activeClassName="active"
+            to="/about"
+          >
+            About
+          </Link>
+          <Link
+            color="textSecondary"
+            component={NavLink}
+            className={classes.navLink}
+            activeClassName="active"
+            to="https://github.com/CB-GJ/Com2Kube"
+          >
+            Github
+          </Link>
+        </Box>
+        <Typography variant="body2" color="textSecondary" m={0.2}>
+          Version: 0.2.0
         </Typography>
         <Typography variant="body2" color="textSecondary">
           {"Copyright© "}
