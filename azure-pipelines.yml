@@ -50,12 +50,16 @@ stages:
       vmImage: 'ubuntu-latest'
     steps:
     - task: CmdLine@2
-      displayName: Backend Lint
+      displayName: Install dependencies
       inputs:
         script: |
           npm install --only=dev
           npm install mkdirp
-
+        workingDirectory: '$(Build.SourcesDirectory)/backend'
+    - task: CmdLine@2
+      displayName: Backend Lint
+      inputs:
+        script: |
           npm run lint
         workingDirectory: '$(Build.SourcesDirectory)/backend'
 
@@ -66,9 +70,28 @@ stages:
           npm run format
         workingDirectory: '$(Build.SourcesDirectory)/backend'
 
+  - job: Test_Frontend
+    displayName: Test Frontend
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: CmdLine@2
+      displayName: Install dependencies
+      inputs:
+        script: |
+          npm install --only=dev
+          npm install mkdirp
+        workingDirectory: '$(Build.SourcesDirectory)/frontend'
+    - task: CmdLine@2
+      displayName: Frontend Lint
+      inputs:
+        script: |
+          npm run lint
+        workingDirectory: '$(Build.SourcesDirectory)/frontend'
 
-  # - job: Test_Frontend
-  #   displayName: Test Frontend
-  #   pool:
-  #     vmImage: 'ubuntu-latest'
-  #   steps:
+    - task: CmdLine@2
+      displayName: Frontend Format
+      inputs:
+        script: |
+          npm run format
+        workingDirectory: '$(Build.SourcesDirectory)/frontend'
