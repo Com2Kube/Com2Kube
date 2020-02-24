@@ -60,6 +60,13 @@ stages:
           npm run format
         workingDirectory: '$(Build.SourcesDirectory)/backend'
 
+    - task: CmdLine@2
+      displayName: Backend Format
+      inputs:
+        script: |
+          npm run format
+        workingDirectory: '$(Build.SourcesDirectory)/backend'
+
 
   # - job: Test_Frontend
   #   displayName: Test Frontend
