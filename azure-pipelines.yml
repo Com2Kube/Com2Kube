@@ -54,6 +54,7 @@ stages:
       inputs:
         script: |
           npm install --only=dev
+          npm install mkdirp
 
           npm run lint
         workingDirectory: '$(Build.SourcesDirectory)/backend'
