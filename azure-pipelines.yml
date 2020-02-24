@@ -1,0 +1,42 @@
+# Docker
+# Build a Docker image 
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+
+resources:
+- repo: self
+
+variables:
+  tag: '$(Build.BuildId)'
+
+stages:
+- stage: Build
+  displayName: Build
+  jobs:  
+  - job: Build_Backend
+    displayName: Build Backend
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: Docker@2
+      displayName: Build Backend
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/backend/Dockerfile.prod'
+        tags: |
+          $(tag)
+
+  - job: Build_Frontend
+    displayName: Build Frontend
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - task: Docker@2
+      displayName: Build Frontend
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/frontend/Dockerfile.prod'
+        tags: |
+          $(tag)
