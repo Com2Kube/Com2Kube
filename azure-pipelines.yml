@@ -53,10 +53,13 @@ stages:
       displayName: Backend Lint
       inputs:
         script: |
-          npm install eslint
+          npm install --only=dev
 
           npm run lint
+
+          npm run format
         workingDirectory: '$(Build.SourcesDirectory)/backend'
+
 
   # - job: Test_Frontend
   #   displayName: Test Frontend
