@@ -56,8 +56,6 @@ stages:
           npm install --only=dev
 
           npm run lint
-
-          npm run format
         workingDirectory: '$(Build.SourcesDirectory)/backend'
 
     - task: CmdLine@2
