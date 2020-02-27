@@ -76,9 +76,8 @@ stages:
       displayName: Backend Test Api
       inputs:
         script: |
-          sudo npm install -g newman
           docker build . -t ci
-          docker run -d -p 5000:5000 ci
+          docker run -d -p 80:5000 ci
           sleep 5
           npm run test
         workingDirectory: '$(Build.SourcesDirectory)/backend'
