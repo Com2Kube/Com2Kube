@@ -27,7 +27,8 @@ const About = () => {
         <p>{t("about.item2")}</p>
         <p>{t("about.item3")}</p>
         <p>{t("about.item4")}</p>
-        <Typography variant="h5">How this app is different from Kompose?</Typography>
+        {/* image */}
+        <Typography variant="h5">How is this app different from Kompose?</Typography>
         <p>
           We are fully aware that the functionality of our app is existent with
           Kompose CLI.
@@ -45,6 +46,7 @@ const About = () => {
           submitted and your response is displayed, they are immediately deleted on
           the backend side.
         </p>
+        {/* image */}
       </div>
     </div>
   )
