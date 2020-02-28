@@ -42,9 +42,9 @@ const Footer = () => {
             component={NavLink}
             className={classes.navLink}
             activeClassName="active"
-            to="/about"
+            to="/terms-and-conditions"
           >
-            About
+            Terms and Conditions
           </Link>
           <Link
             color="textSecondary"

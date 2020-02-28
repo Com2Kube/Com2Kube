@@ -9,6 +9,7 @@
     "step3": "3. Appuyez sur 'Soumettre' afin de convertir votre fichier et d'obtenir le résultat."
   },
   "fileUpload": {
+    "select": "**FR** Select a file",
     "submitBtn": "Soumettre"
   },
   "fileSample": {
@@ -20,5 +21,26 @@
     "item2": "Nous aimerions vous présenter notre premier projet que nous venons à peine de commencer. Il s'agit d'un projet qui nous permet de développer nos connaissances en programmation et nous espérons que vous l'apprécierez autant que nous.",
     "item3": "N'hésitez pas de venir nous voir sur Github et à contribuer.",
     "item4": "À bientôt! :)"
+  },
+  "privacy": {
+    "introTitle": "Votre confidentialité est extrêmement importante pour nous.",
+    "introText1": "",
+    "introText2": "",
+    "websiteTitle": "",
+    "websiteText1": "",
+    "websiteText2": "",
+    "personalInfoTitle": "la collecte d'informations d'identification personnelle",
+    "personalText1": "",
+    "securityTitle": "la sécurité",
+    "securityText1": "",
+    "advertisementsTitle": "la publicité",
+    "advertisementsText1": "",
+    "externalSitesTitle": "Liens vers des sites externes",
+    "externalSitesText1": "",
+    "externalSitesText2": "",
+    "statsTitle": "Statistiques agrégées",
+    "statsText": "",
+    "privacyTitle": "Modifications de la politique de confidentialité",
+    "privacyText": ""
   }
 }

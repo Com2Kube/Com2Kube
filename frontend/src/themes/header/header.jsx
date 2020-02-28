@@ -23,17 +23,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     alignContent: "center"
   },
-  langIcon: {
-    width: "5%",
-    padding: theme.spacing(1)
-  },
   button: {
     margin: theme.spacing(1)
   },
   navLinks: {
     display: "flex",
     justifyContent: "flex-end",
-    flexDirection: "row"
+    flexDirection: "row",
+    minWidth: "1px"
   }
 }))
 
