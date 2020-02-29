@@ -2,6 +2,7 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box, Link, Typography } from "@material-ui/core"
 import { NavLink } from "react-router-dom"
+import LinksMobile from "./style"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "auto"
   },
   navLink: {
+    fontSize: "14px",
     margin: theme.spacing(1, 1)
   }
 }))
@@ -28,41 +30,42 @@ const Footer = () => {
     <div className={classes.root}>
       <footer className={classes.footer}>
         <Box variant="body1" m={0.5}>
-          <Link
-            color="textSecondary"
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/privacy-policy"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            color="textSecondary"
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="/terms-and-conditions"
-          >
-            Terms and Conditions
-          </Link>
-          <Link
-            color="textSecondary"
-            component={NavLink}
-            className={classes.navLink}
-            activeClassName="active"
-            to="https://github.com/CB-GJ/Com2Kube"
-          >
-            Github
-          </Link>
+          <LinksMobile>
+            <Link
+              color="textSecondary"
+              component={NavLink}
+              className={classes.navLink}
+              activeClassName="active"
+              to="/privacy-policy"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              color="textSecondary"
+              component={NavLink}
+              className={classes.navLink}
+              activeClassName="active"
+              to="/terms-and-conditions"
+            >
+              Terms and Conditions
+            </Link>
+            <Link
+              color="textSecondary"
+              className={classes.navLink}
+              href="https://github.com/CB-GJ/Com2Kube"
+            >
+              Github
+            </Link>
+          </LinksMobile>
         </Box>
+
         <Typography variant="body2" color="textSecondary" m={0.2}>
           Version: 0.2.0
         </Typography>
         <Typography variant="body2" color="textSecondary">
           {"Copyright© "}
           <Link color="inherit" href="/">
-            Com2Kube&nbsp;
+            ~ Com2Kube&nbsp;
           </Link>
           {new Date().getFullYear()}
         </Typography>

@@ -23,6 +23,9 @@ const Privacy = () => {
   return (
     <div className={classes.root}>
       <Container className={classes.body}>
+        <Typography align="center" variant="h4">
+          {t("privacy.privacyHeader")}
+        </Typography>
         <Typography variant="h5">{t("privacy.introTitle")}</Typography>
         <p>{t("privacy.introText1")}</p>
         <p>{t("privacy.introText2")}</p>
