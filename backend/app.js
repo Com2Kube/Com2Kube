@@ -1,11 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 
 // Enable Express
 const app = express();
 // Enable Body Parser for Text
-app.use(bodyParser.text())
+app.use(bodyParser.text());
 // app.use(bodyParser.urlencoded({ extended: false }))
 // Enable cors
 app.use(cors());
