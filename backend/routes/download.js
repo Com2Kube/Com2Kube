@@ -4,8 +4,7 @@ const fs = require('fs');
 const router = express.Router();
 
 router.post('/', (req, res) => {
-
-  if (req.headers["content-type"] === "text/plain") {
+  if (req.headers['content-type'] === 'text/plain') {
     // get body data
     const data = req.body;
     // genereate random fileName
@@ -23,9 +22,9 @@ router.post('/', (req, res) => {
         });
       });
     });
-  }
-  else {
-    res.status(404).end("Request type is invalid, you used : " + req.headers["content-type"])
+  } else {
+    // prettier-ignore
+    res.status(404).end(`Request type is invalid, you used : ${req.headers['content-type']}`);
   }
 });
 
