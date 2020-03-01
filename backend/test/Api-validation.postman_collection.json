@@ -94,7 +94,7 @@
         },
         "url": {
           "raw": "Com2Kube File Download",
-          "host": ["dev", "gwebs", "ca"],
+          "host": ["localhost"],
           "path": ["api", "download"]
         }
       },
