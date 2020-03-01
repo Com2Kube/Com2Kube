@@ -9,7 +9,7 @@ router.post('/', (req, res) => {
   // genereate random fileName
   const fileName = Math.floor(Math.random() * 999999999999999);
 
-  const path = `/tmp/${fileName}.txt`;
+  const path = `/tmp/${fileName}.yml`;
   // Write data to a file
   fs.writeFile(path, data, () => {
     // Send file to the user
