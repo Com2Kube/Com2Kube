@@ -2,12 +2,14 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box, Link, Typography } from "@material-ui/core"
 import { NavLink } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 import LinksMobile from "./style"
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
+    alignContent: "center",
     width: "auto",
     flexShrink: "0"
   },
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Footer = () => {
+  const { t } = useTranslation()
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -38,7 +41,7 @@ const Footer = () => {
               activeClassName="active"
               to="/privacy-policy"
             >
-              Privacy Policy
+              {t("footer.policy")}
             </Link>
             <Link
               color="textSecondary"
@@ -47,7 +50,7 @@ const Footer = () => {
               activeClassName="active"
               to="/terms-and-conditions"
             >
-              Terms and Conditions
+              {t("footer.terms")}
             </Link>
             <Link
               color="textSecondary"

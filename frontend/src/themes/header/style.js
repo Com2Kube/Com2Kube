@@ -4,6 +4,11 @@ export const Logo = styled.img`
   width: 5%;
   margin: 1em;
 
+  @media (min-width: 100px) {
+    width: 9vw;
+    margin: 0.5em;
+  }
+
   @media (min-width: 300px) {
     width: 9vw;
     margin: 0.5em;

@@ -59,13 +59,10 @@ const TermsConditions = () => {
           <li>
             {t("termsConditions.hyperlinkSub2Item1")}
             <ol>
-              <li>{t("termsConditions.hyperlinkSub2Item2")}</li>
               <li>{t("termsConditions.hyperlinkSub2Item3")}</li>
               <li>{t("termsConditions.hyperlinkSub2Item4")}</li>
               <li>{t("termsConditions.hyperlinkSub2Item5")}</li>
               <li>{t("termsConditions.hyperlinkSub2Item6")}</li>
-              <li>{t("termsConditions.hyperlinkSub2Item7")}</li>
-              <li>{t("termsConditions.hyperlinkSub2Item8")}</li>
             </ol>
           </li>
         </ol>
