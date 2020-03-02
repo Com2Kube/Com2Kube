@@ -26,11 +26,11 @@
     "menu": "À propos",
     "item1": "Salut à tous!",
     "item2": "Nous aimerions vous présenter notre premier projet que nous venons à peine de commencer. Il s'agit d'un projet qui nous permet de développer nos connaissances en programmation et nous espérons que vous l'apprécierez autant que nous.",
-    "item3": "N'hésitez pas de venir nous voir sur Github et à contribuer.",
+    "item3": "N'hésitez pas de venir nous voir sur Github et contribuer.",
     "item4": "À bientôt! :)",
     "faq1": "Comment cette application est-elle différente de Kompose?",
     "faq1Text1": "Nous sommes au courant que nos fonctionnalités sont similaires à celle de Kompose CLI.",
-    "faq1Text2": "Nous avons créé cet outil afin de faciliter les utilisateurs de télécharger leur fichier docker-compose à kubernetes en ligne. Comparativement à Kompose CLI est un outil que vous devez télécharger. Nous utilisons Kompose dans notre application pour convertir le docker-compse. La différence est que nous laissons les usagers la conversion de leur fichier de n'importe où. ",
+    "faq1Text2": "Nous avons créé cet outil afin de pour permettre aux utilisateurs de convertir leur fichier docker-compose en fichier kubernetes. Comparativement à Kompose qui est un outil CLI que vous devez télécharger. Nous utilisons Kompose dans notre application pour convertir le docker-compse. La différence est que nous laissons les usagers la possibilité de convertir leur fichier de n'importe où. ",
     "faq2": "Sauvegardons-nous votre fichier docker-compose file?",
     "faq2Text1": "La réponse est non, on le sauvegarde pas.",
     "faq2Text2": "Actuellement, nous n'avons aucune base de données. Ce qui veut dire que nous ne sauvegardons null part vos fichiers docker-compose soumises. Une fois que vous avez soumis les fichiers et que les réponses sont affichées, ils sont immédiatement supprimés du côté du backend."

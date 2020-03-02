@@ -30,10 +30,10 @@
     "item4": "Cheers! :) ",
     "faq1": "How is this app different from Kompose?",
     "faq1Text1": "We are fully aware that the functionality of our app is existent with Kompose CLI.",
-    "faq1Text2": "We aim to make it easier for everyone by creating an online tool to download your docker-compose to kubernetes online. Where as Kompose is only a cli tool that you have to download. We are actually using Kompose in the background. The difference, we allow users to do get their files from anywhere.",
+    "faq1Text2": "We aim to make it easier for everyone by creating an online tool to download your docker-compose to Kubernetes online. Whereas Kompose is only a cli tool that you have to download. We are actually using Kompose in the background. The difference, we allow users to get their files from anywhere.",
     "faq2": "Do we save your docker-compose file?",
     "faq2Text1": "The answer is no, we don't.",
-    "faq2Text2": "Currently, Com2kube does not have any database. That being said, we don't store anywhere your submitted docker-compose file. Once you're files are submitted and your response is displayed, they are immediately deleted on the backend side."
+    "faq2Text2": "Currently, Com2kube does not have any database. That being said, we don't store anywhere your submitted docker-compose file. Once your files are submitted and your response is displayed, they are immediately deleted on the backend side."
   },
   "footer": {
     "policy": "Privacy Policy",
