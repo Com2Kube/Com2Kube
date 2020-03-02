@@ -5,6 +5,7 @@ import { Button, Input, Box, Grid } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
+import FileDownload from "./file-download"
 
 const useStyles = () => ({
   form: {
@@ -109,6 +110,7 @@ class FileUpload extends React.Component {
           <Box m={2}>
             {!isLoading ? (
               <div>
+                <FileDownload posts={posts} />
                 <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
                 </SyntaxHighlighter>

@@ -16,6 +16,9 @@
   "fileSample": {
     "downloadBtn": "Download a docker-compose.yml"
   },
+  "fileDownload": {
+    "downloadFileBtn": "Download converted file"
+  },
   "about": {
     "teamHeader": "The Team",
     "backendDev": "backend/devops developer",

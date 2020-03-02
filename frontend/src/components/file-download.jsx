@@ -1,19 +1,30 @@
 import React from "react"
 import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
+import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
 
 class FileDownload extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this.getFileSample = this.getFileSample.bind(this)
+    this.getFileDownload = this.getFileDownload.bind(this)
   }
 
+  /** Api call to get the download file back from the backend.
+   * The user gets back a download file.
+   */
   getFileDownload() {
-    const urlApi = `/api/sample`
-    fetch(urlApi).then((response) => {
+    // eslint-disable-next-line react/destructuring-assignment
+    const data = this.props.posts
+    const urlApi = `/api/download`
+    fetch(urlApi, {
+      method: "POST",
+      body: data,
+      headers: {
+        "Content-Type": "text/plain"
+      }
+    }).then((response) => {
       response
-        // TODO: change
         .blob()
         .then((blob) => {
           const url = window.URL.createObjectURL(blob)
@@ -33,18 +44,17 @@ class FileDownload extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
-    const classes = useStyles()
     return (
-      <div className={classes.root}>
+      <div>
         <Button
           variant="outlined"
           color="primary"
           type="submit"
           alt="download docker-compose"
-          onClick={this.getFileSample}
+          onClick={this.getFileDownload}
           startIcon={<GetAppRoundedIcon />}
         >
-          {t("fileSample.downloadBtn")}
+          {t("fileDownload.downloadFileBtn")}
         </Button>
       </div>
     )
