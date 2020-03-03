@@ -18,12 +18,7 @@ const useStyles = () => ({
   }
 })
 
-const sumbitHandler = () => {
-  ReactGA.event({
-    category: "Sumbit",
-    action: "Submitted a Docker-Compose File"
-  })
-}
+
 
 class FileUpload extends React.Component {
   constructor(props) {
@@ -39,6 +34,13 @@ class FileUpload extends React.Component {
     this.onFormSubmit = this.onFormSubmit.bind(this)
     this.onChange = this.onChange.bind(this)
     this.fileUpload = this.fileUpload.bind(this)
+  }
+
+  gaEvent = () => {
+    ReactGA.event({
+      category: "Sumbit",
+      action: "Submitted a Docker-Compose File"
+    })
   }
 
   onChange(e) {
@@ -59,7 +61,7 @@ class FileUpload extends React.Component {
         // eslint-disable-next-line no-console
         console.error(error)
       })
-    sumbitHandler()
+    this.gaEvent()
   }
 
   fileUpload(file) {
