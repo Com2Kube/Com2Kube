@@ -1,8 +1,13 @@
 import styled from "styled-components"
 
-const Logo = styled.img`
+export const Logo = styled.img`
   width: 5%;
   margin: 1em;
+
+  @media (min-width: 100px) {
+    width: 9vw;
+    margin: 0.5em;
+  }
 
   @media (min-width: 300px) {
     width: 9vw;
@@ -24,4 +29,9 @@ const Logo = styled.img`
     margin: 0.5em;
   }
 `
-export default Logo
+
+export const Name = styled.div`
+  @media (max-width: 388px) {
+    display: none;
+  }
+`

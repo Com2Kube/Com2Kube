@@ -45,6 +45,7 @@ const Index = () => {
           <li>{t("index.step2")}</li>
           <li>{t("index.step3")}</li>
         </ol>
+        <span>{t("index.disclaimer")}</span>
       </Container>
       <Box m="2rem">
         <FileUpload />

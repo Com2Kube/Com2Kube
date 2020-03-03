@@ -4,7 +4,7 @@ import { Button, Typography, Container, Link } from "@material-ui/core"
 import { useTranslation } from "react-i18next"
 import logoCom2kube from "../../assets/images/logo_transparent.png"
 import i18n from "../../i18n"
-import Logo from "./style"
+import { Logo, Name } from "./style"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,17 +23,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     alignContent: "center"
   },
-  langIcon: {
-    width: "5%",
-    padding: theme.spacing(1)
-  },
   button: {
     margin: theme.spacing(1)
   },
   navLinks: {
     display: "flex",
     justifyContent: "flex-end",
-    flexDirection: "row"
+    flexDirection: "row",
+    minWidth: "1px"
   }
 }))
 
@@ -57,18 +54,20 @@ function Header() {
         <Link href="/">
           <Logo src={logoCom2kube} alt="com2kube logo" />
         </Link>
-        <Typography variant="h6">
-          <Link
-            href="/"
-            style={{
-              textDecoration: "none",
-              color: "#5FABC2",
-              justifyContent: "flex-start"
-            }}
-          >
-            Com2kube
-          </Link>
-        </Typography>
+        <Name>
+          <Typography variant="h6">
+            <Link
+              href="/"
+              style={{
+                textDecoration: "none",
+                color: "#5FABC2",
+                justifyContent: "flex-start"
+              }}
+            >
+              Com2kube
+            </Link>
+          </Typography>
+        </Name>
       </Container>
       <Container className={classes.navLinks}>
         <Button color="inherit" href="/about">
