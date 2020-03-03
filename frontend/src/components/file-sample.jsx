@@ -10,21 +10,14 @@ const useStyles = () => ({
   }
 })
 
-
-
 class SampleFile extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
     this.getFileSample = this.getFileSample.bind(this)
+    this.gaEvent = this.gaEvent.bind(this)
   }
 
-  gaEvent = () => {
-    ReactGA.event({
-      category: "Sample",
-      action: "Downloaded a sample file"
-    })
-  }
   getFileSample() {
     const urlApi = `/api/sample`
     fetch(urlApi).then((response) => {
@@ -43,6 +36,13 @@ class SampleFile extends React.Component {
         })
     })
     this.gaEvent()
+  }
+
+  gaEvent() {
+    ReactGA.event({
+      category: "Sample",
+      action: "Downloaded a sample file"
+    })
   }
 
   render() {

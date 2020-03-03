@@ -9,15 +9,9 @@ class FileDownload extends React.Component {
     super(props)
     this.state = {}
     this.getFileDownload = this.getFileDownload.bind(this)
+    this.gaEvent = this.gaEvent.bind(this)
   }
 
-
-  gaEvent = () => {
-    ReactGA.event({
-      category: "Download",
-      action: "Downloaded converted result"
-    })
-  }
   /** Api call to get the download file back from the backend.
    * The user gets back a download file.
    */
@@ -47,6 +41,13 @@ class FileDownload extends React.Component {
         })
     })
     this.gaEvent()
+  }
+
+  gaEvent() {
+    ReactGA.event({
+      category: "Download",
+      action: "Downloaded converted result"
+    })
   }
 
   // TODO: update
