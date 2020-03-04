@@ -1,4 +1,5 @@
 import React from "react"
+import ReactGA from "react-ga"
 import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
@@ -14,6 +15,7 @@ class SampleFile extends React.Component {
     super(props)
     this.state = {}
     this.getFileSample = this.getFileSample.bind(this)
+    this.gaEvent = this.gaEvent.bind(this)
   }
 
   getFileSample() {
@@ -32,6 +34,14 @@ class SampleFile extends React.Component {
           // eslint-disable-next-line no-console
           console.error(error)
         })
+    })
+    this.gaEvent()
+  }
+
+  gaEvent() {
+    ReactGA.event({
+      category: "Sample",
+      action: "Downloaded a sample file"
     })
   }
 

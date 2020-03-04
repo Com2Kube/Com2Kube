@@ -1,4 +1,5 @@
 import React from "react"
+import ReactGA from "react-ga"
 import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
@@ -8,6 +9,7 @@ class FileDownload extends React.Component {
     super(props)
     this.state = {}
     this.getFileDownload = this.getFileDownload.bind(this)
+    this.gaEvent = this.gaEvent.bind(this)
   }
 
   /** Api call to get the download file back from the backend.
@@ -37,6 +39,14 @@ class FileDownload extends React.Component {
           // eslint-disable-next-line no-console
           console.error(error)
         })
+    })
+    this.gaEvent()
+  }
+
+  gaEvent() {
+    ReactGA.event({
+      category: "Download",
+      action: "Downloaded converted result"
     })
   }
 
