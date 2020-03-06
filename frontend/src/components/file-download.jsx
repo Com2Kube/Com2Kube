@@ -15,7 +15,8 @@ class FileDownload extends React.Component {
   /** Api call to get the download file back from the backend.
    * The user gets back a download file.
    */
-  getFileDownload() {
+  getFileDownload(e) {
+    e.preventDefault()
     // eslint-disable-next-line react/destructuring-assignment
     const data = this.props.posts
     const urlApi = `/api/download`
@@ -50,7 +51,6 @@ class FileDownload extends React.Component {
     })
   }
 
-  // TODO: update
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props

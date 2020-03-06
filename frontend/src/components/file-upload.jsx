@@ -1,7 +1,7 @@
 import React from "react"
 import ReactGA from "react-ga"
 import { post } from "axios"
-import { Button, Input, Box, Grid } from "@material-ui/core"
+import { Button, Input, Box, Grid, Container } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
@@ -13,8 +13,8 @@ const useStyles = () => ({
     display: "flex",
     flexDirection: "column"
   },
-  test: {
-    display: "none"
+  container: {
+    margin: "10px"
   }
 })
 
@@ -108,9 +108,9 @@ class FileUpload extends React.Component {
               </Button>
             </Box>
           </Grid>
-          <Box m={2}>
+          <Container>
             {!isLoading ? (
-              <div>
+              <div className={classes.container}>
                 <FileDownload posts={posts} />
                 <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
@@ -120,7 +120,7 @@ class FileUpload extends React.Component {
               // eslint-disable-next-line react/self-closing-comp
               <p></p>
             )}
-          </Box>
+          </Container>
         </form>
       </div>
     )
