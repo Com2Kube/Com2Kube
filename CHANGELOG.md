@@ -2,15 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
-## [for future release]
+## Beta: 0.2.1 - 2020-02-06
 
-### Added
+### Bug Fixes
 
-### Changed
+- Compose HTTP request was called another time to download the download converted file.
+- Add margin to converted object.
 
-### Removed
+## Beta: 0.2.0 - 2020-02-03
 
-## [Unreleased] - 2020-01-18
+### Addded
+
+- Private Policy page
+- Terms and Condition page
+- Footer
+- Download file feature
+
+### Updates
+
+- About pages design and content
+- Screen sizes for mobile view
+
+## Beta: 0.1.0 - 2020-01-18
 
 ### Addded
 
