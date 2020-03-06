@@ -5,7 +5,7 @@ import logoCom2kube from "../../assets/images/logo_transparent.png"
 import { Logo, Name } from "./style"
 import Links from "./links/links"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     position: "fixed",
     flexGrow: 1,
