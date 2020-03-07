@@ -63,7 +63,7 @@ const Footer = () => {
         </Box>
 
         <Typography variant="body2" color="textSecondary" m={0.2}>
-          Version: 0.2.0
+          Version: 0.2.1
         </Typography>
         <Typography variant="body2" color="textSecondary">
           {"Copyright© "}
