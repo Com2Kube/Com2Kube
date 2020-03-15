@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-var compression = require('compression');
-var helmet = require('helmet')
+const compression = require('compression');
+const helmet = require('helmet');
 
 // Enable Express
 const app = express();
@@ -13,11 +13,11 @@ app.use(bodyParser.text());
 // Enable cors
 app.use(cors());
 
-//Enable compression
+// Enable compression
 app.use(compression());
 
-//Enable Helmet for security
-app.use(helmet())
+// Enable Helmet for security
+app.use(helmet());
 
 // Import Routes
 const statusRoute = require('./routes/status');
