@@ -35,6 +35,9 @@ const Links = () => {
       <Button color="inherit" href="/about">
         {t("about.menu")}
       </Button>
+      <Button color="inherit" href="/about">
+        News
+      </Button>
       <Button
         color="inherit"
         onClick={() => window.open("https://github.com/CB-GJ/Com2Kube", "_blank")}
