@@ -35,6 +35,9 @@
     "faq2Text1": "The answer is no, we don't.",
     "faq2Text2": "Currently, Com2kube does not have any database. That being said, we don't store anywhere your submitted docker-compose file. Once your files are submitted and your response is displayed, they are immediately deleted on the backend side."
   },
+  "news": {
+    "findOutMoreLink": " Find Out More"
+  },
   "footer": {
     "policy": "Privacy Policy",
     "terms": "Terms and Conditions"
