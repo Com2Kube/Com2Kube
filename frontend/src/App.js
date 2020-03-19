@@ -9,6 +9,7 @@ import About from "./pages/about/about"
 import Privacy from "./pages/privacy"
 import NotFound from "./pages/not-found"
 import TermsConditions from "./pages/terms-conditions"
+import News from "./pages/news"
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Index} />
             <Route path="/about" component={About} />
+            <Route path="/news" component={News} />
             <Route path="/privacy-policy" component={Privacy} />
             <Route path="/terms-and-conditions" component={TermsConditions} />
             <Route component={NotFound} />

@@ -35,6 +35,9 @@
     "faq2Text1": "La réponse est non, on ne le sauvegarde pas.",
     "faq2Text2": "Actuellement, nous n'avons aucune base de données. Ce qui veut dire que nous ne sauvegardons nulle part ce que nous vous envoyez. Lorsque le fichier est soumis et que le résultat vous est parvenu, le fichier est immédiatement supprimé de nos serveurs. "
   },
+  "news": {
+    "findOutMoreLink": "en savoir plus"
+  },
   "footer": {
     "policy": "Politique de confidentialité",
     "terms": "Termes et conditions"

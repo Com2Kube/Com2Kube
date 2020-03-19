@@ -18,6 +18,7 @@
     "class-methods-use-this": 0,
     "semi": 0,
     "react/prop-types": 0,
+    "react/no-array-index-key": 0,
     "react/jsx-boolean-value": 0,
     "react/jsx-filename-extension": [
       1,
