@@ -31,7 +31,7 @@ export const Logo = styled.img`
 `
 
 export const Name = styled.div`
-  @media (max-width: 388px) {
+  @media (max-width: 460px) {
     display: none;
   }
 `
