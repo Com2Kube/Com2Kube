@@ -58,7 +58,7 @@ const News = () => {
 
   // https://dev.to/api/articles?username=cbun097
   useEffect(() => {
-    fetch(`https://dev.to/api/articles?username=gabrieljean`)
+    fetch(`https://dev.to/api/articles?username=cbun097`)
       .then((response) => response.json())
       .then((resultData) => {
         setArticles(resultData)
