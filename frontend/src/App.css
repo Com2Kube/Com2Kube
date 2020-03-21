@@ -4,6 +4,7 @@ html {
 body {
   min-height: 100%;
   position: relative;
+  background-color: #f5f7f9;
 }
 
 .App {
