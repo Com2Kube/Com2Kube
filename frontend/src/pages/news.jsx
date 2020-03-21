@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
   },
   card: {
     maxWidth: 304,
-    marginTop: "5em",
     margin: "auto",
     boxShadow: "none"
   },
@@ -58,7 +57,7 @@ const News = () => {
 
   // https://dev.to/api/articles?username=cbun097
   useEffect(() => {
-    fetch(`https://dev.to/api/articles?username=cbun097`)
+    fetch(`https://dev.to/api/articles?username=gabrieljean`)
       .then((response) => response.json())
       .then((resultData) => {
         setArticles(resultData)
@@ -75,7 +74,7 @@ const News = () => {
           container
           direction="row"
           justify="center"
-          alignItems="baseline"
+          alignItems="center"
           spacing={3}
         >
           {articles.map((data) => (
