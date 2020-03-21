@@ -58,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
 const News = () => {
   const [articles, setArticles] = useState([])
 
+  // https://dev.to/api/articles?username=cbun097
   useEffect(() => {
     fetch(`https://dev.to/api/articles?username=gabrieljean`)
       .then((response) => response.json())
@@ -73,35 +74,37 @@ const News = () => {
     <div className={classes.root}>
       <div className={classes.body}>
         {/* <h2>Latest post</h2> */}
-        <Grid container >
+        <Grid container>
           <Grid item xs={12}>
             {articles.map((data) => (
               <Grid key={data.id} direction="row">
                 <Paper elevation={3} variant="outlined" className={classes.card}>
-                  <a  href={data.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={classes.link}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      className={classes.media}
-                      image={data.cover_image}
-                      alt="article blog"
-                    />
-                    <CardContent>
-                      <p className={classes.date}>
-                        {Moment(data.published_at).format("MMMM, Do, YYYY")}
-                      </p>
-                      <h2>{data.title}</h2>
-                      <p>{data.description}</p>
-                      {data.tag_list.map((tag, i) => (
-                        <div key={i} className={classes.tag}>
-                          <span>#{tag}</span>
-                        </div>
-                      ))}
-                    </CardContent>
-                  </CardActionArea>
+                  <a
+                    href={data.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.link}
+                  >
+                    <CardActionArea>
+                      <CardMedia
+                        component="img"
+                        className={classes.media}
+                        image={data.cover_image}
+                        alt="article blog"
+                      />
+                      <CardContent>
+                        <p className={classes.date}>
+                          {Moment(data.published_at).format("MMMM, Do, YYYY")}
+                        </p>
+                        <h2>{data.title}</h2>
+                        <p>{data.description}</p>
+                        {data.tag_list.map((tag, i) => (
+                          <div key={i} className={classes.tag}>
+                            <span>#{tag}</span>
+                          </div>
+                        ))}
+                      </CardContent>
+                    </CardActionArea>
                   </a>
                   <Button color="primary" fullWidth>
                     <a
