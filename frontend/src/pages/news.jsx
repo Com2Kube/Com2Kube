@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     display: "flex",
-    flexGrow: 1,
+    flexGrow: 1
   },
   media: {
     height: 140
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 304,
     marginTop: "5em",
     margin: "auto",
-    boxShadow: "none",
+    boxShadow: "none"
   },
   tag: {
     color: "#fff",
@@ -62,7 +62,6 @@ const News = () => {
       .then((response) => response.json())
       .then((resultData) => {
         setArticles(resultData)
-
       })
   }, [])
 
@@ -72,53 +71,59 @@ const News = () => {
   return (
     <div className={classes.root}>
       <div className={classes.body}>
-      {/* <h2>Latest post</h2> */}
-      <Grid container direction="row" justify="center" alignItems="baseline" spacing={3}>
-        {articles.map((data) => (
-          <Grid key={data.id} item xs container justify="center">
-            <Paper elevation={3} variant="outlined" className={classes.card}>
-              <a
-                href={data.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={classes.link}
-              >
-                <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    className={classes.media}
-                    image={data.cover_image}
-                    alt="article blog"
-                  />
-                  <CardContent>
-                    <p className={classes.date}>
-                      {Moment(data.published_at).format("MMMM, Do, YYYY")}
-                    </p>
-                    <h2>{data.title}</h2>
-                    <p>{data.description}</p>
-                    {data.tag_list.map((tag, i) => (
-                      <div key={i} className={classes.tag}>
-                        <span>#{tag}</span>
-                      </div>
-                    ))}
-                  </CardContent>
-                </CardActionArea>
-              </a>
-              <Button color="primary" fullWidth>
+        {/* <h2>Latest post</h2> */}
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="baseline"
+          spacing={3}
+        >
+          {articles.map((data) => (
+            <Grid key={data.id} item xs container justify="center">
+              <Paper elevation={3} variant="outlined" className={classes.card}>
                 <a
                   href={data.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={classes.link}
                 >
-                  {t("news.findOutMoreLink")}{" "}
-                  <ChevronRightRounded className={classes.icon} />
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      className={classes.media}
+                      image={data.cover_image}
+                      alt="article blog"
+                    />
+                    <CardContent>
+                      <p className={classes.date}>
+                        {Moment(data.published_at).format("MMMM, Do, YYYY")}
+                      </p>
+                      <h2>{data.title}</h2>
+                      <p>{data.description}</p>
+                      {data.tag_list.map((tag, i) => (
+                        <div key={i} className={classes.tag}>
+                          <span>#{tag}</span>
+                        </div>
+                      ))}
+                    </CardContent>
+                  </CardActionArea>
                 </a>
-              </Button>
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
+                <Button color="primary" fullWidth>
+                  <a
+                    href={data.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={classes.link}
+                  >
+                    {t("news.findOutMoreLink")}{" "}
+                    <ChevronRightRounded className={classes.icon} />
+                  </a>
+                </Button>
+              </Paper>
+            </Grid>
+          ))}
+        </Grid>
       </div>
     </div>
   )
