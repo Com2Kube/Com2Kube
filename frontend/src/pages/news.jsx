@@ -71,7 +71,6 @@ const News = () => {
   return (
     <div className={classes.root}>
       <div className={classes.body}>
-        {/* <h2>Latest post</h2> */}
         <Grid
           container
           direction="row"
