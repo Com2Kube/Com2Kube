@@ -71,7 +71,7 @@ const News = () => {
   return (
     <div className={classes.root}>
       <div className={classes.body}>
-        <h2>Latest post</h2>
+        {/* <h2>Latest post</h2> */}
         <Grid container>
           <Grid item xs={12}>
             {articles.map((data) => (
