@@ -5,8 +5,6 @@ import { Alert, AlertTitle } from "@material-ui/lab"
 import { useTranslation } from "react-i18next"
 import SampleFile from "../components/file-sample"
 import FileUpload from "../components/file-upload"
-import StepperSteps from "../components/stepper"
-import Intro from "../components/intro"
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -20,6 +18,7 @@ const useStyles = makeStyles(() => ({
   text: {
     alignItems: "center",
     justifyContent: "center",
+    textAlign: "center",
     margin: "auto",
     padding: "2vh"
   },
@@ -39,9 +38,13 @@ const Index = () => {
         <SampleFile />
       </Alert>
       <Container className={classes.text}>
-        <Intro />
-        <h2>3 simple steps</h2>
-        <StepperSteps />
+        <p>{t("index.introduction")}</p>
+        <p>{t("index.steps")}</p>
+        <ol className={classes.li}>
+          <li>{t("index.step1")}</li>
+          <li>{t("index.step2")}</li>
+          <li>{t("index.step3")}</li>
+        </ol>
         <span>{t("index.disclaimer")}</span>
       </Container>
       <Box m="2rem">

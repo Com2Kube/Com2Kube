@@ -11,6 +11,8 @@ const useStyles = makeStyles(() => ({
     flexGrow: 1,
     width: "100%",
     display: "flex",
+    backgroundColor: "white",
+    boxShadow: "1px 1px 2px #888888;",
     zIndex: "1"
   },
   nameLogo: {

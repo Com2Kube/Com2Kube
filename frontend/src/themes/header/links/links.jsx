@@ -6,22 +6,13 @@ import i18n from "../../../i18n"
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    margin: theme.spacing(1),
-    color: "#274595",
-    fontWeight: "bold"
+    margin: theme.spacing(1)
   },
   navLinks: {
     display: "flex",
     justifyContent: "flex-end",
     flexDirection: "row",
-    minWidth: "1px",
-    color: "#274595"
-  },
-  navText: {
-    fontWeight: "bold",
-    "&:hover": {
-      textDecoration: "underline"
-    }
+    minWidth: "1px"
   }
 }))
 
@@ -41,14 +32,13 @@ const Links = () => {
 
   return (
     <Container className={classes.navLinks}>
-      <Button color="inherit" href="/about" className={classes.navText}>
+      <Button color="inherit" href="/about">
         {t("about.menu")}
       </Button>
-      <Button color="inherit" href="/news" className={classes.navText}>
+      <Button color="inherit" href="/news">
         News
       </Button>
       <Button
-        className={classes.navText}
         color="inherit"
         onClick={() => window.open("https://github.com/CB-GJ/Com2Kube", "_blank")}
       >
