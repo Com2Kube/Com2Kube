@@ -23,11 +23,9 @@ const useStyles = makeStyles((theme) => ({
     height: 140
   },
   body: {
-    body: {
-      margin: theme.spacing(6, 5),
-      minWidth: "10%",
-      padding: theme.spacing(5, 2)
-    }
+    margin: theme.spacing(6, 5),
+    minWidth: "10%",
+    padding: theme.spacing(5, 2)
   },
   card: {
     maxWidth: 304,
@@ -71,7 +69,6 @@ const News = () => {
   return (
     <div className={classes.root}>
       <div className={classes.body}>
-        <h2>Latest post</h2>
         <Grid container>
           <Grid item xs={12}>
             {articles.map((data) => (
