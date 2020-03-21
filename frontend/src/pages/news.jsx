@@ -59,7 +59,7 @@ const News = () => {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
-    fetch(`https://dev.to/api/articles?username=cbun097`)
+    fetch(`https://dev.to/api/articles?username=gabrieljean`)
       .then((response) => response.json())
       .then((resultData) => {
         setArticles(resultData)
@@ -73,11 +73,15 @@ const News = () => {
     <div className={classes.root}>
       <div className={classes.body}>
         {/* <h2>Latest post</h2> */}
-        <Grid container>
+        <Grid container >
           <Grid item xs={12}>
             {articles.map((data) => (
-              <Grid key={data.id}>
+              <Grid key={data.id} direction="row">
                 <Paper elevation={3} variant="outlined" className={classes.card}>
+                  <a  href={data.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={classes.link}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
@@ -98,6 +102,7 @@ const News = () => {
                       ))}
                     </CardContent>
                   </CardActionArea>
+                  </a>
                   <Button color="primary" fullWidth>
                     <a
                       href={data.url}
