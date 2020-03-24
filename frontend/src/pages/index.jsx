@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: "15vh"
+    marginTop: "8vh"
   },
   text: {
     alignItems: "center",
@@ -45,7 +45,7 @@ const Index = () => {
         <span>{t("index.disclaimer")}</span>
       </Container>
       <Box m="2rem">
-        <FileUpload />
+        <FileUpload id="file-upload" />
       </Box>
     </div>
   )

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     flex: "1",
-    width: "auto",
+    width: "100%",
     height: "100%"
   },
   startedBtn: {
@@ -36,7 +36,7 @@ const Intro = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.root} spacing={2} wrap="nowrap">
+      <Grid container className={classes.root} spacing={2} wrap="wrap">
         <Grid item xs={6}>
           <h2>What is Com2kube?</h2>
           <p>{t("index.introduction")}</p>

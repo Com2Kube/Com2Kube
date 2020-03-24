@@ -1,19 +1,27 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
+import IconButton from "@material-ui/core/IconButton"
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward"
 
 const useStyles = makeStyles((theme) => ({
-  buttonTop: {
-    display: "block",
-    height: "300px",
-    width: "300px",
-    borderRaius: "50%",
-    border: "1px solid red"
+  root: {
+    float: "right"
   }
 }))
 
 const ScrollTop = () => {
+  const scrollToTop = () => {
+    document.getElementById("compose_file").scrollIntoView()
+    console.log("scroll to the top")
+  }
   const classes = useStyles()
-  return <button className={classes.buttonTop}>+</button>
+  return (
+    <div className={classes.root}>
+      <IconButton onClick={scrollToTop} aria-label="scroll to the top">
+        <ArrowUpwardIcon style={{ fontSize: 40 }} />
+      </IconButton>
+    </div>
+  )
 }
 
 export default ScrollTop

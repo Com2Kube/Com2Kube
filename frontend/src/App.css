@@ -12,4 +12,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  /* margin: 0 40px; */
+}
+
+.fileUpload {
+  background: "white";
+  border-style: "dotted";
 }
