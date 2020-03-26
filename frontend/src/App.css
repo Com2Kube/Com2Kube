@@ -14,8 +14,3 @@ body {
   justify-content: space-between;
   /* margin: 0 40px; */
 }
-
-.fileUpload {
-  background: "white";
-  border-style: "dotted";
-}

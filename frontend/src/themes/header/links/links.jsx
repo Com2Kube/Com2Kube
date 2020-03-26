@@ -44,8 +44,9 @@ const Links = () => {
       <Button color="inherit" href="/about" className={classes.navText}>
         {t("about.menu")}
       </Button>
-      <Button color="inherit" href="/news" className={classes.navText}>
-        News
+      <Button color="inherit" href="/blog" className={classes.navText}>
+        {/* TODO: update Blog */}
+        Blog
       </Button>
       <Button
         className={classes.navText}
