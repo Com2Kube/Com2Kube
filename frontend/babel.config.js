@@ -1,4 +1,13 @@
 module.exports = {
-  presets: ["@babel/preset-env", "@babel/preset-react"],
-  plugin: ["@babel/transform-react-jsx", "babel-plugin-transform-class-properties"]
+  presets: [
+    [
+      "@babel/preset-env",
+      {
+        targets: {
+          node: "current"
+        }
+      }
+    ]
+  ],
+  plugins: ["transform-es2015-modules-commonjs"]
 }

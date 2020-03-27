@@ -1,8 +1,8 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import App from "../App"
+import NotFound from "../pages/not-found"
 
 it("renders correctly", () => {
-  const wrapper = renderer.create(<App />).toJSON()
+  const wrapper = renderer.create(<NotFound />).toJSON()
   expect(wrapper).toMatchSnapshot()
 })

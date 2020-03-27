@@ -1,9 +1,16 @@
 module.exports = {
-  testPathIgnorePatterns: ["<rootDir>/node_modules"],
-  setupFilesAfterEnv: ["./src/setupTests.js"],
-  moduleFileExtensions: ["js", "jsx"],
+  collectCoverageFrom: ["src/**/*.{js,jsx}"],
+  testMatch: [
+    "<rootDir>/src/__tests__/**/*.{js,jsx}",
+    "<rootDir>/src/**/?(*.)(test).{js,jsx}"
+  ],
   transform: {
-    "^.+\\.jsx?$": "<rootDir>/jest.transform.js"
+    "^.+\\.(js|jsx)$": "<rootDir>/jest-transformer.js"
   },
-  snapshotSerializers: ["enzyme-to-json"]
+  transformIgnorePatterns: ["/node_modules/(?!(react-syntax-highlighter)/)"],
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/src/__mocks__/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/src/__mocks__/styleMock.js"
+  }
 }

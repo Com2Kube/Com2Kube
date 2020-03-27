@@ -1,9 +1,8 @@
 import React from "react"
-import { shallow } from "enzyme"
+import renderer from "react-test-renderer"
 import Index from "../pages/index"
 
 it("renders correctly enzyme", () => {
-  const wrapper = shallow(<Index />)
-
-  expect(toJson(wrapper)).toMatchSnapshot()
+  const wrapper = renderer.create(<Index />).toJSON()
+  expect(wrapper).toMatchSnapshot()
 })
