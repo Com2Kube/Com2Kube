@@ -1,6 +1,7 @@
 # Com2Kube
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![BCH compliance](https://bettercodehub.com/edge/badge/CB-GJ/Com2Kube?branch=master)](https://bettercodehub.com/) ![](https://github.com/CB-GJ/Com2kube/workflows/Build%20Frontend/badge.svg) ![](https://github.com/CB-GJ/Com2kube/workflows/Build%20Backend/badge.svg)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![BCH compliance](https://bettercodehub.com/edge/badge/CB-GJ/Com2Kube?branch=master)](https://bettercodehub.com/)
+![Azure DevOps tests](https://img.shields.io/azure-devops/tests/com2kube/com2kube/5)
 
 This project aims to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
@@ -58,4 +59,3 @@ Thank your for contributing to our project. Please follow our [Contributing docu
 ## Licence
 
 [Apache License](LICENCE.md)
-
