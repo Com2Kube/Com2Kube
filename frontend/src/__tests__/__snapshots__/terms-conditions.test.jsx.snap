@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
+  >
+    Oops..
+  </h2>
+  <h4
+    className="MuiTypography-root MuiTypography-h4"
+  >
+    We can't seem to find the page you're looking for.
+  </h4>
+  <img
+    alt="not found error img"
+    className="makeStyles-img-2"
+    src="test-file-stub"
+  />
+</div>
+`;
