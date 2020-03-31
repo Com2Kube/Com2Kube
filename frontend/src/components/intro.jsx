@@ -43,12 +43,12 @@ const Intro = () => {
           <Alert severity="info">
             <AlertTitle>{t("index.betaTitle")}</AlertTitle>
             {t("index.betaMessage")}
-            <SampleFile />
           </Alert>
           <span>{t("index.disclaimer")}</span>
         </Grid>
         <Grid item xs={6}>
           <img src={FileSyncImg} alt="file sync" className={classes.img} />
+          <SampleFile />
         </Grid>
       </Grid>
     </div>
