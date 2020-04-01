@@ -40,7 +40,15 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-const BlogCard = ({ url, coverImage, publishedDate, title, description, tag }) => {
+const BlogCard = ({
+  url,
+  coverImage,
+  publishedDate,
+  title,
+  description,
+  tag,
+  author
+}) => {
   const { t } = useTranslation()
   const classes = useStyles()
 
@@ -61,6 +69,7 @@ const BlogCard = ({ url, coverImage, publishedDate, title, description, tag }) =
           />
           <CardContent>
             <p className={classes.date}>
+              {author} &bull;&nbsp;
               {Moment(publishedDate).format("MMMM, Do, YYYY")}
             </p>
             <h2>{title}</h2>

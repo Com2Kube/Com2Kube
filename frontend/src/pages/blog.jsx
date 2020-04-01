@@ -24,7 +24,7 @@ const Blog = () => {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
-    fetch(`https://dev.to/api/articles?username=cbun097`)
+    fetch(`https://dev.to/api/articles?username=com2kube`)
       .then((response) => response.json())
       .then((resultData) => {
         setArticles(resultData)
@@ -52,6 +52,7 @@ const Blog = () => {
                 title={data.title}
                 description={data.description}
                 tag={data.tag_list}
+                author={data.user.name}
               />
             </Grid>
           ))}
