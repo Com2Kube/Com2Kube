@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`About renders correctly 1`] = `
 <div
   className="makeStyles-root-1"
 >
@@ -11,14 +11,14 @@ exports[`renders correctly 1`] = `
       className="MuiContainer-root MuiContainer-maxWidthLg"
     >
       <div
-        className="sc-AykKD gDyBzM"
+        className="sc-AxirZ hqBCvD"
       >
         <div
-          className="sc-AykKE bChJxL"
+          className="sc-AxiKw zNChJ"
         >
           <img
             alt="Claire"
-            className="sc-AykKC gSFPIp makeStyles-avatarImg-3"
+            className="sc-AxjAm hQqKtS makeStyles-avatarImg-3"
             src="test-file-stub"
           />
           <span>
@@ -30,11 +30,11 @@ exports[`renders correctly 1`] = `
           </span>
         </div>
         <div
-          className="sc-AykKE bChJxL"
+          className="sc-AxiKw zNChJ"
         >
           <img
             alt="Gab"
-            className="sc-AykKC gSFPIp makeStyles-avatarImg-3"
+            className="sc-AxjAm hQqKtS makeStyles-avatarImg-3"
             src="test-file-stub"
           />
           <span>
@@ -65,10 +65,10 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="makeStyles-container-5"
+      className="MuiGrid-root MuiGrid-container"
     >
       <div
-        className="sc-AykKD gDyBzM"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
       >
         <img
           alt="FAQ"
@@ -77,7 +77,7 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <div
-        className="makeStyles-item-6"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5"
@@ -93,10 +93,10 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="makeStyles-container-5"
+      className="MuiGrid-root MuiGrid-container"
     >
       <div
-        className="makeStyles-item-6"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5"
@@ -111,7 +111,7 @@ exports[`renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="sc-AykKD gDyBzM"
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
       >
         <img
           alt="solution"

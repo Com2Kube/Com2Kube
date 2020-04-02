@@ -1,12 +1,12 @@
 import React from "react"
-import FileSyncImg from "../assets/images/file-sync.svg"
-import { makeStyles } from "@material-ui/core/styles"
 import { useTranslation } from "react-i18next"
+import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import SampleFile from "../components/file-sample"
 import { Alert, AlertTitle } from "@material-ui/lab"
+import FileSyncImg from "../assets/images/file-sync.svg"
+import SampleFile from "./file-sample"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1
   },

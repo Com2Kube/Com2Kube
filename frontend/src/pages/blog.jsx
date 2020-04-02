@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import BlogCard from "../components/blog-card"
 import { Grid } from "@material-ui/core"
+import BlogCard from "../components/blog-card"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,6 +24,7 @@ const Blog = () => {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
+    // TODO: update to axios
     fetch(`https://dev.to/api/articles?username=com2kube`)
       .then((response) => response.json())
       .then((resultData) => {

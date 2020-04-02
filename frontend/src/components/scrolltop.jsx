@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import IconButton from "@material-ui/core/IconButton"
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     float: "right"
   }
@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 const ScrollTop = () => {
   const scrollToTop = () => {
     document.getElementById("compose_file").scrollIntoView()
-    console.log("scroll to the top")
   }
   const classes = useStyles()
   return (

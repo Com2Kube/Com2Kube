@@ -11,7 +11,7 @@ import {
 import ChevronRightRounded from "@material-ui/icons/ChevronRightRounded"
 import Moment from "moment"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   media: {
     height: 140
   },
@@ -74,9 +74,9 @@ const BlogCard = ({
             </p>
             <h2>{title}</h2>
             <p>{description}</p>
-            {tag.map((tag, i) => (
+            {tag.map((tagDev, i) => (
               <div key={i} className={classes.tag}>
-                <span>#{tag}</span>
+                <span>#{tagDev}</span>
               </div>
             ))}
           </CardContent>

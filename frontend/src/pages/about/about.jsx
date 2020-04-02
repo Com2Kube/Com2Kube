@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { useTranslation } from "react-i18next"
-import { Typography, Container, Grid, Paper } from "@material-ui/core"
+import { Typography, Container, Grid } from "@material-ui/core"
 import faq from "../../assets/images/faq.svg"
 import solution from "../../assets/images/solution.svg"
 import claire from "../../assets/images/claire.png"

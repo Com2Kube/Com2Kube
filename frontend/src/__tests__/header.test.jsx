@@ -1,10 +1,10 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import NotFound from "../pages/not-found"
+import Header from "../themes/header/header"
 
-describe("Not Found", () => {
+describe("Header", () => {
   it("renders correctly", () => {
-    const wrapper = renderer.create(<NotFound />).toJSON()
+    const wrapper = renderer.create(<Header />).toJSON()
     expect(wrapper).toMatchSnapshot()
   })
 })

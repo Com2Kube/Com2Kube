@@ -1,10 +1,10 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import NotFound from "../pages/not-found"
+import Footer from "../themes/footer/footer"
 
-describe("Not Found", () => {
+describe("Footer", () => {
   it("renders correctly", () => {
-    const wrapper = renderer.create(<NotFound />).toJSON()
+    const wrapper = renderer.create(<Footer />).toJSON()
     expect(wrapper).toMatchSnapshot()
   })
 })
