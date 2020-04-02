@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <footer
+    className="makeStyles-footer-2"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-5"
+      variant="body1"
+    >
+      <div
+        className="sc-AxjAm exFmnX"
+      >
+        <a
+          aria-current={null}
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-3 MuiTypography-colorTextSecondary"
+          href="/privacy-policy"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          footer.policy
+        </a>
+        <a
+          aria-current={null}
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-3 MuiTypography-colorTextSecondary"
+          href="/terms-and-conditions"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+        >
+          footer.terms
+        </a>
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-navLink-3 MuiTypography-colorTextSecondary"
+          href="https://github.com/CB-GJ/Com2Kube"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          Github
+        </a>
+      </div>
+    </div>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+      m={0.2}
+    >
+      Version: 0.3.0
+    </p>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      Copyright© 
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+        href="/"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        ~ Com2Kube 
+      </a>
+      2020
+    </p>
+  </footer>
+</div>
+`;
