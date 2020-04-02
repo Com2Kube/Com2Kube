@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Privacy renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="MuiContainer-root makeStyles-body-2 MuiContainer-maxWidthLg"
+  >
+    <h4
+      className="MuiTypography-root MuiTypography-h4 MuiTypography-alignCenter"
+    >
+      privacy.privacyHeader
+    </h4>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.introTitle
+    </h5>
+    <p>
+      privacy.introText1
+    </p>
+    <p>
+      privacy.introText2
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.websiteTitle
+    </h5>
+    <p>
+      privacy.websiteText1
+    </p>
+    <p>
+      privacy.websiteText2
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.personalInfoTitle
+    </h5>
+    <p>
+      privacy.personalText1
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.securityTitle
+    </h5>
+    <p>
+      privacy.securityText1
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.advertisementsTitle
+    </h5>
+    <p>
+      privacy.advertisementsText1
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.externalSitesTitle
+    </h5>
+    <p>
+      privacy.externalSitesText1
+    </p>
+    <p>
+      privacy.externalSitesText2
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.statsTitle
+    </h5>
+    <p>
+      privacy.statsText
+    </p>
+    <h5
+      className="MuiTypography-root MuiTypography-h5"
+    >
+      privacy.privacyTitle
+    </h5>
+    <p>
+      privacy.privacyText
+    </p>
+  </div>
+</div>
+`;

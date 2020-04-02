@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders correctly 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="makeStyles-body-2"
+  >
+    <div
+      className="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        className="sc-AxirZ hqBCvD"
+      >
+        <div
+          className="sc-AxiKw zNChJ"
+        >
+          <img
+            alt="Claire"
+            className="sc-AxjAm hQqKtS makeStyles-avatarImg-3"
+            src="test-file-stub"
+          />
+          <span>
+            <b>
+              Claire
+            </b>
+             • 
+            about.frontendDev
+          </span>
+        </div>
+        <div
+          className="sc-AxiKw zNChJ"
+        >
+          <img
+            alt="Gab"
+            className="sc-AxjAm hQqKtS makeStyles-avatarImg-3"
+            src="test-file-stub"
+          />
+          <span>
+            <b>
+              Gabriel
+            </b>
+             • 
+            about.backendDev
+          </span>
+        </div>
+      </div>
+      <h4
+        className="MuiTypography-root MuiTypography-h4 MuiTypography-alignJustify"
+      >
+        about.teamHeader
+      </h4>
+      <p>
+        about.item1
+      </p>
+      <p>
+        about.item2
+      </p>
+      <p>
+        about.item3
+      </p>
+      <p>
+        about.item4
+      </p>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <img
+          alt="FAQ"
+          className="makeStyles-img-4"
+          src="test-file-stub"
+        />
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          about.faq1
+        </h5>
+        <p>
+          about.faq1Text1
+        </p>
+        <p>
+          about.faq1Text2
+        </p>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-container"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+      >
+        <h5
+          className="MuiTypography-root MuiTypography-h5"
+        >
+          about.faq2
+        </h5>
+        <p>
+          about.faq2Text1
+        </p>
+        <p>
+          about.faq2Text2
+        </p>
+      </div>
+      <div
+        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <img
+          alt="solution"
+          className="makeStyles-img-4"
+          src="test-file-stub"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

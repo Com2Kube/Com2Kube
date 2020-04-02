@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog renders correctly enzyme 1`] = `
+<div
+  className="makeStyles-root-1"
+>
+  <div
+    className="makeStyles-body-3"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    />
+  </div>
+</div>
+`;

@@ -20,6 +20,7 @@ class SampleFile extends React.Component {
 
   getFileSample() {
     const urlApi = `/api/sample`
+    // TODO: update to axios
     fetch(urlApi).then((response) => {
       response
         .blob()

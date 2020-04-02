@@ -1,20 +1,19 @@
 import React from "react"
-import FileSyncImg from "../assets/images/file-sync.svg"
-import { makeStyles } from "@material-ui/core/styles"
 import { useTranslation } from "react-i18next"
+import { makeStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
-import Paper from "@material-ui/core/Paper"
-// import overlayImg from "../assets/illustrations/overlay.svg"
+import { Alert, AlertTitle } from "@material-ui/lab"
+import FileSyncImg from "../assets/images/file-sync.svg"
+import SampleFile from "./file-sample"
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1
-    // backgroundImage: `url(${overlayImg})`
   },
   img: {
     flex: "1",
-    width: "auto",
-    height: "100%"
+    width: "75%",
+    height: "70%"
   },
   startedBtn: {
     padding: "18px 36px",
@@ -36,15 +35,20 @@ const Intro = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.root} spacing={2} wrap="nowrap">
+      <Grid container className={classes.root} spacing={2} wrap="wrap">
         <Grid item xs={6}>
           <h2>What is Com2kube?</h2>
           <p>{t("index.introduction")}</p>
           <p>{t("index.steps")}</p>
-          <button className={classes.startedBtn}>Get Started</button>
+          <Alert severity="info">
+            <AlertTitle>{t("index.betaTitle")}</AlertTitle>
+            {t("index.betaMessage")}
+          </Alert>
+          <span>{t("index.disclaimer")}</span>
         </Grid>
         <Grid item xs={6}>
           <img src={FileSyncImg} alt="file sync" className={classes.img} />
+          <SampleFile />
         </Grid>
       </Grid>
     </div>

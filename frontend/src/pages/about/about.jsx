@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { useTranslation } from "react-i18next"
-import { Typography, Container } from "@material-ui/core"
+import { Typography, Container, Grid } from "@material-ui/core"
 import faq from "../../assets/images/faq.svg"
 import solution from "../../assets/images/solution.svg"
 import claire from "../../assets/images/claire.png"
@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: theme.spacing(2)
+    padding: theme.spacing(2),
+    flexGrow: 1
   },
   body: {
     margin: theme.spacing(6, 3),
@@ -84,26 +85,26 @@ const About = () => {
           <p>{t("about.item3")}</p>
           <p>{t("about.item4")}</p>
         </Container>
-        <div className={classes.container}>
-          <AvatarCenter>
+        <Grid container>
+          <Grid item xs={4}>
             <img src={faq} className={classes.img} alt="FAQ" />
-          </AvatarCenter>
-          <div className={classes.item}>
+          </Grid>
+          <Grid item xs={7}>
             <Typography variant="h5">{t("about.faq1")}</Typography>
             <p>{t("about.faq1Text1")}</p>
             <p>{t("about.faq1Text2")}</p>
-          </div>
-        </div>
-        <div className={classes.container}>
-          <div className={classes.item}>
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={7}>
             <Typography variant="h5">{t("about.faq2")}</Typography>
             <p>{t("about.faq2Text1")}</p>
             <p>{t("about.faq2Text2")}</p>
-          </div>
-          <AvatarCenter>
+          </Grid>
+          <Grid item xs={4}>
             <img src={solution} className={classes.img} alt="solution" />
-          </AvatarCenter>
-        </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   )

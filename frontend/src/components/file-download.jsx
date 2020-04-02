@@ -20,6 +20,7 @@ class FileDownload extends React.Component {
     // eslint-disable-next-line react/destructuring-assignment
     const data = this.props.posts
     const urlApi = `/api/download`
+    // TODO: update to axios
     fetch(urlApi, {
       method: "POST",
       body: data,

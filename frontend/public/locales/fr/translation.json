@@ -6,7 +6,7 @@
     "steps": "Vous pouvez effectuer la conversion du fichier docker-compose en trois étapes faciles:",
     "step1": "1. Cliquez sur le bouton 'Choose File'.",
     "step2": "2. Sélectionnez votre fichier docker-compose.yml.",
-    "step3": "3. Appuyez sur 'Soumettre' afin de convertir votre fichier et d'obtenir le résultat.",
+    "step3": "3. Soumettre",
     "disclaimer": "Avertissement: Nous sauvegardons aucun de vos fichiers soumis."
   },
   "fileUpload": {

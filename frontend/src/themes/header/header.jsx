@@ -7,11 +7,8 @@ import Links from "./links/links"
 
 const useStyles = makeStyles(() => ({
   root: {
-    position: "fixed",
-    flexGrow: 1,
     width: "100%",
-    display: "flex",
-    zIndex: "1"
+    display: "flex"
   },
   nameLogo: {
     display: "flex",

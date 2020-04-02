@@ -6,8 +6,13 @@ import { withTranslation } from "react-i18next"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 import FileDownload from "./file-download"
+import ScrollTop from "./scrolltop"
 
 const useStyles = () => ({
+  root: {
+    background: "white",
+    borderStyle: "dotted"
+  },
   form: {
     width: "100%",
     display: "flex",
@@ -112,9 +117,11 @@ class FileUpload extends React.Component {
             {!isLoading ? (
               <div className={classes.container}>
                 <FileDownload posts={posts} />
+
                 <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
                 </SyntaxHighlighter>
+                <ScrollTop />
               </div>
             ) : (
               // eslint-disable-next-line react/self-closing-comp
