@@ -4,3 +4,4 @@ build
 /src/__mocks__/
 /src/__tests__/
 jest-transformer.js
+/src/setupTests.js
