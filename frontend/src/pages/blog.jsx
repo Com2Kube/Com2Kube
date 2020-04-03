@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
+import axios from "axios"
 import { Grid } from "@material-ui/core"
 import BlogCard from "../components/blog-card"
 
@@ -24,13 +25,18 @@ const Blog = () => {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
-    // TODO: update to axios
-    fetch(`https://dev.to/api/articles?username=com2kube`)
-      .then((response) => response.json())
-      .then((resultData) => {
-        setArticles(resultData)
-      })
+    getDataDevTo()
   }, [])
+
+  async function getDataDevTo() {
+    const url = `https://dev.to/api/articles?username=com2kube`
+    try {
+      const response = await axios.get(url)
+      setArticles(response.data)
+    } catch (error) {
+      console.error(error)
+    }
+  }
 
   const classes = useStyles()
 
