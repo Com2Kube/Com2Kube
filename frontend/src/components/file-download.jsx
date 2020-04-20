@@ -5,6 +5,13 @@ import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
 
+const useStyles = () => ({
+  root: {
+    display: "flex",
+    justifyContent: "flex-end"
+  }
+})
+
 class FileDownload extends React.Component {
   constructor(props) {
     super(props)
@@ -50,19 +57,19 @@ class FileDownload extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
+    const classes = useStyles()
     return (
-      <div>
-        <Button
-          variant="outlined"
-          color="primary"
-          type="submit"
-          alt="download docker-compose"
-          onClick={this.getFileDownload}
-          startIcon={<GetAppRoundedIcon />}
-        >
-          {t("fileDownload.downloadFileBtn")}
-        </Button>
-      </div>
+      <Button
+        variant="outlined"
+        color="primary"
+        type="submit"
+        alt="download docker-compose"
+        fullWidth={true}
+        onClick={this.getFileDownload}
+        startIcon={<GetAppRoundedIcon />}
+      >
+        {t("fileDownload.downloadFileBtn")}
+      </Button>
     )
   }
 }

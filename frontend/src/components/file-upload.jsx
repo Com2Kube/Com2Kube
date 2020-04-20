@@ -20,6 +20,11 @@ const useStyles = () => ({
   },
   container: {
     margin: "10px"
+  },
+  toRight: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-end"
   }
 })
 
@@ -77,7 +82,7 @@ class FileUpload extends React.Component {
 
   gaEvent() {
     ReactGA.event({
-      category: "Sumbit",
+      category: "Submit",
       action: "Submitted a Docker-Compose File"
     })
   }
@@ -102,6 +107,9 @@ class FileUpload extends React.Component {
               required={true}
               onChange={this.onChange}
             />
+            <p style={{ color: "#707070", fontSize: "14px" }}>
+              {t("index.disclaimer")}
+            </p>
             <Box m={2}>
               <Button
                 type="submit"
@@ -116,8 +124,7 @@ class FileUpload extends React.Component {
           <Container>
             {!isLoading ? (
               <div className={classes.container}>
-                <FileDownload posts={posts} />
-
+                <FileDownload posts={posts} className={classes.toRight} />
                 <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
                 </SyntaxHighlighter>

@@ -1,31 +1,33 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
 import { makeStyles } from "@material-ui/core/styles"
-import Grid from "@material-ui/core/Grid"
+import { Container, Box } from "@material-ui/core"
 import { Alert, AlertTitle } from "@material-ui/lab"
-import FileSyncImg from "../assets/images/file-sync.svg"
 import SampleFile from "./file-sample"
+import StepperSteps from "./stepper"
 
 const useStyles = makeStyles(() => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    flexDirection: "row",
+    width: "100%"
+  },
+  row: {
+    display: "flex",
+    flexDirection: "row"
+  },
+  col: {
+    display: "flex",
+    flexDirection: "column"
   },
   img: {
     flex: "1",
     width: "75%",
     height: "70%"
   },
-  startedBtn: {
-    padding: "18px 36px",
-    borderRadius: "61px",
-    boxShadow: "inset 0 0 0 2px #474E51",
-    transition:
-      "300ms box-shadow cubic-bezier(0.4, 0, 0.6, 1), 300ms background-color cubic-bezier(0.4, 0, 0.6, 1) 300ms color cubic-bezier(0.4, 0, 0.6, 1)",
-    color: "#474E51",
-    "&:hover": {
-      boxShadow: "inset 0 0 0 4px #5778F3",
-      color: "#5778F3"
-    }
+  downloadBtn: {
+    marginTop: "2rem",
+    marginBottom: "2rem"
   }
 }))
 
@@ -35,22 +37,19 @@ const Intro = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container className={classes.root} spacing={2} wrap="wrap">
-        <Grid item xs={6}>
-          <h2>What is Com2kube?</h2>
-          <p>{t("index.introduction")}</p>
-          <p>{t("index.steps")}</p>
-          <Alert severity="info">
-            <AlertTitle>{t("index.betaTitle")}</AlertTitle>
-            {t("index.betaMessage")}
-          </Alert>
-          <span>{t("index.disclaimer")}</span>
-        </Grid>
-        <Grid item xs={6}>
-          <img src={FileSyncImg} alt="file sync" className={classes.img} />
+      <Container className={classes.col} maxWidth="md">
+        <Alert severity="info">
+          <AlertTitle>{t("index.betaTitle")}</AlertTitle>
+          {t("index.betaMessage")}
+        </Alert>
+        <h2>What is Com2kube?</h2>
+        <p>{t("index.introduction")}</p>
+        <p>{t("index.steps")}</p>
+        <StepperSteps />
+        <Box className={classes.downloadBtn}>
           <SampleFile />
-        </Grid>
-      </Grid>
+        </Box>
+      </Container>
     </div>
   )
 }
