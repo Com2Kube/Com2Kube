@@ -20,11 +20,6 @@ const useStyles = () => ({
   },
   container: {
     margin: "10px"
-  },
-  toRight: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-end"
   }
 })
 
@@ -124,7 +119,7 @@ class FileUpload extends React.Component {
           <Container>
             {!isLoading ? (
               <div className={classes.container}>
-                <FileDownload posts={posts} className={classes.toRight} />
+                <FileDownload posts={posts} />
                 <SyntaxHighlighter language="yaml" style={atomDark}>
                   {posts}
                 </SyntaxHighlighter>

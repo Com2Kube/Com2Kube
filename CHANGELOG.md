@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## Beta: 0.2.1 - 2020-04-22
+
+### Added
+
+- Scroll to the top feature
+- Unit Test for pages
+- Blog section
+- Stepper component
+
+### Bug Fixes
+
+- Mobile responsiveness
+- Translation for french
+
+### Updates
+
+- Landing page layout
+- Header and footer layout
+- Use all Axios Request from Fetch requests
+- Header content
+
 ## Beta: 0.2.1 - 2020-02-06
 
 ### Bug Fixes
