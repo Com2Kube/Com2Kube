@@ -24,19 +24,20 @@ const useStyles = makeStyles((theme) => ({
 const Blog = () => {
   const [articles, setArticles] = useState([])
 
-  useEffect(() => {
-    getDataDevTo()
-  }, [])
-
   async function getDataDevTo() {
     const url = `https://dev.to/api/articles?username=com2kube`
     try {
       const response = await axios.get(url)
       setArticles(response.data)
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error)
     }
   }
+
+  useEffect(() => {
+    getDataDevTo()
+  }, [])
 
   const classes = useStyles()
 

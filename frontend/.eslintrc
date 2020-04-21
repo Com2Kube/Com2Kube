@@ -12,6 +12,7 @@
     "document": true,
     "foo": true,
     "window": true,
+    "Blob": true,
     "fetch": false
   },
   "rules": {

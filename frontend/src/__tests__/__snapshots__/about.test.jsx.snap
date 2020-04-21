@@ -65,10 +65,10 @@ exports[`About renders correctly 1`] = `
       </p>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-container"
+      className="makeStyles-container-5"
     >
       <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+        className="sc-AxirZ hqBCvD"
       >
         <img
           alt="FAQ"
@@ -77,7 +77,7 @@ exports[`About renders correctly 1`] = `
         />
       </div>
       <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+        className="makeStyles-item-6"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5"
@@ -93,10 +93,10 @@ exports[`About renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="MuiGrid-root MuiGrid-container"
+      className="makeStyles-container-5"
     >
       <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+        className="makeStyles-item-6"
       >
         <h5
           className="MuiTypography-root MuiTypography-h5"
@@ -111,7 +111,7 @@ exports[`About renders correctly 1`] = `
         </p>
       </div>
       <div
-        className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+        className="sc-AxirZ hqBCvD"
       >
         <img
           alt="solution"

@@ -8,9 +8,7 @@ const useStyles = makeStyles(() => ({
   root: {
     width: "100%",
     display: "flex",
-    flexDirection: "column",
-    paddingTop: "100px",
-    position: "absolute"
+    flexDirection: "column"
   }
 }))
 

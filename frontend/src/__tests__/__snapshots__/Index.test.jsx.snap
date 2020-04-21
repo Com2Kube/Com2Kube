@@ -5,67 +5,121 @@ exports[`Index renders correctly enzyme 1`] = `
   className="makeStyles-root-1"
 >
   <div
-    className="MuiContainer-root makeStyles-text-2 MuiContainer-maxWidthLg"
+    className="MuiContainer-root MuiContainer-maxWidthLg"
   >
     <div
-      className="makeStyles-root-12"
+      className="makeStyles-root-10"
     >
       <div
-        className="MuiGrid-root makeStyles-root-12 MuiGrid-container MuiGrid-spacing-xs-2"
+        className="MuiContainer-root makeStyles-col-12 MuiContainer-maxWidthMd"
       >
         <div
-          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+          className="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
+          role="alert"
         >
-          <h2>
-            What is Com2kube?
-          </h2>
-          <p>
-            index.introduction
-          </p>
-          <p>
-            index.steps
-          </p>
           <div
-            className="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
-            role="alert"
+            className="MuiAlert-icon"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
+              />
+            </svg>
+          </div>
+          <div
+            className="MuiAlert-message"
           >
             <div
-              className="MuiAlert-icon"
+              className="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+            >
+              index.betaTitle
+            </div>
+            index.betaMessage
+          </div>
+        </div>
+        <h2>
+          What is Com2kube?
+        </h2>
+        <p>
+          index.introduction
+        </p>
+        <p>
+          index.steps
+        </p>
+        <nav
+          aria-label="breadcrumb"
+          className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+        >
+          <ol
+            className="MuiBreadcrumbs-ol"
+          >
+            <li
+              className="MuiBreadcrumbs-li"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+              >
+                index.step1
+              </p>
+            </li>
+            <li
+              aria-hidden={true}
+              className="MuiBreadcrumbs-separator"
             >
               <svg
                 aria-hidden="true"
-                className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                 />
               </svg>
-            </div>
-            <div
-              className="MuiAlert-message"
+            </li>
+            <li
+              className="MuiBreadcrumbs-li"
             >
-              <div
-                className="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
               >
-                index.betaTitle
-              </div>
-              index.betaMessage
-            </div>
-          </div>
-          <span>
-            index.disclaimer
-          </span>
-        </div>
+                index.step2
+              </p>
+            </li>
+            <li
+              aria-hidden={true}
+              className="MuiBreadcrumbs-separator"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                />
+              </svg>
+            </li>
+            <li
+              className="MuiBreadcrumbs-li"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+              >
+                index.step3
+              </p>
+            </li>
+          </ol>
+        </nav>
         <div
-          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+          className="MuiBox-root MuiBox-root-104 makeStyles-downloadBtn-14"
         >
-          <img
-            alt="file sync"
-            className="makeStyles-img-13"
-            src="test-file-stub"
-          />
           <div
             className={
               Object {
@@ -116,75 +170,9 @@ exports[`Index renders correctly enzyme 1`] = `
         </div>
       </div>
     </div>
-    <nav
-      aria-label="breadcrumb"
-      className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"
-    >
-      <ol
-        className="MuiBreadcrumbs-ol"
-      >
-        <li
-          className="MuiBreadcrumbs-li"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
-          >
-            index.step1
-          </p>
-        </li>
-        <li
-          aria-hidden={true}
-          className="MuiBreadcrumbs-separator"
-        >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-            />
-          </svg>
-        </li>
-        <li
-          className="MuiBreadcrumbs-li"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
-          >
-            index.step2
-          </p>
-        </li>
-        <li
-          aria-hidden={true}
-          className="MuiBreadcrumbs-separator"
-        >
-          <svg
-            aria-hidden="true"
-            className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-            />
-          </svg>
-        </li>
-        <li
-          className="MuiBreadcrumbs-li"
-        >
-          <p
-            className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
-          >
-            index.step3
-          </p>
-        </li>
-      </ol>
-    </nav>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-239"
+    className="MuiBox-root MuiBox-root-137"
   >
     <div>
       <form
@@ -218,8 +206,18 @@ exports[`Index renders correctly enzyme 1`] = `
               type="file"
             />
           </div>
+          <p
+            style={
+              Object {
+                "color": "#707070",
+                "fontSize": "14px",
+              }
+            }
+          >
+            index.disclaimer
+          </p>
           <div
-            className="MuiBox-root MuiBox-root-272"
+            className="MuiBox-root MuiBox-root-273"
           >
             <button
               alt="convert button"

@@ -5,13 +5,6 @@ import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
 
-const useStyles = () => ({
-  root: {
-    display: "flex",
-    justifyContent: "flex-end"
-  }
-})
-
 class FileDownload extends React.Component {
   constructor(props) {
     super(props)
@@ -31,7 +24,7 @@ class FileDownload extends React.Component {
     axios({
       url: urlApi,
       method: "POST",
-      data: data,
+      data,
       responseType: "blob",
       headers: {
         "Content-Type": "text/plain"
@@ -57,7 +50,6 @@ class FileDownload extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const { t } = this.props
-    const classes = useStyles()
     return (
       <Button
         variant="outlined"
