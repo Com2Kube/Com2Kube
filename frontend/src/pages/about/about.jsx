@@ -25,23 +25,21 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     flex: "1",
-    width: "90%",
+    width: "350px",
     height: "100%",
     margin: theme.spacing(2),
-    padding: theme.spacing(2),
-    marginLeft: theme.spacing(3)
+    padding: theme.spacing(2)
   },
   container: {
     display: "flex",
     flexDirection: "row",
-    flexWrap: "wrap",
-    margin: theme.spacing(5, 0)
+    flexWrap: "wrap"
   },
   item: {
     flexGrow: 3,
     display: "flex",
     flexDirection: "column",
-    width: "500px",
+    width: "200px",
     margin: theme.spacing(5),
     padding: theme.spacing(4)
   }
