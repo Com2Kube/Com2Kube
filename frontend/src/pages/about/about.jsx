@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(5, 4)
   },
   img: {
-    flex: "1",
     width: "350px",
     height: "100%",
     margin: theme.spacing(2),
