@@ -7,13 +7,13 @@
     "step1": "1. Cliquez sur le bouton 'Choose File'.",
     "step2": "2. Sélectionnez votre fichier docker-compose.yml.",
     "step3": "3. Soumettre",
-    "disclaimer": "Avertissement: Nous sauvegardons aucun de vos fichiers soumis."
+    "disclaimer": "Avertissement: Nous ne sauvegardons aucun de vos fichiers soumis."
   },
   "fileUpload": {
     "submitBtn": "Soumettre"
   },
   "fileSample": {
-    "downloadBtn": "Télécharger un docker-compose.yml"
+    "downloadBtn": "Télécharger un échantillon"
   },
   "fileDownload": {
     "downloadFileBtn": "Télécharger le fichier converti"

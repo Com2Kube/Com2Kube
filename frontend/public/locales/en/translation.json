@@ -2,9 +2,9 @@
   "index": {
     "betaTitle": "Beta Version",
     "betaMessage": "Please note that this is a beta version.",
-    "introduction": " The purpose of this application is to make your job easier when it comes to converting your docker-compose files into Kubernetes objects. This is the reason why we wanted to create an online tool to get your file back easily.",
+    "introduction": " The purpose of this application is to make your job easier when it comes to converting your docker-compose files into Kubernetes objects.",
     "steps": "You can convert your docker-compose files into three simple steps:",
-    "step1": "1. Click on the 'Choose File'.",
+    "step1": "1. Click on the 'Choose File' button.",
     "step2": "2. Select your docker-compose.yml file.",
     "step3": "3. Submit",
     "disclaimer": "Disclaimer: We do not save any of your docker-compose files submitted."
@@ -14,7 +14,7 @@
     "submitBtn": "Submit"
   },
   "fileSample": {
-    "downloadBtn": "Download a docker-compose.yml"
+    "downloadBtn": "Download a sample file"
   },
   "fileDownload": {
     "downloadFileBtn": "Download converted file"
