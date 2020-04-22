@@ -2,11 +2,12 @@
   "index": {
     "betaTitle": "Beta Version",
     "betaMessage": "Please note that this is a beta version.",
+    "indexTitle": "What is Com2kube?",
     "introduction": " The purpose of this application is to make your job easier when it comes to converting your docker-compose files into Kubernetes objects.",
     "steps": "You can convert your docker-compose files into three simple steps:",
     "step1": "1. Click on the 'Choose File' button.",
     "step2": "2. Select your docker-compose.yml file.",
-    "step3": "3. Press submit to convert your docker-compose into a Kubernetes file and get the result.",
+    "step3": "3. Submit",
     "disclaimer": "Disclaimer: We do not save any of your docker-compose files submitted."
   },
   "fileUpload": {
@@ -14,15 +15,16 @@
     "submitBtn": "Submit"
   },
   "fileSample": {
-    "downloadBtn": "Download a docker-compose.yml"
+    "downloadBtn": "Download a sample file",
+    "sampleLabel": "You can use it to try out Com2kube!"
   },
   "fileDownload": {
     "downloadFileBtn": "Download converted file"
   },
   "about": {
     "teamHeader": "The Team",
-    "backendDev": "backend/devops developer",
-    "frontendDev": "frontend developer",
+    "backendDev": "Backend/DevOps developer",
+    "frontendDev": "Frontend developer",
     "menu": "About",
     "item1": "Hey all!",
     "item2": "We would like to present to you the first project that we built. It's something that we've been working on for our personal development and we hope that you will like our project as much as we do.",

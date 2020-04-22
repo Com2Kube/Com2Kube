@@ -4,6 +4,10 @@ export const Logo = styled.img`
   width: 5%;
   margin: 1em;
 
+  @media (max-width: 320px) {
+    display: none;
+  }
+
   @media (min-width: 100px) {
     width: 9vw;
     margin: 0.5em;
@@ -31,7 +35,7 @@ export const Logo = styled.img`
 `
 
 export const Name = styled.div`
-  @media (max-width: 388px) {
+  @media (max-width: 460px) {
     display: none;
   }
 `

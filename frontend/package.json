@@ -19,7 +19,7 @@
     "react-ga": "^2.7.0",
     "react-i18next": "^11.2.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.0",
     "react-syntax-highlighter": "^12.2.1",
     "styled-components": "^5.0.0"
   },
@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
+    "test:watch": "jest --watch",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx --ext .js .",
     "lint:fix": "eslint --fix .",

@@ -1,19 +1,14 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Container, Link } from "@material-ui/core"
-import logoCom2kube from "../../assets/images/logo_transparent.png"
+import logoCom2kube from "../../assets/images/logo_transparent-removebg-preview.png"
 import { Logo, Name } from "./style"
 import Links from "./links/links"
 
 const useStyles = makeStyles(() => ({
   root: {
-    position: "fixed",
-    flexGrow: 1,
     width: "100%",
-    display: "flex",
-    backgroundColor: "white",
-    boxShadow: "1px 1px 2px #888888;",
-    zIndex: "1"
+    display: "flex"
   },
   nameLogo: {
     display: "flex",

@@ -3,6 +3,7 @@ import ReactGA from "react-ga"
 import { Button } from "@material-ui/core"
 import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
+import axios from "axios"
 
 const useStyles = () => ({
   root: {
@@ -20,20 +21,17 @@ class SampleFile extends React.Component {
 
   getFileSample() {
     const urlApi = `/api/sample`
-    fetch(urlApi).then((response) => {
-      response
-        .blob()
-        .then((blob) => {
-          const url = window.URL.createObjectURL(blob)
-          const a = document.createElement("a")
-          a.href = url
-          a.download = "docker-compose.yml"
-          a.click()
-        })
-        .catch((error) => {
-          // eslint-disable-next-line no-console
-          console.error(error)
-        })
+    axios({
+      url: urlApi,
+      method: "GET",
+      responseType: "blob"
+    }).then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response.data]))
+      const link = document.createElement("a")
+      link.href = url
+      link.setAttribute("download", "docker-compose.yml")
+      document.body.appendChild(link)
+      link.click()
     })
     this.gaEvent()
   }
@@ -61,6 +59,10 @@ class SampleFile extends React.Component {
         >
           {t("fileSample.downloadBtn")}
         </Button>
+
+        <p style={{ marginTop: 5, color: "#707070", fontSize: "14px" }}>
+          {t("fileSample.sampleLabel")}
+        </p>
       </div>
     )
   }

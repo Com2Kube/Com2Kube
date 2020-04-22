@@ -1,115 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly enzyme 1`] = `
+exports[`Index renders correctly enzyme 1`] = `
 <div
   className="makeStyles-root-1"
 >
   <div
-    className="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
-    role="alert"
+    className="MuiContainer-root MuiContainer-maxWidthLg"
   >
     <div
-      className="MuiAlert-icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
-        focusable="false"
-        role="presentation"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
-        />
-      </svg>
-    </div>
-    <div
-      className="MuiAlert-message"
+      className="makeStyles-root-11"
     >
       <div
-        className="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+        className="MuiContainer-root makeStyles-col-13 MuiContainer-maxWidthMd"
       >
-        index.betaTitle
-      </div>
-      index.betaMessage
-      <div
-        className={
-          Object {
-            "margin": "1.2rem",
-          }
-        }
-      >
-        <button
-          alt="download docker-compose"
-          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
-          disabled={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={0}
-          type="submit"
+        <div
+          className="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
+          role="alert"
         >
-          <span
-            className="MuiButton-label"
+          <div
+            className="MuiAlert-icon"
           >
-            <span
-              className="MuiButton-startIcon MuiButton-iconSizeMedium"
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20, 12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10, 10 0 0,0 12,2M11,17H13V11H11V17Z"
+              />
+            </svg>
+          </div>
+          <div
+            className="MuiAlert-message"
+          >
+            <div
+              className="MuiTypography-root MuiAlertTitle-root MuiTypography-body1 MuiTypography-gutterBottom"
+            >
+              index.betaTitle
+            </div>
+            index.betaMessage
+          </div>
+        </div>
+        <h2>
+          index.indexTitle
+        </h2>
+        <p>
+          index.introduction
+        </p>
+        <p>
+          index.steps
+        </p>
+        <nav
+          aria-label="breadcrumb"
+          className="MuiTypography-root MuiBreadcrumbs-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+        >
+          <ol
+            className="MuiBreadcrumbs-ol"
+          >
+            <li
+              className="MuiBreadcrumbs-li"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+              >
+                index.step1
+              </p>
+            </li>
+            <li
+              aria-hidden={true}
+              className="MuiBreadcrumbs-separator"
             >
               <svg
                 aria-hidden="true"
-                className="MuiSvgIcon-root"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
                 focusable="false"
-                role="presentation"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16.59 9H15V4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v5H7.41c-.89 0-1.34 1.08-.71 1.71l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.63-.63.19-1.71-.7-1.71zM5 19c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1z"
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                 />
               </svg>
-            </span>
-            fileSample.downloadBtn
-          </span>
-        </button>
+            </li>
+            <li
+              className="MuiBreadcrumbs-li"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+              >
+                index.step2
+              </p>
+            </li>
+            <li
+              aria-hidden={true}
+              className="MuiBreadcrumbs-separator"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                />
+              </svg>
+            </li>
+            <li
+              className="MuiBreadcrumbs-li"
+            >
+              <p
+                className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+              >
+                index.step3
+              </p>
+            </li>
+          </ol>
+        </nav>
       </div>
     </div>
   </div>
   <div
-    className="MuiContainer-root makeStyles-text-2 MuiContainer-maxWidthLg"
-  >
-    <p>
-      index.introduction
-    </p>
-    <p>
-      index.steps
-    </p>
-    <ol
-      className="makeStyles-li-3"
-    >
-      <li>
-        index.step1
-      </li>
-      <li>
-        index.step2
-      </li>
-      <li>
-        index.step3
-      </li>
-    </ol>
-    <span>
-      index.disclaimer
-    </span>
-  </div>
-  <div
-    className="MuiBox-root MuiBox-root-129"
+    className="MuiBox-root MuiBox-root-105"
   >
     <div>
       <form
@@ -143,8 +155,18 @@ exports[`renders correctly enzyme 1`] = `
               type="file"
             />
           </div>
+          <p
+            style={
+              Object {
+                "color": "#707070",
+                "fontSize": "14px",
+              }
+            }
+          >
+            index.disclaimer
+          </p>
           <div
-            className="MuiBox-root MuiBox-root-267"
+            className="MuiBox-root MuiBox-root-241"
           >
             <button
               alt="convert button"
@@ -179,6 +201,68 @@ exports[`renders correctly enzyme 1`] = `
           <p />
         </div>
       </form>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-274 makeStyles-downloadBtn-2"
+  >
+    <div
+      className={
+        Object {
+          "margin": "1.2rem",
+        }
+      }
+    >
+      <button
+        alt="download docker-compose"
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="submit"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 9H15V4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v5H7.41c-.89 0-1.34 1.08-.71 1.71l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.63-.63.19-1.71-.7-1.71zM5 19c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1z"
+              />
+            </svg>
+          </span>
+          fileSample.downloadBtn
+        </span>
+      </button>
+      <p
+        style={
+          Object {
+            "color": "#707070",
+            "fontSize": "14px",
+            "marginTop": 5,
+          }
+        }
+      >
+        fileSample.sampleLabel
+      </p>
     </div>
   </div>
 </div>

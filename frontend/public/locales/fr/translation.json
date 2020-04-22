@@ -2,27 +2,28 @@
   "index": {
     "betaTitle": "Version Beta",
     "betaMessage": "Veuillez prendre en compte qu'il s'agit d'une version BETA.",
-    "introduction": "Le but de cette application est de vous faciliter la vie en convertissant un fichier docker-compose en objets Kubernetes.",
+    "indexTitle": "Qu'est-ce que Com2kube?",
+    "introduction": "Le but de cette application est de vous faciliter la vie en convertissant un fichier docker-compose en objets Kubernetes facilement.",
     "steps": "Vous pouvez effectuer la conversion du fichier docker-compose en trois étapes faciles:",
     "step1": "1. Cliquez sur le bouton 'Choose File'.",
     "step2": "2. Sélectionnez votre fichier docker-compose.yml.",
-    "step3": "3. Appuyez sur 'Soumettre' afin de convertir votre fichier et d'obtenir le résultat.",
-    "disclaimer": "Avertissement: Nous sauvegardons aucun de vos fichiers soumis."
+    "step3": "3. Soumettre",
+    "disclaimer": "Avertissement: Nous ne sauvegardons aucun de vos fichiers soumis."
   },
   "fileUpload": {
-    "select": "**FR** Select a file",
     "submitBtn": "Soumettre"
   },
   "fileSample": {
-    "downloadBtn": "Télécharger un docker-compose.yml"
+    "downloadBtn": "Télécharger un échantillon",
+    "sampleLabel": "Vous pouvez l'utiliser pour essayer Com2kube!"
   },
   "fileDownload": {
     "downloadFileBtn": "Télécharger le fichier converti"
   },
   "about": {
     "teamHeader": "L'équipe",
-    "backendDev": "développeur backend/devops",
-    "frontendDev": "développeur frontend",
+    "backendDev": "Développeur backend/DevOps",
+    "frontendDev": "Développeur frontend",
     "menu": "À propos",
     "item1": "Salut à tous!",
     "item2": "Nous aimerions vous présenter notre premier projet que nous venons à peine de commencer. Il s'agit d'un projet qui nous permet de développer nos connaissances en programmation et nous espérons que vous l'apprécierez autant que nous.",
