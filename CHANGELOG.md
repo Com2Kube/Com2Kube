@@ -14,7 +14,7 @@ All notable changes to this project will be documented in this file.
 ### Bug Fixes
 
 - Mobile responsiveness
-- Translation for french
+- Translation for French and English
 
 ### Updates
 
@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - Header and footer layout
 - Use all Axios Request from Fetch requests
 - Header content
+- Logo to have transparent background
 
 ## Beta: 0.2.1 - 2020-02-06
 

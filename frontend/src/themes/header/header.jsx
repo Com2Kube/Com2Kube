@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Typography, Container, Link } from "@material-ui/core"
-import logoCom2kube from "../../assets/images/logo_transparent.png"
+import logoCom2kube from "../../assets/images/logo_transparent-removebg-preview.png"
 import { Logo, Name } from "./style"
 import Links from "./links/links"
 
