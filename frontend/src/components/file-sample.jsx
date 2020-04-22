@@ -59,6 +59,10 @@ class SampleFile extends React.Component {
         >
           {t("fileSample.downloadBtn")}
         </Button>
+
+        <p style={{ marginTop: 5, color: "#707070", fontSize: "14px" }}>
+          {t("fileSample.sampleLabel")}
+        </p>
       </div>
     )
   }

@@ -46,9 +46,7 @@ const Intro = () => {
         <p>{t("index.introduction")}</p>
         <p>{t("index.steps")}</p>
         <StepperSteps />
-        <Box className={classes.downloadBtn}>
-          <SampleFile />
-        </Box>
+        
       </Container>
     </div>
   )

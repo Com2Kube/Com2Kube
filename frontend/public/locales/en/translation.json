@@ -15,7 +15,8 @@
     "submitBtn": "Submit"
   },
   "fileSample": {
-    "downloadBtn": "Download a sample file"
+    "downloadBtn": "Download a sample file",
+    "sampleLabel": "You can use it to try out the app!"
   },
   "fileDownload": {
     "downloadFileBtn": "Download converted file"

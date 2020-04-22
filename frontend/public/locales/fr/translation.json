@@ -14,7 +14,8 @@
     "submitBtn": "Soumettre"
   },
   "fileSample": {
-    "downloadBtn": "Télécharger un échantillon"
+    "downloadBtn": "Télécharger un échantillon",
+    "sampleLabel": "Vous pouvez l'utiliser pour essayer l'app!"
   },
   "fileDownload": {
     "downloadFileBtn": "Télécharger le fichier converti"
