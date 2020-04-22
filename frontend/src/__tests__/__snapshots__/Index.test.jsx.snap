@@ -8,10 +8,10 @@ exports[`Index renders correctly enzyme 1`] = `
     className="MuiContainer-root MuiContainer-maxWidthLg"
   >
     <div
-      className="makeStyles-root-10"
+      className="makeStyles-root-11"
     >
       <div
-        className="MuiContainer-root makeStyles-col-12 MuiContainer-maxWidthMd"
+        className="MuiContainer-root makeStyles-col-13 MuiContainer-maxWidthMd"
       >
         <div
           className="MuiPaper-root MuiAlert-root MuiAlert-standardInfo MuiPaper-elevation0"
@@ -43,7 +43,7 @@ exports[`Index renders correctly enzyme 1`] = `
           </div>
         </div>
         <h2>
-          What is Com2kube?
+          index.indexTitle
         </h2>
         <p>
           index.introduction
@@ -117,62 +117,11 @@ exports[`Index renders correctly enzyme 1`] = `
             </li>
           </ol>
         </nav>
-        <div
-          className="MuiBox-root MuiBox-root-104 makeStyles-downloadBtn-14"
-        >
-          <div
-            className={
-              Object {
-                "margin": "1.2rem",
-              }
-            }
-          >
-            <button
-              alt="download docker-compose"
-              className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
-              disabled={false}
-              onBlur={[Function]}
-              onClick={[Function]}
-              onDragLeave={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onKeyUp={[Function]}
-              onMouseDown={[Function]}
-              onMouseLeave={[Function]}
-              onMouseUp={[Function]}
-              onTouchEnd={[Function]}
-              onTouchMove={[Function]}
-              onTouchStart={[Function]}
-              tabIndex={0}
-              type="submit"
-            >
-              <span
-                className="MuiButton-label"
-              >
-                <span
-                  className="MuiButton-startIcon MuiButton-iconSizeMedium"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="MuiSvgIcon-root"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M16.59 9H15V4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v5H7.41c-.89 0-1.34 1.08-.71 1.71l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.63-.63.19-1.71-.7-1.71zM5 19c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1z"
-                    />
-                  </svg>
-                </span>
-                fileSample.downloadBtn
-              </span>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div
-    className="MuiBox-root MuiBox-root-137"
+    className="MuiBox-root MuiBox-root-105"
   >
     <div>
       <form
@@ -217,7 +166,7 @@ exports[`Index renders correctly enzyme 1`] = `
             index.disclaimer
           </p>
           <div
-            className="MuiBox-root MuiBox-root-273"
+            className="MuiBox-root MuiBox-root-241"
           >
             <button
               alt="convert button"
@@ -252,6 +201,68 @@ exports[`Index renders correctly enzyme 1`] = `
           <p />
         </div>
       </form>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-274 makeStyles-downloadBtn-2"
+  >
+    <div
+      className={
+        Object {
+          "margin": "1.2rem",
+        }
+      }
+    >
+      <button
+        alt="download docker-compose"
+        className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="submit"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          <span
+            className="MuiButton-startIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.59 9H15V4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v5H7.41c-.89 0-1.34 1.08-.71 1.71l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.63-.63.19-1.71-.7-1.71zM5 19c0 .55.45 1 1 1h12c.55 0 1-.45 1-1s-.45-1-1-1H6c-.55 0-1 .45-1 1z"
+              />
+            </svg>
+          </span>
+          fileSample.downloadBtn
+        </span>
+      </button>
+      <p
+        style={
+          Object {
+            "color": "#707070",
+            "fontSize": "14px",
+            "marginTop": 5,
+          }
+        }
+      >
+        fileSample.sampleLabel
+      </p>
     </div>
   </div>
 </div>

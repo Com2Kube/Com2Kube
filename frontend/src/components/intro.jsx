@@ -1,9 +1,8 @@
 import React from "react"
 import { useTranslation } from "react-i18next"
 import { makeStyles } from "@material-ui/core/styles"
-import { Container, Box } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 import { Alert, AlertTitle } from "@material-ui/lab"
-import SampleFile from "./file-sample"
 import StepperSteps from "./stepper"
 
 const useStyles = makeStyles(() => ({
@@ -42,13 +41,10 @@ const Intro = () => {
           <AlertTitle>{t("index.betaTitle")}</AlertTitle>
           {t("index.betaMessage")}
         </Alert>
-        <h2>What is Com2kube?</h2>
+        <h2>{t("index.indexTitle")}</h2>
         <p>{t("index.introduction")}</p>
         <p>{t("index.steps")}</p>
         <StepperSteps />
-        <Box className={classes.downloadBtn}>
-          <SampleFile />
-        </Box>
       </Container>
     </div>
   )

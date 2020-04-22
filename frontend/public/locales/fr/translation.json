@@ -2,18 +2,20 @@
   "index": {
     "betaTitle": "Version Beta",
     "betaMessage": "Veuillez prendre en compte qu'il s'agit d'une version BETA.",
+    "indexTitle": "Qu'est-ce que Com2kube?",
     "introduction": "Le but de cette application est de vous faciliter la vie en convertissant un fichier docker-compose en objets Kubernetes facilement.",
     "steps": "Vous pouvez effectuer la conversion du fichier docker-compose en trois étapes faciles:",
     "step1": "1. Cliquez sur le bouton 'Choose File'.",
     "step2": "2. Sélectionnez votre fichier docker-compose.yml.",
     "step3": "3. Soumettre",
-    "disclaimer": "Avertissement: Nous sauvegardons aucun de vos fichiers soumis."
+    "disclaimer": "Avertissement: Nous ne sauvegardons aucun de vos fichiers soumis."
   },
   "fileUpload": {
     "submitBtn": "Soumettre"
   },
   "fileSample": {
-    "downloadBtn": "Télécharger un docker-compose.yml"
+    "downloadBtn": "Télécharger un échantillon",
+    "sampleLabel": "Vous pouvez l'utiliser pour essayer Com2kube!"
   },
   "fileDownload": {
     "downloadFileBtn": "Télécharger le fichier converti"
