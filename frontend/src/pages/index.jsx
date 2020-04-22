@@ -27,8 +27,8 @@ const Index = () => {
         <FileUpload id="file-upload" />
       </Box>
       <Box className={classes.downloadBtn}>
-          <SampleFile />
-        </Box>
+        <SampleFile />
+      </Box>
     </div>
   )
 }
