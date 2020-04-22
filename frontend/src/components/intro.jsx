@@ -42,7 +42,7 @@ const Intro = () => {
           <AlertTitle>{t("index.betaTitle")}</AlertTitle>
           {t("index.betaMessage")}
         </Alert>
-        <h2>What is Com2kube?</h2>
+        <h2>{t("index.indexTitle")}</h2>
         <p>{t("index.introduction")}</p>
         <p>{t("index.steps")}</p>
         <StepperSteps />

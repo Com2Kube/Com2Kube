@@ -2,6 +2,7 @@
   "index": {
     "betaTitle": "Beta Version",
     "betaMessage": "Please note that this is a beta version.",
+    "indexTitle": "What is Com2kube?",
     "introduction": " The purpose of this application is to make your job easier when it comes to converting your docker-compose files into Kubernetes objects.",
     "steps": "You can convert your docker-compose files into three simple steps:",
     "step1": "1. Click on the 'Choose File' button.",
