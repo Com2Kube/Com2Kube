@@ -5,9 +5,11 @@
 ![Azure DevOps tests](https://img.shields.io/azure-devops/tests/com2kube/com2kube/5)
 ![Azure DevOps Deploy](https://img.shields.io/azure-devops/release/com2kube/334cc7b8-c59a-4422-a037-9972f9f8a55f/2/5)
 
-This project aims to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
+> This project aims to provide an easy way for docker-compose users to convert their deployment files for Kubernetes
 
-## Getting started
+![com2kube demo](demo/com2kube0.3.0.gif)
+
+## Installation
 
 ```text
 git clone https://github.com/Com2Kube/Com2Kube.git
@@ -31,7 +33,7 @@ To force docker to rebuild the images : `docker-compose up --build`
 ### Frontend
 
 - React
-- React Material UI
+- [React Material UI](https://material-ui.com/)
 - [React Syntaxe Highlighter](https://github.com/conorhastings/react-syntax-highlighter/tree/f7e4774b9cbc76fb42ee97e8861349aa1d50e532)
 - [React i18next](https://github.com/i18next/react-i18next)
 
@@ -57,6 +59,12 @@ Thank your for contributing to our project. Please follow our [Contributing docu
 
 - [Gabriel Jean](https://github.com/GabrielJean)
 - [Claire Bun](https://github.com/cbun097)
+
+You can reach us by [email](mailto:com2kube@gmail.com).
+
+## Release History
+
+Please check our [CHANGELOG](CHANGELOG.md) or our [release](https://github.com/Com2Kube/Com2Kube/releases).
 
 ## Licence
 
