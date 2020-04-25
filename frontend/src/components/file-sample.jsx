@@ -1,25 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
 import ReactGA from "react-ga"
 import { Button } from "@material-ui/core"
-import { withTranslation } from "react-i18next"
 import GetAppRoundedIcon from "@material-ui/icons/GetAppRounded"
 import axios from "axios"
 
-const useStyles = () => ({
-  root: {
-    margin: "1.2rem"
-  }
-})
+const SampleFile = () => {
+  const [isSending, setIsSending] = useState(false)
+  useEffect(() => {
+    getFileSample()
+  }, isSending)
 
-class SampleFile extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-    this.getFileSample = this.getFileSample.bind(this)
-    this.gaEvent = this.gaEvent.bind(this)
+  const gaEvent = () => {
+    ReactGA.event({
+      category: "Sample",
+      action: "Downloaded a sample file"
+    })
   }
 
-  getFileSample() {
+  function getFileSample() {
     const urlApi = `/api/sample`
     axios({
       url: urlApi,
@@ -33,39 +32,27 @@ class SampleFile extends React.Component {
       document.body.appendChild(link)
       link.click()
     })
-    this.gaEvent()
+    gaEvent()
   }
 
-  gaEvent() {
-    ReactGA.event({
-      category: "Sample",
-      action: "Downloaded a sample file"
-    })
-  }
-
-  render() {
-    // eslint-disable-next-line react/prop-types
-    const { t } = this.props
-    const classes = useStyles()
-    return (
-      <div className={classes.root}>
-        <Button
-          variant="outlined"
-          color="primary"
-          type="submit"
-          alt="download docker-compose"
-          onClick={this.getFileSample}
-          startIcon={<GetAppRoundedIcon />}
-        >
-          {t("fileSample.downloadBtn")}
-        </Button>
-
-        <p style={{ marginTop: 5, color: "#707070", fontSize: "14px" }}>
-          {t("fileSample.sampleLabel")}
-        </p>
-      </div>
-    )
-  }
+  const { t } = useTranslation()
+  return (
+    <div style={{ margin: "1.2rem" }}>
+      <Button
+        variant="outlined"
+        color="primary"
+        type="submit"
+        alt="download docker-compose"
+        onClick={getFileSample}
+        startIcon={<GetAppRoundedIcon />}
+      >
+        {t("fileSample.downloadBtn")}
+      </Button>
+      <p style={{ marginTop: 5, color: "#707070", fontSize: "14px" }}>
+        {t("fileSample.sampleLabel")}
+      </p>
+    </div>
+  )
 }
 
-export default withTranslation()(SampleFile)
+export default SampleFile
