@@ -48,7 +48,7 @@ exports[`Footer renders correctly 1`] = `
       className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
       m={0.2}
     >
-      Version: 0.3.1
+      Version: 0.3.2
     </p>
     <p
       className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
