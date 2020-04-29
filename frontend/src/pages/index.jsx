@@ -6,7 +6,6 @@ import SampleFile from "../components/file-sample"
 import Intro from "../components/intro"
 import { Grid } from "@material-ui/core"
 import Image from "../assets/images/file-sync.svg"
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -22,7 +21,6 @@ const useStyles = makeStyles(() => ({
 
 const Index = () => {
   const classes = useStyles()
-  const matches = useMediaQuery('(max-width:400px)')
   return (
     <div className={classes.root}>
       <Grid
