@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Box, Container } from "@material-ui/core"
+import { Box, Container, Hidden} from "@material-ui/core"
 import FileUpload from "../components/file-upload"
 import SampleFile from "../components/file-sample"
 import Intro from "../components/intro"
@@ -31,11 +31,11 @@ const Index = () => {
             <Grid item xs container>
                 <Intro />
             </Grid>
-            <Box display={{ xs: 'none', sm: 'block' }}>
-              <Grid item xs={4} container>
-                  <img style={{width: "30em"}} src={Image} alt=""/>
+            <Hidden smDown>
+              <Grid item xs={4} container zeroMinWidth>
+                  <img style={{width: "80%"}} src={Image} alt=""/>
               </Grid>
-            </Box>
+            </Hidden>
       </Grid>
 
 
