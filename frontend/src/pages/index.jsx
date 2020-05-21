@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Box, Container, Hidden} from "@material-ui/core"
+import { Box, Container, Hidden } from "@material-ui/core"
 import FileUpload from "../components/file-upload"
 import SampleFile from "../components/file-sample"
 import Intro from "../components/intro"
@@ -18,27 +18,20 @@ const useStyles = makeStyles(() => ({
   }
 }))
 
-
 const Index = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
-      <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center">
-            <Grid item xs container>
-                <Intro />
-            </Grid>
-            <Hidden smDown>
-              <Grid item xs={4} container zeroMinWidth>
-                  <img style={{width: "80%"}} src={Image} alt=""/>
-              </Grid>
-            </Hidden>
+      <Grid container direction="row" justify="center" alignItems="center">
+        <Grid item xs container>
+          <Intro />
+        </Grid>
+        <Hidden smDown>
+          <Grid item xs={4} container zeroMinWidth>
+            <img style={{ width: "80%" }} src={Image} alt="file image" />
+          </Grid>
+        </Hidden>
       </Grid>
-
-
 
       <Box m="2rem">
         <FileUpload id="file-upload" />
