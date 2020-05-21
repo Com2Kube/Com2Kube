@@ -1,11 +1,12 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import { Box, Container, Hidden } from "@material-ui/core"
-import FileUpload from "../components/file-upload"
-import SampleFile from "../components/file-sample"
-import Intro from "../components/intro"
+import FileUpload from "../../components/file-upload"
+import SampleFile from "../../components/file-sample"
+import Intro from "../../components/intro"
 import { Grid } from "@material-ui/core"
-import Image from "../assets/images/file-sync.svg"
+import Image from "../../assets/images/file-sync.svg"
+import { BackgroundImage } from "./style.js"
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -15,6 +16,9 @@ const useStyles = makeStyles(() => ({
   },
   downloadBtn: {
     textAlign: "center"
+  },
+  img: {
+    width: "80%",
   }
 }))
 
@@ -28,7 +32,8 @@ const Index = () => {
         </Grid>
         <Hidden smDown>
           <Grid item xs={4} container zeroMinWidth>
-            <img style={{ width: "80%" }} src={Image} alt="file image" />
+            {/* <img className={classes.img} src={Image} alt="file image" /> */}
+            <BackgroundImage src={Image} className={classes.img}/>
           </Grid>
         </Hidden>
       </Grid>
