@@ -16,9 +16,6 @@ const useStyles = makeStyles(() => ({
   },
   downloadBtn: {
     textAlign: "center"
-  },
-  img: {
-    width: "80%",
   }
 }))
 
@@ -33,7 +30,7 @@ const Index = () => {
         <Hidden smDown>
           <Grid item xs={4} container zeroMinWidth>
             {/* <img className={classes.img} src={Image} alt="file image" /> */}
-            <BackgroundImage src={Image} className={classes.img}/>
+            <BackgroundImage src={Image}/>
           </Grid>
         </Hidden>
       </Grid>
