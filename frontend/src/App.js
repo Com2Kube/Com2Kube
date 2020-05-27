@@ -14,7 +14,7 @@ import Blog from "./pages/blog"
 function App() {
   useEffect(() => {
     // Making sure we dont mix prod and dev analytic data
-    if (window.location.hostname === "com2kube.io" || window.location.hostname === "wwww.com2kube.io" ) {
+    if (window.location.hostname === "com2kube.io") {
       ReactGA.initialize("UA-156694657-2")
       // To Report Page View
       ReactGA.pageview(window.location.pathname + window.location.search)
