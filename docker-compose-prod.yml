@@ -11,15 +11,14 @@ services:
       - PGID=1000
       - TZ=America/Toronto
       - URL=com2kube.io
-      - SUBDOMAINS=dev
       - VALIDATION=http
       - EMAIL=com2kube@gmail.com #optional
       - DHLEVEL=2048 #optional
-      - ONLY_SUBDOMAINS=true #optional
+      - ONLY_SUBDOMAINS=false #optional
       # - EXTRA_DOMAINS=com2kube.com #optional
-      - STAGING=false #optional
+      # - STAGING=true #optional
     volumes:
-      - ./frontend/nginx/nginx-https.conf:/config/nginx/site-confs/default
+      - ./nginx/nginx-https.conf:/config/nginx/site-confs/default
     ports:
       - 443:443
       - 80:80 #optional
