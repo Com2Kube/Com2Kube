@@ -9,7 +9,8 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     flexDirection: "row",
-    width: "100%"
+    width: "100%",
+    paddingLeft: "2vh"
   },
   row: {
     display: "flex",

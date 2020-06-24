@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom"
 import ReactGA from "react-ga"
 import Header from "./themes/header/header"
 import Footer from "./themes/footer/footer"
-import Index from "./pages/index"
+import Index from "./pages/index/index"
 import About from "./pages/about/about"
 import Privacy from "./pages/privacy"
 import NotFound from "./pages/not-found"
@@ -14,7 +14,8 @@ import Blog from "./pages/blog"
 function App() {
   useEffect(() => {
     // Making sure we dont mix prod and dev analytic data
-    if (window.location.hostname === "com2kube.io" || window.location.hostname === "www.com2kube.io") {
+    // prettier-ignore
+    if (window.location.hostname === "com2kube.io") {
       ReactGA.initialize("UA-156694657-2")
       // To Report Page View
       ReactGA.pageview(window.location.pathname + window.location.search)
