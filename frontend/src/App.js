@@ -14,6 +14,7 @@ import Blog from "./pages/blog"
 function App() {
   useEffect(() => {
     // Making sure we dont mix prod and dev analytic data
+    // prettier-ignore
     if (window.location.hostname === "com2kube.io") {
       ReactGA.initialize("UA-156694657-2")
       // To Report Page View
